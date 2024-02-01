@@ -10,7 +10,7 @@ dateCreated: 2024-02-01T16:20:53.348Z
 
 A collection is auto generated when defining a rule. A collection holds all media that either got picked up by the handling of the corresponding rule or got manually added. 
 
-When the specified amount of days that media must live in the collection is passed, the collection handler job will perform the necessary cleanup actions.
+When the specified amount of days1 that media must live in the collection is passed, the collection handler job will perform the necessary cleanup actions.
 
 > Collection handling is a batch process that runs every 12 hours. You can manually trigger it with the `Handle collection` button on the 'collections' page.
 > 
