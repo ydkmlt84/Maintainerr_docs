@@ -28,5 +28,5 @@ I've been sharing my Plex Server with family and friends for a while now. They q
 With Maintainerr, I no longer have to keep an eye on their usage. And it has the added benefit of announcing media that's about to be deleted on the Plex home screen.
 
 <p align="center">
-<a href="https://discord.gg/WP4ZW2QYwk"><img src=/images/discord_icon.svg width=25%>&nbsp &nbsp &nbsp &nbsp </a><a href = "https://github.com/jorenn92/Maintainerr"><img src=/images/docker_icon.svg width=25%></a>
+<a href="https://discord.gg/WP4ZW2QYwk"><img src=/images/discord_icon.svg width=25%>&nbsp &nbsp &nbsp &nbsp </a><a href = "https://github.com/jorenn92/Maintainerr"><img src=/images/GitHub-Logo.png height= 25% width=25%></a>&nbsp &nbsp &nbsp &nbsp <a href="https://hub.docker.com/r/jorenn92/maintainerr"><img src=/images/docker_icon.svg width=25%>
 </p>
