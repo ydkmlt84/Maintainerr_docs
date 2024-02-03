@@ -1,13 +1,3 @@
----
-title: Home
-description: 
-published: true
-date: 2024-02-01T16:21:07.374Z
-tags: 
-editor: markdown
-dateCreated: 2024-02-01T16:21:04.740Z
----
-
 <b>Maintainerr</b> makes managing your media easy. Create custom rules with parameters across different services, show the matching media on the Plex home screen for a given amount of days and handle the deletion.
 
 > Maintainerr is beta software, please report any bugs and issues.
@@ -37,4 +27,14 @@ With Maintainerr, i no longer have to keep an eye on their usage. And it has the
 
 # Ran into a problem?
 
-Feel free to submit an issue on the [Github page](https://github.com/jorenn92/Maintainerr/issues). All help is welcome!
+<p align="center" >
+  <a href="https://discord.gg/WP4ZW2QYwk"><img src="https://dcbadge.vercel.app/api/server/WP4ZW2QYwk?style=flat&theme=default-inverted" width="25%" alt="Discord link"/></a>
+  &nbsp; 
+  <picture>
+  <img src="https://github.com/jorenn92/Maintainerr/actions/workflows/build.yml/badge.svg?branch=main" width="17%" alt="Build" /> </picture>
+    &nbsp; 
+  <picture>  
+  <img src="https://github.com/jorenn92/Maintainerr/actions/workflows/release.yml/badge.svg?branch=main" width="19%" alt="Release" /> </picture>
+  &nbsp; 
+  <a href="https://hub.docker.com/r/jorenn92/maintainerr"><img src="https://img.shields.io/docker/pulls/jorenn92/maintainerr" alt="Docker pulls" width="16.5%"></a>
+</p>
