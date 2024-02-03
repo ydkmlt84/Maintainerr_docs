@@ -1,6 +1,6 @@
 **Maintainerr** makes managing your media easy. No longer do you have to worry about your precious hard drive space being taken up by Movies and TVShows, that aren't even being watched.
 
-> Maintainerr is beta software, please report any bugs and issues.
+<blockquote> Maintainerr is beta software, please report any bugs and issues. </blockquote>
 
 # Features
 - Make Plex collections from a specific set of rules, defined by you.
@@ -23,10 +23,8 @@ Currently, Maintainerr supports rules across these apps :
 
 ## Motivation
 
-I've been sharing my Plex Server with family and friends for a while now. They quickly started to request everything they could think of through Overseerr, while not watching most of it. Since I use a modest server with limited capacity, I had to spend some time cleaning up after them.
-
-With Maintainerr, I no longer have to keep an eye on their usage. And it has the added benefit of announcing media that's about to be deleted on the Plex home screen.
-
+I've been sharing my Plex Server with family and friends for a while now. They quickly started to request everything they could think of through Overseerr, while not watching most of it. Since I use a modest server with limited capacity, I had to spend some time cleaning up after them.With Maintainerr, I no longer have to keep an eye on their usage. And it has the added benefit of announcing media that's about to be deleted on the Plex home screen.
+<br>
 <p align="center">
 <a href="https://discord.gg/WP4ZW2QYwk" target="_blank"><img src=/images/discord_icon.svg width=150> </a> &nbsp &nbsp &nbsp &nbsp <a href="https://github.com/jorenn92/Maintainerr" target="_blank"><img src=/images/GitHub-Logo.png width=150></a>&nbsp &nbsp &nbsp &nbsp <a href="https://hub.docker.com/r/jorenn92/maintainerr" target="_blank"><img src=/images/docker_icon.svg width=150>
 </p>
