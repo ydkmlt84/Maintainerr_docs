@@ -13,9 +13,6 @@ A collection is auto generated when defining a rule. A collection holds all medi
 When the specified amount of days1 that media must live in the collection is passed, the collection handler job will perform the necessary cleanup actions.
 
 > Collection handling is a batch process that runs every 12 hours. You can manually trigger it with the `Handle collection` button on the 'collections' page.
-> 
-> 
-> Please note that the button doesn't show any feedback. Repeatedly pushing it will trigger handling multiple times
 
 # Plex
 

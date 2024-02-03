@@ -1,14 +1,17 @@
 Docker is the easiest way to start Maintainerr.
 
-images for amd64 & arm64 are available under jorenn92/maintainerr and ghcri.io/jorenn92/maintainerr.
-Data is saved under /opt/data, a volume should be created to persist the configuration. 
+Images for amd64 & arm64 are available under jorenn92/maintainerr and ghcri.io/jorenn92/maintainerr.
+Data is saved under /opt/data, a docker volume should be created to persist your configuration. 
 
 
-> You have the option to define a User and Group ID for running the container. Maintainerr will operate using this specified UID:GID, and any files it generates within your data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000, representing the 'node' user inside the container. 
->
-> **Make sure your data volume is read/writeable by this UID:GID!**
+> <center>You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.</center>
 
+> :warning:  **Make sure your data volume is read/writeable by this UID:GID!**
+ >> `It is possible that you will need to change permissions on the hosts data directory.`
+ >>:bulb:[Linux Permission Command](https://www.ibm.com/docs/en/aix/7.1?topic=c-chown-command)
+ >>:bulb:[Windows Permissions](https://v2cloud.com/tutorials/how-to-change-folder-permissions-on-windows)
 
+ :memo: **NOTE** - If you are still lost, reach out to us on [Discord](https://discord.gg/WP4ZW2QYwk).
 
 # Run
 
@@ -37,7 +40,7 @@ Pull the latest image:
 docker pull ghcr.io/jorenn92/maintainerr:latest
 ```
 
-Finally, run the container with the same parameters originally used to create the container.
+Finally, run the container with the same parameters you originally used to create the container.
 
 You may alternatively use a third-party updating mechanism, such as Watchtower or Ouroboros, to keep Maintainerr up-to-date automatically.
 

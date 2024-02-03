@@ -8,14 +8,12 @@ editor: markdown
 dateCreated: 2024-02-01T16:21:12.263Z
 ---
 
-Rules are the engine of Maintainerr. They will test media and add them to a collection.
-When media existed in the collection for a specified amount of time, they'll be deleted from disk & external applications.
+Rules are the engine of Maintainerr. Media will be tested against the rule parameters and add them to a collection, if they are a match.
+When media exists in the collection for a specified amount of time, they'll be deleted from disk & external applications.
 
 On rule creation, Maintainerr will also generate a collection. The collection will only be visible in Plex if it contains media.
 
 > Rule handling is a batch process that runs every 8 hours. You can manually trigger it with the `Run rules` button on the 'rules' page.
->
-> Please note that the button doesn't show any feedback. Repeatedly pushing it will trigger handling multiple times
 
 # Creating rules
 
