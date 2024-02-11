@@ -61,13 +61,13 @@ We will start from the top of a new rule.
    > <img src="../images/screenshot_discord_comment.png" width=85%></img>
 
 ## Rule Configuration
-Now we are getting into the nitty gritty. After the settings above have been configured to your liking, you start to craft the rule logic. There is an button labeled Community, which are rule setups that have been shared by others. Clicking on this button will list the "uploaded" rules and you can use one of these rules if you wish. Clicking on a rule and then clicking on the info button down below, will give you uploaders description of that rule and possibly how it works.
+Now we are getting into the nitty gritty. After the settings above have been configured to your liking, you start to craft the rule logic. There is a button labeled Community, which are rule setups that have been shared by others. Clicking on this button will list the "uploaded" rules and you can use one of these rules if you wish. Clicking on a rule and then clicking on the info button down below, will give you uploaders description of that rule and possibly how it works.
 > :memo: Community rules are just that, from the community. They may not work like they say they do. They may not be formatted properly. It can be a nice place to start but I personally wouldn't rely on them as everyones situation is different. 
 
 Below the **Community** button there are two other buttons. Import and Export. You can import a rule from a txt file in YAML format (this is an advanced method but it is an option). 
  > :memo: If you want to go down this path, I would choose one of the Community rules, doesn't really matter which one, and then use the export button. You will get a generated YAML format of the rule. If you are familiar with YAML this will be a good place to start. Take a look at this page for the proper syntax of each parameter -> [Rules Glossary](https://docs.maintainerr.info/en/Glossary). 
  
- If you are looking at a rule that you have already created, you can export the rule in YAML format in order to share it or textually edit it. 
+ If you are looking at a rule that you have already created, you can export the rule in YAML format, in order to share it or textually edit it. 
 ### Rules and Sections
 Understanding rules and sections can be crucial to getting your rule setup properly and acheiving your desired outcome.
 
