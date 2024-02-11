@@ -60,7 +60,7 @@ We will start from the top of a new rule.
 - 11: (:warning: It is recommended to keep this option off as it uses an outdated method. Maintainerr now automatically does this.) When the action set in #5 is taken, will we tell Overseerr that this item is no longer available and can be requested again?
 - 12: You can toggle the rule system off and on. This is useful if you have collections in Plex that you want to see in Maintainerr, but don't want any actions taken on the collection.
 - 13: You can create a collection in Plex, and then use that collection in Maintainerr. If you are doing that, tick this Custom Collection box to on. This can be useful if there is a collection made by say PMM or by you, and you want to execute some rules against it.
-</br>
+
    > <img alt="screenshot-discord" src="../images/screenshot_discord_comment.png" width=85%></img>
 
 ---
