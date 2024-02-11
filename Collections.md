@@ -10,7 +10,7 @@ dateCreated: 2024-02-01T16:20:53.348Z
 
 A collection is auto generated when defining a rule. A collection holds all media that either got picked up by the handling of the corresponding rule or got manually added. 
 
-When the specified amount of days1 that media must live in the collection is passed, the collection handler job will perform the necessary cleanup actions.
+When the specified amount of days that media must live in the collection is passed, the collection handler job will perform the necessary cleanup actions.
 
 > Collection handling is a batch process that runs every 12 hours. You can manually trigger it with the `Handle collection` button on the 'collections' page.
 
@@ -26,7 +26,7 @@ If the `Show on home` option was checked, the Plex Collection will be shown on a
 
 You can manually add media to a collection on the `Overview` page, by using the `Add` button on the media. Using the button will open a popup where you are able to pick the collection you wish to add the media to. 
 
-> Please note that the first option selected is to **remove** media from all collections. However, if the media was added by the rule handler, it will be added again. If you wish to counter this behaviour, you must also exclude it from all collections.
+> :warning: Please note that the first option selected is to **remove** media from all collections. However, if the media was added by the rule handler, it will be added again. If you wish to counter this behaviour, you must also exclude it from all collections.
 
 ## Removing
 
