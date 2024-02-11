@@ -83,7 +83,7 @@ Understanding rules and sections can be crucial to getting your rule setup prope
 
 When you first start, you will be in the first *section*. Section #1 - Rule #1. A section is a grouped set of rules with one output over the whole section, depending on what was matched in the rules *within* that section.
 
-## AND
+### AND
 
 So let's try an **AND** example...
 
@@ -93,7 +93,7 @@ So let's try an **AND** example...
 - The output of this section would be X only.
   - Since X was matched by rule 1 AND rule 2 but Y was only matched by rule 1, it will not be included in the sections output because we said we want the output of the *section* to be everthing that matched <font color=yellow>(rule 1 AND rule 2)</font>.
 
-## OR
+### OR
 
 Now an **OR** example...
 
@@ -105,7 +105,7 @@ Now an **OR** example...
 
 This is probably the simplest form of a rule setup that you can get. Well, unless of course you are only using one rule because anything matched by that one rule becomes the output.
 
-## AND/OR
+### AND/OR
 
 Now let's try a mixed **AND** / **OR** example...
 
