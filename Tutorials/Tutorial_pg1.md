@@ -5,7 +5,7 @@ The rule system behind Maintainerr is quite complex, and therefore powerful. Whe
 
 # Tutorial
 <p align="center">
-<img src="../images/movie_poster.png" width="180" height="250"></img>
+<img src="../images/movie_poster.png" width="150" height="250"></img>
 </p>
 
 Let's take this movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, OverSeerr, and Radar:
@@ -42,7 +42,7 @@ We will start from the top of a new rule.
 
 - 1: This is the name of the Rule, and will eventually be the name of the Collection that gets created.
 - 2: Self explanatory but you can put whatever you want here. It will be shown in Plex when you open the collection.
-     <p align="center"><img src="images/screenshot_plex_collection.png" width="75%"></p>
+     <p align="center"><img src="../images/screenshot_plex_collection.png" width="75%"></p>
 - 3: Drop-down list of your Plex Libraries. Which library is this rule going to be run against?
 - 4: This will not be shown if you select a Movies library in #3. If you selected a TVShow library, your options will be shows/seasons/episodes. What type of TVShow media are we going to run the rule against? An entire show, just seasons, or just episodes? Different options will be made avaialable to you or taken away, depending on what you select here.
 - 5: Sonarr/Radarr action is what is going to happen after the `action after days` set in #6. Options are dependent on the library and media type from above. `Delete` will remove the files and the item from Sonarr/Radarr. `Unmonitor and delete` will unmonitor (not remove) the item from Sonarr/Radarr but delete the files. `Unmonitor and keep` will unmonitor the item from Sonarr/Radarr and <u>**keep**</u> the files.
