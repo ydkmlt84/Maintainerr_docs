@@ -2,7 +2,8 @@
 
 > Maintainerr is beta software, please report any bugs or issues.
 
-# Features
+## Features
+
 - Make Plex collections from a specific set of rules, defined by you.
 - Configure those rules to match your needs. (i.e. `Plex last viewed 30 days ago`)
 - See an overview of your Plex library contents.
@@ -21,7 +22,7 @@ Maintainerr supports rules across these apps :
 - Radarr
 - Sonarr
 
-<br>
+</br>
 <p align="center">
 <a href="https://discord.gg/WP4ZW2QYwk" target="_blank"><img src=/images/discord_icon.svg width=150> </a> &nbsp &nbsp &nbsp &nbsp <a href="https://github.com/jorenn92/Maintainerr" target="_blank"><img src=/images/GitHub-Logo.png width=150></a>&nbsp &nbsp &nbsp &nbsp <a href="https://hub.docker.com/r/jorenn92/maintainerr" target="_blank"><img src=/images/docker_icon.svg width=150>
 </p>

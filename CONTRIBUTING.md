@@ -8,82 +8,85 @@ editor: markdown
 dateCreated: 2024-02-01T16:20:49.633Z
 ---
 
-# Contributing to Maintainerr
+## Contributing to Maintainerr
 
 All help is welcome and greatly appreciated! If you would like to contribute to the project, the following instructions should get you started...
 
-## Development
+### Development
 
-### Tools Required
+#### Tools Required
 
 - HTML/Typescript/Javascript editor
   - [VSCode](https://code.visualstudio.com/) is recommended. Upon opening the project, a few extensions will be automatically recommended for install.
 - [NodeJS](https://nodejs.org/en/download/) (Node 20.x or higher)
 - [Git](https://git-scm.com/downloads)
 
-### Getting Started
+#### Getting Started
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) the repository to your own GitHub account and [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device:
 
-   ```bash
+  ```bash
    git clone https://github.com/YOUR_USERNAME/Maintainerr.git
    cd Maintainerr/
-   ```
+  ```
 
 2. Add the remote `upstream`:
 
-   ```bash
+  ```bash
    git remote add upstream https://github.com/jorenn92/Maintainerr.git
-   ```
+  ```
 
 3. Create a new branch:
 
-   ```bash
+  ```bash
    git checkout -b BRANCH_NAME main
-   ```
+  ```
 
-   - It is recommended to give your branch a meaningful name, relevant to the feature or fix you are working on.
-     - Good examples:
+- It is recommended to give your branch a meaningful name, relevant to the feature or fix you are working on.
+- Good examples:
        - `docs-docker-setup`
        - `feat-new-system`
        - `fix-title-cards`
        - `ci-improve-build`
-     - Bad examples:
+- Bad examples:
        - `bug`
        - `docs`
        - `feature`
        - `fix`
        - `patch`
 
-
 4. Activate the correct Yarn version
-    ```bash
+
+  ```bash
    corepack install
    corepack enable
-   ```
+  ```
 
 5. Install dependencies
-    ```bash
+
+  ```bash
     yarn
-   ```
+  ```
 
 6. Run the development commands:
-   ```bash
+
+  ```bash
    yarn dev:server
    yarn dev:ui
-   ```
+  ```
 
-   - If the build fails with Windows Powershell, try to use cmd instead.
+- If the build fails with Windows Powershell, try to use cmd instead.
 
 7. Create your patch and test your changes.
 
-   - Be sure to follow both the [code](#contributing-code) and [UI text](#ui-text-style) guidelines.
-   - Should you need to update your fork, you can do so by rebasing from `upstream`:
-     ```bash
+- Be sure to follow both the [code](#contributing-code) and [UI text](#ui-text-style) guidelines.
+  - Should you need to update your fork, you can do so by rebasing from `upstream`:
+
+    ```bash
      git fetch upstream
      git rebase upstream/develop
      git push origin BRANCH_NAME -f
-     ```
+    ```
 
 ### Contributing Code
 
@@ -114,7 +117,6 @@ When adding new UI text, please try to adhere to the following guidelines:
 9. In full sentences, abbreviations like "info" or "auto" should not be used in place of full words, unless referencing the name/label of a specific setting or option which has an abbreviation in its name.
 10. Do your best to check for spelling errors and grammatical mistakes.
 11. Do not misspell "Maintainerr."
-
 
 ## Attribution
 

@@ -1,19 +1,20 @@
 Docker is the easiest way to start Maintainerr.
 
 Images for amd64 & arm64 are available under `jorenn92/maintainerr` and `ghcr.io/jorenn92/maintainerr`.
-Data is saved under /opt/data, a docker volume should be created to persist your configuration. 
+The containers data location is /opt/data. A docker volume/bind is strongly encouraged to persist your configuration.
 
+> You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.
+<font color="red">See [Run](#run) and [Compose](#compose) below for examples.</font>
 
-> <center>You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.</center>
-
+Take note &darr;
 > :warning:  **Make sure your data volume is read/writeable by this UID:GID!**
  >> `It is possible that you will need to change permissions on the hosts data directory.`
  >>:bulb:[Linux Permission Command](https://www.ibm.com/docs/en/aix/7.1?topic=c-chown-command)
  >>:bulb:[Windows Permissions](https://v2cloud.com/tutorials/how-to-change-folder-permissions-on-windows)
 
- :memo: **NOTE** - If you are still lost, reach out to us on [Discord](https://discord.gg/WP4ZW2QYwk).
+If you are still lost, reach out to us on &nbsp; <a href="https://discord.gg/WP4ZW2QYwk" target="_blank"><img src=/images/discord_icon.svg width=150> </a>
 
-# Run
+## Run
 
 ```bash
 docker run -d \
@@ -26,7 +27,7 @@ docker run -d \
 ghcr.io/jorenn92/maintainerr:latest
 ```
 
-## Updating
+### Updating
 
 Stop and remove the existing container:
 
@@ -44,9 +45,9 @@ Finally, run the container with the same parameters you originally used to creat
 
 You may alternatively use a third-party updating mechanism, such as Watchtower or Ouroboros, to keep Maintainerr up-to-date automatically.
 
-# Compose
+## Compose
 
-Define the Maintainerr service in your docker-compose.yml as follows. 
+Define the Maintainerr service in your docker-compose.yml as follows.
 
 ```Yaml
 version: '3'
@@ -74,7 +75,7 @@ Then, start all services defined in your Compose file:
 docker compose up -d
 ```
 
-## Updating
+### Updating
 
 Pull the latest image:
 

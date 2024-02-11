@@ -15,9 +15,9 @@ On rule creation, Maintainerr will also generate a collection. The collection wi
 
 > Rule handling is a batch process that runs every 8 hours. You can manually trigger it with the `Run rules` button on the 'rules' page.
 
-# Creating rules
+## Creating rules
 
-## General
+### General
 
 General info about the rule. Some of the information specified here will be shown on the generated collection. In here you also specify how to handle the collection.
 
@@ -40,11 +40,11 @@ General info about the rule. Some of the information specified here will be show
 
 ## TV media type
 
-With the 'Media type' parameter you're able to specify the type of media that should be used for a TV library. This allows to run rules on either a selection of shows, seasons or episodes. 
+With the 'Media type' parameter you're able to specify the type of media that should be used for a TV library. This allows to run rules on either a selection of shows, seasons or episodes.
 
-For instance, this makes it possible to create rulegroups that select & delete old/watched seasons of a tv show, without removing the newer seasons.
+For instance, this makes it possible to create rule groups that select & delete old/watched seasons of a tv show, without removing the newer seasons.
 
-> Because you can't mix media types on a Plex collection, Maintainerr also doesn't allow to use multiple types on a rulegroup / collection.
+> Because you can't mix media types on a Plex collection, Maintainerr also doesn't allow the use of multiple types on a rule group / collection.
 
 > Executing rules on episodes takes a lot longer than shows & seasons because Maintainerr has to sift through more data
 
@@ -83,7 +83,7 @@ Starting from the second rule or section, a `operator` parameter is also require
 
 ## Operators
 
-There are 2 operator choices, both explained below. <br />
+There are 2 operator choices, both explained below. </br>
 The choice of operator defines what happens to the result of each section or rule.
 
 ### AND
@@ -98,7 +98,7 @@ The output of the rule will then be passed on to the next rule.
 
 ## Actions
 
-The action defines the way the `first value` and `second value` will be compared. <br />
+The action defines the way the `first value` and `second value` will be compared. </br>
 The available actions are dependent on the type of the `first value`
 
 | Action                    | Description                                                                                                                               | Types              |
@@ -125,9 +125,9 @@ The difference between 'Contains' and 'Contains (partial)' is only apparent with
 The `Second value` field allows some custom values. The available custom values are dependent on the type of `first value`.
 | Action | Description | Types |
 | ------------- |------------- | ------------- |
-| Custom days | This behaviour depends on the selected `action`. In case of `in_last` or `in_next`, this translates to 'in the last (or next) x days'. in case of `before` the value will be translated to the current date **subtracted** by the amount of `custom days`. In all other cases, the amount of days will be **added** to the current date | date
-| Custom date | Takes a specific date | date
-| Custom number | Takes a specific number | number
-| Custom text | Takes a specific text | text
+| Custom days | This behavior depends on the selected `action`. In case of `in_last` or `in_next`, this translates to 'in the last (or next) x days'. in case of `before` the value will be translated to the current date **subtracted** by the amount of `custom days`. In all other cases, the amount of days will be **added** to the current date | date  |
+| Custom date | Takes a specific date | date |
+| Custom number | Takes a specific number | number |
+| Custom text | Takes a specific text | text |
 
 You can incorporate text lists as custom values using JSON notation. For example, specifying ["Jef", "Frank", "Wilhelm"] will be parsed and treated as a list.
