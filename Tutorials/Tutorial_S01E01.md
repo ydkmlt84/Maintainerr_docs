@@ -31,7 +31,7 @@ Let's take this movie as an example. This isn't a real movie, but for the purpos
 
 We want to make a rule that would add this movie to it's collection.
 
- (:memo: There are many more attributes available in the API responses of Plex, Sonarr/Radarr, and Overseerr. We are only looking at these specific ones for the tutorial.)
+ :memo: There are many more attributes available in the API responses of Plex, Sonarr/Radarr, and Overseerr. We are only looking at these specific ones for the tutorial.
 
  Also, this won't be the only movie in the collection. However, all of the other movies that will be added into this collection matched the rule-set for the same reason/s.
 
@@ -57,7 +57,8 @@ We will start from the top of a new rule.
 - 8: Is this Rule active? Will it be one of the rules ran either by a manual run, or through periodic runs?
 - 9: Is this collection going to be shown on the Plex Home screen, or are you only going to be able to see it through the Plex Library screen?
 - 10: When the action set in #5 is taken, will Maintainerr also send a hit back to Sonarr/Radarr that excludes this item from being automatically added by any import lists?
-- 11: (:warning: It is recommended to keep this option off as it uses an outdated method. Maintainerr now automatically does this.) When the action set in #5 is taken, will we tell Overseerr that this item is no longer available and can be requested again?
+- 11: :warning: It is recommended to keep this option off as it uses an outdated method. Maintainerr now automatically does this.
+  - When the action set in #5 is taken, will we tell Overseerr that this item is no longer available and can be requested again?
 - 12: You can toggle the rule system off and on. This is useful if you have collections in Plex that you want to see in Maintainerr, but don't want any actions taken on the collection.
 - 13: You can create a collection in Plex, and then use that collection in Maintainerr. If you are doing that, tick this Custom Collection box to on. This can be useful if there is a collection made by say PMM or by you, and you want to execute some rules against it.
 
