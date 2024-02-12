@@ -54,6 +54,8 @@ Those are some fairly simple AND examples, and hopefully it is starting to becom
 
 Another way to look at these examples, is that within a *section*, each rule is making a list. The next rule is checking that list to see if anything ALSO has that value, plus the value of it's own rule.
 
+#### Visual Example
+
  ```mermaid
  graph LR
  title:>Rule-set: Rule1 AND Rule2]
@@ -72,6 +74,8 @@ We don't have to go too far in-depth with this because of what we have already l
   - This would match because as we can see, that is who requested the movie.
 - 3: This rule-set *WOULD* add our movie because it meets one OR the other of our criteria. It was added *60* days ago so it does not meet our criteria of *BEFORE* *90* days, AKA the day it was added has not yet been 90 days *BEFORE* today's date. It did however match the Overseerr requested by user rule. It gets added because we said we wanted <font color=yellow>(Rule 1 OR Rule 2)</font>.
 Now let's get a visual.
+
+#### Visual Example
 
 ```mermaid
 graph LR
