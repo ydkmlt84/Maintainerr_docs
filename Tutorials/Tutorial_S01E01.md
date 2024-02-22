@@ -1,6 +1,6 @@
 ﻿The rule system behind Maintainerr is quite complex, and therefore powerful. When you get the hang of it, you will be cleaning up that mess you call a library in no time.
 </br>
-<p align="center">
+<p>
 <img alt="poster" src="../images/movie_poster.png" width="150" height="250"></img>
 </p>
 

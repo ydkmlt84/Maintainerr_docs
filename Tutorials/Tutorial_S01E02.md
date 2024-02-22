@@ -42,7 +42,7 @@ With this information, we have quite a few options that we can use as rule param
 ## Simple AND
 
 - 1: We could add Rule 1 that states `Plex-Date Added` `before` `amount of days` `60`. Rule 2 that states AND `Plex-Times Viewed` `bigger` `number` `5`.
-  - This would not catch our movie because it has a *Times Viewed* value of 4 and we need it to match <font color=yellow> (rule 1 AND rule 2)</font>. It does match rule 1 but it does not match rule 2. If another movie in the library was added 60 days ago or more **AND** it had a view count of 10. It **WOULD** get added to this rule.
+  - This would not catch our movie because it has a *Times Viewed* value of 4 and we need it to match <font color=yellow> (rule 1 AND rule 2)</font>. It does match rule 1 but it does not match rule 2. If another movie in the library was added 60 days ago or more **AND** it had a view count of more than 5. It **WOULD** get added to this rule.
 </br>  
 
 **Let's try one more.**
@@ -59,7 +59,7 @@ Another way to look at these examples, is that within a *section*, each rule is 
  ```mermaid
  graph LR
  title:>Rule-set: Rule1 AND Rule2]
-A([Does it have 4 times viewed?]) -->|Yes|B([AND is it monitored in Radarr?])
+A([Has it been viewed in Plex more than 3 times?]) -->|Yes|B([AND is it monitored in Radarr?])
     B -->|Yes| C([Add it to the collection])
     B -->|No| D([Don't add to the collection.]) 
 ```
@@ -72,7 +72,7 @@ We don't have to go too far in-depth with this because of what we have already l
   - This will not match in our special tutorial scenario because the day the Movie was added to Plex happened only *60* days BEFORE today's date. Not quite *90* days yet.
 - 2: Our next rule states OR `Overseerr-Requested by user (Plex or local username)` `Contains (Partial list match)` `text` `user_girl123`.
   - This would match because as we can see, that is who requested the movie.
-- 3: This rule-set *WOULD* add our movie because it meets one OR the other of our criteria. It was added *60* days ago so it does not meet our criteria of *BEFORE* *90* days, AKA the day it was added has not yet been 90 days *BEFORE* today's date. It did however match the Overseerr requested by user rule. It gets added because we said we wanted <font color=yellow>(Rule 1 OR Rule 2)</font>.
+- 3: This rule-set **WOULD** add our movie because it meets one **OR** the other of our criteria. It was added *60* days ago so it does not meet our criteria of *BEFORE* *90* days, AKA the day it was added has not yet been 90 days *BEFORE* today's date. It did however match the Overseerr requested by user rule. It gets added because we said we wanted <font color=yellow>(Rule 1 OR Rule 2)</font>.
 Now let's get a visual.
 
 ### Visual Example
