@@ -1,12 +1,3 @@
----
-title: Rules
-description: 
-published: true
-date: 2024-02-01T16:21:14.928Z
-tags: 
-editor: markdown
-dateCreated: 2024-02-01T16:21:12.263Z
----
 
 Rules are the engine of Maintainerr. Media will be tested against the rule parameters and add them to a collection, if they are a match.
 When media exists in the collection for a specified amount of time, they'll be deleted from disk & external applications.
@@ -53,7 +44,8 @@ For instance, this makes it possible to create rule groups that select & delete 
 In case you want to manage the collection manually, or with another program, there's the possibility to disable Maintainerr's collection system by specifying a manual collection.
 Maintainerr will sync all media added/removed from the Plex collection into it's internal collection.
 
-> Warning: if media is excluded in Maintainerr, but is added manually to the Plex collection, the exclude will be ignored.
+> !!! warning
+     If media is excluded in Maintainerr, but is added manually to the Plex collection, the exclude will be ignored.
 
 Additionally, you can disable the rule system by unchecking the 'use rules' checkbox.
 
@@ -123,6 +115,7 @@ The difference between 'Contains' and 'Contains (partial)' is only apparent with
 ## Custom values
 
 The `Second value` field allows some custom values. The available custom values are dependent on the type of `first value`.
+
 | Action | Description | Types |
 | ------------- |------------- | ------------- |
 | Custom days | This behavior depends on the selected `action`. In case of `in_last` or `in_next`, this translates to 'in the last (or next) x days'. in case of `before` the value will be translated to the current date **subtracted** by the amount of `custom days`. In all other cases, the amount of days will be **added** to the current date | date  |

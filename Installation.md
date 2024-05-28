@@ -3,16 +3,18 @@ Docker is the easiest way to start Maintainerr.
 Images for amd64 & arm64 are available under `jorenn92/maintainerr` and `ghcr.io/jorenn92/maintainerr`.
 The containers data location is /opt/data. A docker volume/bind is strongly encouraged to persist your configuration.
 
-> You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.
-<font color="red">See [Run](#run) and [Compose](#compose) below for examples.</font>
+> !!! info
+    You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.
+    <font color="red">See [Run](#run) and [Compose](#compose) below for examples.</font>
 
 Take note &darr;
-> :warning:  **Make sure your data volume is read/writeable by this UID:GID!**
+> !!! warning
+      **Make sure your data volume is read/writeable by this UID:GID!**
  >> `It is possible that you will need to change permissions on the hosts data directory.`
  >>:bulb:[Linux Permission Command](https://www.ibm.com/docs/en/aix/7.1?topic=c-chown-command)
  >>:bulb:[Windows Permissions](https://v2cloud.com/tutorials/how-to-change-folder-permissions-on-windows)
 
-If you are still lost, reach out to us on &nbsp; <a href="https://discord.gg/WP4ZW2QYwk" target="_blank"><img src=/images/discord_icon.svg width=150> </a>
+If you are still lost about permissions or something else so far, reach out on &nbsp; [Discord :fontawesome-brands-discord:](https://discord.gg/WP4ZW2QYwk){.md-button .md-button--primary}
 
 ## Run
 

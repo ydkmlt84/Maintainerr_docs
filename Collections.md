@@ -1,12 +1,4 @@
----
-title: Collections
-description: 
-published: true
-date: 2024-02-01T16:20:55.866Z
-tags: 
-editor: markdown
-dateCreated: 2024-02-01T16:20:53.348Z
----
+
 
 A collection is auto generated when defining a rule. A collection holds all media that either got picked up by the handling of the corresponding rule or got manually added.
 

@@ -1,6 +1,6 @@
 <p style="text-align: center; font-weight: bold;"> 🎊 **Welcome to Episode 3! It has been a while since our last episode.** 🎊</p>
 <p style="text-align: center;">
-<img alt="classroom" src="../images/classroom.jpg" width=75% height="250px"></img>
+<img alt="classroom" src="../../images/classroom.jpg" width=75% height="250px"></img>
 </p>
 
 # Sections

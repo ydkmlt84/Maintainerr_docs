@@ -1,9 +1,10 @@
 In episode 1 we went over the basic outline of rules and sections as well as operators. In today's episode we will drill down even further.
 
+
 Let's bring back the Movie from episode 1, that we wanted to add into our new collection.
 
 <p>
-<img alt="poster" src="../images/movie_poster.png" width="150" height="250"></img>
+<img alt="poster" src="../../images/movie_poster.png" width="150" height="250"></img>
 </p>
 
 This movie has the following attributes across Plex, OverSeerr, and Radar:
@@ -59,10 +60,10 @@ Another way to look at these examples, is that within a *section*, each rule is 
  ```mermaid
  graph LR
  title:>Rule-set: Rule1 AND Rule2]
-A([Has it been viewed in Plex more than 3 times?]) -->|Yes|B([AND is it monitored in Radarr?])
+    A([Has it been viewed in Plex more than 3 times?]) -->|Yes|B([AND is it monitored in Radarr?])
     B -->|Yes| C([Add it to the collection])
-    B -->|No| D([Don't add to the collection.]) 
-```
+    B -->|No| D([Don't add to the collection.])
+ ```
 
 ## Simple OR
 
@@ -77,12 +78,12 @@ Now let's get a visual.
 
 ### Visual Example
 
-```mermaid
+``` mermaid
 graph LR
 title:>Rule-set: Rule1 OR Rule2]
-A([Was it added to Plex before 90 days?]) -->|No|B([Did it match one OR the other])
- C([Was it requested by user_girl123]) -->|Yes|B
- B -->|Yes|D([Add it to the collection]) 
+A([Was it added to Plex before 90 days?]) -->|No|B([Did it match one OR the other]);
+ C([Was it requested by user_girl123]) -->|Yes|B;
+ B -->|Yes|D([Add it to the collection]); 
 ```
 
 Again, I hope this is starting to come together. In our next episode we will be going over the use of sections and when they can be useful. Stay tuned.
