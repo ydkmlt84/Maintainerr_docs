@@ -14,7 +14,7 @@ Take note &darr;
  >>:bulb:[Linux Permission Command](https://www.ibm.com/docs/en/aix/7.1?topic=c-chown-command)
  >>:bulb:[Windows Permissions](https://v2cloud.com/tutorials/how-to-change-folder-permissions-on-windows)
 
-If you are still lost about permissions or something else so far, reach out on &nbsp; [Discord :fontawesome-brands-discord:](https://discord.gg/WP4ZW2QYwk){.md-button .md-button--primary}
+If you are still lost about permissions or something else so far, reach out on &nbsp; [Discord :fontawesome-brands-discord:](https://discord.gg/WP4ZW2QYwk){.md-button--primary .md-button}
 
 ## Run
 
