@@ -1,92 +1,91 @@
 ---
 title: Contributing
-description: 
-published: true
-date: 2024-02-01T16:20:52.192Z
-tags: 
-editor: markdown
-dateCreated: 2024-02-01T16:20:49.633Z
 ---
+# Contributing to Maintainerr
 
-## Contributing to Maintainerr
+All help is welcome and greatly appreciated! If you would like to contribute to the project, the following instructions should get you started... (The below is specific to a Windows Development environment.)
 
-All help is welcome and greatly appreciated! If you would like to contribute to the project, the following instructions should get you started...
+## Development
 
-### Development
-
-#### Tools Required
+### Tools Required
 
 - HTML/Typescript/Javascript editor
   - [VSCode](https://code.visualstudio.com/) is recommended. Upon opening the project, a few extensions will be automatically recommended for install.
 - [NodeJS](https://nodejs.org/en/download/) (Node 20.x or higher)
 - [Git](https://git-scm.com/downloads)
 
-#### Getting Started
+### Getting Started
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) the repository to your own GitHub account and [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device:
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the repository to your own GitHub account and [clone](https://help.github.com/articles/cloning-a-repository/) the fork to your local device:
 
-  ```bash
+   ```bash
    git clone https://github.com/YOUR_USERNAME/Maintainerr.git
    cd Maintainerr/
-  ```
+   ```
 
 2. Add the remote `upstream`:
 
-  ```bash
+   ```bash
    git remote add upstream https://github.com/jorenn92/Maintainerr.git
-  ```
+   ```
 
 3. Create a new branch:
 
-  ```bash
-   git checkout -b BRANCH_NAME main
-  ```
+   ```bash
+   git checkout -b <YOUR_NEW_BRANCH_NAME> main
+   ```
 
-- It is recommended to give your branch a meaningful name, relevant to the feature or fix you are working on.
-- Good examples:
+   - It is recommended to give your branch a meaningful name, relevant to the feature or fix you are working on.
+     - Good examples:
        - `docs-docker-setup`
        - `feat-new-system`
        - `fix-title-cards`
        - `ci-improve-build`
-- Bad examples:
+     - Bad examples:
        - `bug`
        - `docs`
        - `feature`
        - `fix`
-       - `patch`
+       - `patch`  
 
-4. Activate the correct Yarn version
+4. Activate the correct Yarn version. (*Note: In order to run `corepack enable`, you will need to be running cmd or Powershell as an Administrator.*)
 
-  ```bash
+    ```bash
    corepack install
    corepack enable
-  ```
+   ```
 
 5. Install dependencies
 
-  ```bash
+    ```bash
     yarn
-  ```
+   ```
 
-6. Run the development commands:
-
-  ```bash
-   yarn dev:server
-   yarn dev:ui
-  ```
-
-- If the build fails with Windows Powershell, try to use cmd instead.
-
-7. Create your patch and test your changes.
-
-- Be sure to follow both the [code](#contributing-code) and [UI text](#ui-text-style) guidelines.
-  - Should you need to update your fork, you can do so by rebasing from `upstream`:
+6. As of Maintainerr v2.0, the project looks to ensure you have read/write permissions on the `data` directory. This `data` directory does not exist when you first clone your fork. Before running the below commands, create a folder inside of your main Maintainerr directory named `data`, and ensure it has full permissions to the `Everyone` user.
 
     ```bash
+    example ->  C:\Users\You\Documents\GitRepos\Maintainerr\data
+    ```
+
+7. Run the development commands (you will need two different cmd/Powershell terminals. One for each command.)
+
+   ```bash
+   yarn dev:server
+   yarn dev:ui
+   ```
+
+   - If the build fails with Powershell, try to use cmd instead.
+
+8. Make your code changes/improvements and test that they work as intended.
+
+   - Be sure to follow both the [code](#contributing-code) and [UI text](#ui-text-style) guidelines.
+   - Should you need to update your fork (from any recent ORIGIN changes), you can do so by rebasing from `upstream`:
+
+     ```bash
      git fetch upstream
      git rebase upstream/develop
      git push origin BRANCH_NAME -f
-    ```
+     ```
 
 ### Contributing Code
 
