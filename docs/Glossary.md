@@ -1,13 +1,3 @@
----
-title: Glossary
-description: 
-published: true
-date: 2024-02-01T16:21:03.544Z
-tags: 
-editor: markdown
-dateCreated: 2024-02-01T16:21:00.733Z
----
-
 ## Rule glossary
 
 This glossary describes the available rules that can be used in maintainerr.
