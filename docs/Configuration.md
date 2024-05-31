@@ -1,13 +1,3 @@
----
-title: Configuration
-description: 
-published: true
-date: 2024-02-01T16:20:59.571Z
-tags: 
-editor: markdown
-dateCreated: 2024-02-01T16:20:57.032Z
----
-
 All configuration is done inside the application, no extra config is required in files. </br>
 At first boot you will be redirected to the settings page.
 
