@@ -120,3 +120,5 @@ Then, restart all services defined in the Compose file:
 ```bash
 docker compose up -d
 ```
+
+:material-clock-edit: Last Updated: 5/31/24

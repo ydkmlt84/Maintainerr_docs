@@ -1,11 +1,21 @@
+---
+date: 2024-03-25
+title: S01E02
+categories:
+  - Tutorials
+authors:
+  - ydkmlt84
+---
+
 In episode 1 we went over the basic outline of rules and sections as well as operators. In today's episode we will drill down even further.
 
 
 Let's bring back the Movie from episode 1, that we wanted to add into our new collection.
 
 <p>
-<img alt="poster" src="../../images/movie_poster.png" width="150" height="250"></img>
+<img alt="poster" src="https://docs.maintainerr.info/images/movie_poster.png" width="150" height="250"></img>
 </p>
+<!-- more -->
 
 This movie has the following attributes across Plex, OverSeerr, and Radar:
 

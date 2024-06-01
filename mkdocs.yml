@@ -79,7 +79,12 @@ theme:
 
 # Plugins
 plugins:
-  - blog
+  - blog:
+      blog_toc: true
+      post_url_format: "/{categories}/{slug}"
+      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   #- meta
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -176,11 +181,7 @@ nav:
     - Introduction.md
     - Contributing.md
   - Guides:
-    - Tutorials:
-      - Tutorials/index.md
-      - S01E01: Tutorials/Tutorial_S01E01.md
-      - S01E02: Tutorials/Tutorial_S01E02.md
-      - S01E03: Tutorials/Tutorial_S01E03.md
+    - blog/index.md
 
 # Custom Homepage Elements
 home_cover_image: # This path starts at your root mkdocs directory.

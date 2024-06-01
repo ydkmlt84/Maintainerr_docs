@@ -1,6 +1,15 @@
+---
+date: 2024-05-10
+title: S01E03
+categories:
+  - Tutorials
+authors:
+  - ydkmlt84
+---
+
 <p style="text-align: center; font-weight: bold;"> 🎊 **Welcome to Episode 3! It has been a while since our last episode.** 🎊</p>
 <p style="text-align: center;">
-<img alt="classroom" src="../../images/classroom.jpg" width=75% height="250px"></img>
+<img alt="classroom" src="https://docs.maintainerr.info/images/classroom.jpg" width=75% height="250px"></img>
 </p>
 
 # Sections
@@ -10,7 +19,7 @@ Today is all about rule sections!
 **Why do we even have sections?**
 
 It has been said that another word to use for sections could be `group`. The reason behind a section is to group a ***section*** of rules together.
-
+<!-- more -->
 We need a way to group a few rules together that we don't want to be a part of the main rule set.
 
 ## Example 1
