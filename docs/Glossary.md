@@ -137,7 +137,7 @@ The key is used for identification in Yaml rule files.
 
 #### Last episode added at
 
-> The date when the last episode was added to the Plex item. This rule is only available for shows.
+> The date when the last episode was added to the Plex item. This is not for the most recently aired episode of the show. Just the last episode that was added to Plex. This rule is only available for shows.
 
 - Key: Plex.sw_lastEpisodeAddedAt
 - Availability: shows, seasons
@@ -145,7 +145,7 @@ The key is used for identification in Yaml rule files.
 
 #### Last episode aired at
 
-> The date when the newest episode added to Plex was originally aired. This rule is only available for shows.
+> The date when the newest episode added to Plex was originally aired. This is not for the most recently aired episode of the show. Just the last episode that was added to Plex.This rule is only available for shows.
 
 - Key: Plex.sw_lastEpisodeAiredAt
 - Availability: shows, seasons
