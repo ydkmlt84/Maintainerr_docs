@@ -1,10 +1,22 @@
-﻿The rule system behind Maintainerr is quite complex, and therefore powerful. When you get the hang of it, you will be cleaning up that mess you call a library in no time.
+---
+date: 2024-03-01
+title: Getting Started with Rules (S01E01)
+categories:
+  - Tutorials
+authors:
+  - ydkmlt84
+---
+**Ok so you installed Maintainerr and don't know where to start.**
+
+The rule system behind Maintainerr is quite complex, and therefore powerful.  Getting started can be a little daunting at first. That is only because it is new to you. When you get the hang of it, you will be cleaning up that mess you call a library in no time. This will be the first in a series of tutorials that should help you get more familiar with the rules and rule setup.
+<!-- more -->
+
 </br>
 <p>
-<img alt="poster" src="../../images/movie_poster.png" width="150" height="250"></img>
+<img alt="poster" src="https://docs.maintainerr.info/images/movie_poster.png" width="150" height="250"></img>
 </p>
 
-Let's take this movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, OverSeerr, and Radar:
+Let's take the above movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, OverSeerr, and Radar:
 
 **Plex** -
 
@@ -24,10 +36,12 @@ Let's take this movie as an example. This isn't a real movie, but for the purpos
 | ------------ | ------------ | ------- |
 | 31Oct2023 | True | 114 minutes |
 
+
 </br>
 
 > :bulb: This information can be looked at for an actual item in your Plex library. You can do it through the Plex UI or you can parse through the XML of an item.
 <a href="https://support.plex.tv/articles/201998867-investigate-media-information-and-formats/#:~:text=Open%20the%20Media,the%20XML%20information"> 🌐 &rarr; Link to see how to get your Plex Media Info and XML data</a>
+
 
 We want to make a rule that would add this movie to it's collection.
 
@@ -41,17 +55,17 @@ We want to make a rule that would add this movie to it's collection.
 
 We will start from the top of a new rule.
 
-<p align="center"><img alt="screenshot-1" src="../../images/screenshot-1.png" width="80%"></img></p>
+<p align="center"><img alt="screenshot-1" src="https://docs.maintainerr.info/images/screenshot-1.png" width="80%"></img></p>
 
 - 1: This is the name of the Rule, and will eventually be the name of the Collection that gets created.
 - 2: Self explanatory but you can put whatever you want here. It will be shown in Plex when you open the collection.
-     <p align="center"><img alt"screenshot_plex" src="../../images/screenshot_plex_collection.png" width="75%"></p>
+     <p align="center"><img alt"screenshot_plex" src="https://docs.maintainerr.info/images/screenshot_plex_collection.png" width="75%"></p>
 - 3: Drop-down list of your Plex Libraries. Which library is this rule going to be run against?
 - 4: This will not be shown if you select a `Movies` library in #3. If you selected a `TVShow` library, your options will be shows/seasons/episodes. What type of TVShow media are we going to run the rule against? An entire show, just seasons, or just episodes? Different options will be made available to you or taken away, depending on what you select here.
 - 5: Sonarr/Radarr action is what is going to happen after the `action after days` set in #6. Options are dependent on the library and media type from above. `Delete` will remove the files and the item from Sonarr/Radarr. `Unmonitor and delete` will unmonitor (not remove) the item from Sonarr/Radarr but delete the files. `Unmonitor and keep` will unmonitor the item from Sonarr/Radarr and <u>**keep**</u> the files.
 - 6: Think of this as a "delay" setting. How many days after this rule is ran, items have been matched to this rules filter parameters and added to the collection, will we execute the action set in #5?
 
-<p align="center"><img alt="screenshot-2"src="../../images/screenshot-2.png" width="75%"></img></p>
+<p align="center"><img alt="screenshot-2"src="https://docs.maintainerr.info/images/screenshot-2.png" width="75%"></img></p>
 
 - 7: How many months are we going to keep logs of this collections actions?
 - 8: Is this Rule active? Will it be one of the rules ran either by a manual run, or through periodic runs?
@@ -62,7 +76,7 @@ We will start from the top of a new rule.
 - 12: You can toggle the rule system off and on. This is useful if you have collections in Plex that you want to see in Maintainerr, but don't want any actions taken on the collection.
 - 13: You can create a collection in Plex, and then use that collection in Maintainerr. If you are doing that, tick this Custom Collection box to on. This can be useful if there is a collection made by say PMM or by you, and you want to execute some rules against it.
 
-   > <img alt="screenshot-discord" src="../../images/screenshot_discord_comment.png" width=85%></img>
+   > <img alt="screenshot-discord" src="https://docs.maintainerr.info/images/screenshot_discord_comment.png" width=85%></img>
 
 ---
 
@@ -72,7 +86,7 @@ Now we are getting into the nitty gritty. After the settings above have been con
 > :memo: Community rules are just that, from the community. They may not work like they say they do. They may not be formatted properly. It can be a nice place to start, but I personally wouldn't rely on them as everyone's situation is different.
 
 Below the *Community* button there are two other buttons. Import and Export. You can import a rule from a txt file in YAML format (this is an advanced method but it is an option).
- > :bulb: If you want to go down this path, I would choose one of the Community rules, doesn't really matter which one, and then use the export button. You will get a generated YAML format of the rule. If you are familiar with YAML this will be a good place to start. Take a look at this page for the proper syntax of each parameter &rarr; [Rules Glossary][glossary].
+ > :bulb: If you want to go down this path, I would choose one of the Community rules, doesn't really matter which one, and then use the export button. You will get a generated YAML format of the rule. If you are familiar with YAML this will be a good place to start. Take a look at this page for the proper syntax of each parameter &rarr; [Rules Glossary](../../Glossary.md).
 
  If you are looking at a rule that you have already created, you can export the rule in YAML format, in order to share it or textually edit it.
 
@@ -121,7 +135,5 @@ Now let's try a mixed **AND** / **OR** example...
 
 ---
 
-This is a very good jumping off point for you to start making rules. If you are still not 100% confident yet, or just want/need more, take a look at [S01E02][episode2] and go even deeper down the rabbit-hole.
+This is a very good jumping off point for you to start making rules. If you are still not 100% confident yet, or just want/need more, take a look at [S01E02](Tutorial_S01E02.md) and go even deeper down the rabbit-hole.
 
-[episode2]: ./Tutorial_S01E02.md
-[glossary]: ../Glossary.md
