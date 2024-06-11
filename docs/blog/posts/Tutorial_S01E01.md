@@ -1,18 +1,22 @@
 ---
 date: 2024-03-01
-title: S01E01
+title: Getting Started with Rules (S01E01)
 categories:
   - Tutorials
 authors:
   - ydkmlt84
 ---
-The rule system behind Maintainerr is quite complex, and therefore powerful. When you get the hang of it, you will be cleaning up that mess you call a library in no time.
+**Ok so you installed Maintainerr and don't know where to start.**
+
+The rule system behind Maintainerr is quite complex, and therefore powerful.  Getting started can be a little daunting at first. That is only because it is new to you. When you get the hang of it, you will be cleaning up that mess you call a library in no time. This will be the first in a series of tutorials that should help you get more familiar with the rules and rule setup.
+<!-- more -->
+
 </br>
 <p>
 <img alt="poster" src="https://docs.maintainerr.info/images/movie_poster.png" width="150" height="250"></img>
 </p>
 
-Let's take this movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. <!-- more --> This movie has the following attributes across Plex, OverSeerr, and Radar:
+Let's take the above movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, OverSeerr, and Radar:
 
 **Plex** -
 
