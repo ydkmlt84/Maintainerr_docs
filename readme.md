@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/docs/images/docs_image.png" alt="Maintainerr's custom image"/>
+  <img src="/docs/images/docs_image.png" alt="Maintainerr's docs image" style="max-width:50%;"</img>
 </p>
 
 <p align="center" >
@@ -37,4 +37,4 @@ There are a TON of options in the Material for Mkdocs project, and they are outl
 
 # Credits
 
-I have personally added and tweaked some things here, but thanks goes out the dev who made the wise decision to document his work. Please check out [Maintainerr](https://maintainerr.info), and if you love it, consider donating with the KOFI link at the top of this README.
+I have personally added and tweaked some things here, but thanks goes out the dev who made the wise decision to document his work. Please check out [Maintainerr](https://maintainerr.info), and if you love it, consider donating with the [KOFI](https://ko-fi.com/maintainerr_app) link at the top of this README.
