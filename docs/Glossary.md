@@ -215,6 +215,14 @@ The key is used for identification in Yaml rule files.
 - Availability: movies, shows, seasons, episodes
 - Type: text[]
 
+#### Watchlisted by (username)
+
+> List of users that have the Plex item in their watchlist. This rule is experimental and might not work for all use cases.
+
+- Key: Plex.watchlist_isListedByUsers
+- Availability: movies, shows, seasons, episodes
+- Type: text[]
+
 #### Present in amount of other collections (incl. parents)
 
 > The number of collections the Plex item is present in. This will also include collections the parent season and/or episode is present in.
