@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/docs/images/docs_image.png" alt="Maintainerr's docs image" style="max-width: 50%;">
+  <img src="/docs/images/docs_image.png" alt="Maintainerr's docs image" width="50%">
 </p>
 
 <p align="center" >
