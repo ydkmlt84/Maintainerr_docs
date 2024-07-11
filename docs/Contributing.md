@@ -50,22 +50,22 @@ All help is welcome and greatly appreciated! If you would like to contribute to 
 
 4. Activate the correct Yarn version. (*Note: In order to run `corepack enable`, you will need to be running cmd or Powershell as an Administrator.*)
 
-    ```bash
+   ```bash
    corepack install
    corepack enable
    ```
 
 5. Install dependencies
 
-    ```bash
-    yarn
+   ```bash
+   yarn
    ```
 
 6. As of Maintainerr v2.0, the project looks to ensure you have read/write permissions on the `data` directory. This `data` directory does not exist when you first clone your fork. Before running the below commands, create a folder inside of your main Maintainerr directory named `data`, and ensure it has full permissions to the `Everyone` user.
 
-    ```bash
-    example ->  C:\Users\You\Documents\GitRepos\Maintainerr\data
-    ```
+   ```bash
+   example ->  C:\Users\You\Documents\GitRepos\Maintainerr\data
+   ```
 
 7. Run the development commands (you will need two different cmd/Powershell terminals. One for each command.)
 
