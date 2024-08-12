@@ -217,7 +217,7 @@ The key is used for identification in Yaml rule files.
 
 #### Watchlisted by (username)
 
-> List of users that have the Plex item in their watchlist. This rule is experimental and might not work for all use cases.
+> List of users that have the Plex item in their watchlist. This does not work with private watchlists. This rule is experimental and might not work for all use cases.
 
 - Key: Plex.watchlist_isListedByUsers
 - Availability: movies, shows, seasons, episodes
