@@ -19,7 +19,7 @@ Let's bring back the Movie from episode 1, that we wanted to add into our new co
 </p>
 
 
-This movie has the following attributes across Plex, OverSeerr, and Radar:
+This movie has the following attributes across Plex, Overseerr, and Radarr:
 
 **Plex** -
 
@@ -27,7 +27,7 @@ This movie has the following attributes across Plex, OverSeerr, and Radar:
 | -------|-------------|--------------|---------------- |
 | 3Nov2023 | 10Jan2024 | 4 | 7.3 |
 
-**OverSeerr** -
+**Overseerr** -
 
 | Requested by | Requested Date | Times Requested by Anyone|
 | ------------| --------------- | ------------- |

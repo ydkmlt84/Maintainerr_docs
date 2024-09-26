@@ -53,3 +53,13 @@ Sonarr's configuration is required to use it's parameters in rules and to remove
 | Hostname or IP| The domain name or local IP of the host your server runs on |
 | Port          | The port Sonarr runs on |
 | Api key   | Sonarr API key, should be visible in the Sonarr settings |
+
+## Tautulli
+
+Tautulli's configuration is required to use it's parameters in rules.
+
+| Param | Description |
+| ------------- |:-------------:|
+| Hostname or IP| The domain name or local IP of the host your server runs on |
+| Port          | The port Tautulli runs on |
+| Api key  | Tautulli API key, should be visible in the Tautulli settings |

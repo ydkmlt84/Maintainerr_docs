@@ -16,7 +16,7 @@ The rule system behind Maintainerr is quite complex, and therefore powerful.  Ge
 <img alt="poster" src="https://docs.maintainerr.info/images/movie_poster.png" width="150" height="250"></img>
 </p>
 
-Let's take the above movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, OverSeerr, and Radar:
+Let's take the above movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, Overseerr, and Radarr:
 
 **Plex** -
 
@@ -24,7 +24,7 @@ Let's take the above movie as an example. This isn't a real movie, but for the p
 | -------|-------------|--------------|---------------- |
 | 3Nov2023 | 10Jan2024 | 4 | 7.3 |
 
-**OverSeerr** -
+**Overseerr** -
 
 | Requested by | Requested Date | Times Requested by Anyone|
 | ------------| --------------- | ------------- |
