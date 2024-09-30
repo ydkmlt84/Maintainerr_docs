@@ -509,3 +509,21 @@ The key is used for identification in Yaml rule files.
 - Key: Overseerr.isRequested
 - Availability: movies, shows, seasons, episodes
 - Type: boolean
+
+### Tautulli
+
+#### Viewed by (username)
+
+> List of Plex usernames who have viewed (according to Tautulli) the Plex item. The percentage for the item to be considered as viewed is configured in the Tautulli settings.
+
+- Key: Tautulli.seenBy
+- Availability: movies, shows, seasons, episodes
+- Type: text[]
+
+#### Users that saw all available episodes
+
+> List of users who have seen (according to Tautulli) all available episodes of the Plex item. The percentage for an episode to be considered as viewed is configured in the Tautulli settings.
+
+- Key: Tautulli.sw_allEpisodesSeenBy
+- Availability: shows, seasons
+- Type: text[]
