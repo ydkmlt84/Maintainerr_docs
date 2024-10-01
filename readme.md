@@ -6,7 +6,6 @@
   <a href="https://discord.gg/WP4ZW2QYwk"><img alt="Discord" src="https://img.shields.io/discord/1152219249549512724?style=flat&logo=discord&logoColor=white&label=Maintainerr"></a>
   <picture><img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/ydkmlt84/maintainerr_docs?style=flat&logo=github&logoColor=white"></picture>
   <a href="https://ko-fi.com/maintainerr_app"><img alt="Static Badge" src="https://img.shields.io/badge/DONATE-kofi-red?style=flat&logo=ko-fi&logoColor=white"></a>
-  <a rel="me" href="https://social.tacohouse.us/@thatoneguy99"><img alt="Mastodon Badge" src="https://img.shields.io/badge/Mastodon-thatoneguy99-blue?style=flat&logo=mastodon&logoColor=white"></a>
 </p>
 
 <b>[Maintainerr](https://maintainerr.info)</b> makes managing your media easy.
