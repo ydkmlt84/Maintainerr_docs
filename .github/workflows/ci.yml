@@ -1,5 +1,5 @@
 name: pushed_updates
-run-name: ${{ github.actor }} is updating the docs, after changes were made.
+run-name: ${{ github.actor }} is updating the docs, after changes were made
 on:
   workflow_dispatch:
     inputs:
