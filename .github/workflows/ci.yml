@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          script: ls -al
+          script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute.sh
