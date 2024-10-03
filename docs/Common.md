@@ -46,7 +46,7 @@ Q. Is there a set of pre-made rules somewhere that I can use as a starting point
 A. There is a Community button when you are inside of a new rule. You can pull Community uploaded rules from there. There is a vote feature to show if a rule is good/popular or if it doesn't work as expected. These rules are not tested are guaranteed to work as advertised. The Community is free to upload as they wish.
 
 ??? example "See The Fix?"
-![Community Button](images/community_button.png)
+    ![Community Button](images/community_button.png)
 
 ## Status of Services
 
