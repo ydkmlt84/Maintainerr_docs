@@ -4,16 +4,13 @@ on:
   push:
     branches:
       - 'main'
-on:
   release:
     type: [published]
-on:
   pull_request:
     types: 
       - 'closed' 
     branches:
       - 'main'       
-on:
   workflow_dispatch:
     inputs:
       dry-run:
