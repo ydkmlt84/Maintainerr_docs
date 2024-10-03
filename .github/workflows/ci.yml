@@ -43,3 +43,11 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute.sh
+      - name: Actions for Discord
+        uses: Ilshidur/action-discord@0.3.2
+        env:
+          DISCORD_WEBHOOK: ${{DISCORD_WEBHOOK}}
+        with:
+          args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
+
+    
