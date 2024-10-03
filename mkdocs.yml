@@ -174,6 +174,7 @@ nav:
   - Getting started:
     - Installation: Installation.md
     - Configuring Maintainerr: Configuration.md
+    - Common Issues: Common.md
   - Rules:
     - Rule Explanations: Rules.md
     - Rules Glossary: Glossary.md
