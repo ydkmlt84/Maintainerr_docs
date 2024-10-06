@@ -6,7 +6,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 [tooltip]: https://docs.docker.com/storage/volumes/#start-a-container-with-a-volume "Click here to be taken to the Docker documentation page on volumes."
 
 
-> !!! info
+!!! info
     You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.
     <font color="red">See [Run](#run) and [Compose](#compose) below for examples.</font>
 
