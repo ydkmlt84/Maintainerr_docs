@@ -5,4 +5,4 @@
 ## Public endpoints
 
 !!! note ""
-    Testing
+    == GET ==
