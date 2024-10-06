@@ -4,5 +4,5 @@
 
 ## Public endpoints
 
-!!! note
-    
+!!! note ""
+    ==GET==  <!-- md:flag experimental -->
