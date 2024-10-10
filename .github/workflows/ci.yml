@@ -24,51 +24,51 @@ jobs:
     name: Use tailscale to connect and execute command.
     runs-on: ubuntu-24.04
     if: ${{ github.ref_name == 'main' }}    
-      steps:
-        - name: Tailscale
-          uses: tailscale/github-action@v2
-          with:
-            oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
-            oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
-            tags: tag:ci
-        - name: getting boolean status
-          run: echo ${{inputs.dry-run}}
-          shell: bash
-        - name: executing remote ssh commands using password
-          if: ${{ inputs.dry-run == false }}
-          uses: appleboy/ssh-action@v1.0.3
-          with:
-            host: ${{ secrets.SSH_HOST_TS }}
-            username: ${{ secrets.SSH_USERNAME }}
-            password: ${{ secrets.SSH_PASSWORD }}
-            port: ${{ secrets.SSH_PORT }}
-            script_stop: true
-            script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute.sh
-        - name: Actions for Discord
-          uses: Ilshidur/action-discord@0.3.2
-          env:
-            DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          with:
-            args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
+    steps:
+      - name: Tailscale
+        uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+      - name: getting boolean status
+        run: echo ${{inputs.dry-run}}
+        shell: bash
+      - name: executing remote ssh commands using password
+        if: ${{ inputs.dry-run == false }}
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST_TS }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script_stop: true
+          script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute.sh
+      - name: Actions for Discord
+        uses: Ilshidur/action-discord@0.3.2
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
     if: ${{ github.ref_name == 'develop' }}    
-      steps:
-        - name: Tailscale
-          uses: tailscale/github-action@v2
-          with:
-            oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
-            oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
-            tags: tag:ci
-        - name: getting boolean status
-          run: echo ${{inputs.dry-run}}
-          shell: bash
-        - name: executing remote ssh commands using password
-          if: ${{ inputs.dry-run == false }}
-          uses: appleboy/ssh-action@v1.0.3
-          with:
-            host: ${{ secrets.SSH_HOST_TS }}
-            username: ${{ secrets.SSH_USERNAME }}
-            password: ${{ secrets.SSH_PASSWORD }}
-            port: ${{ secrets.SSH_PORT }}
-            script_stop: true
-            script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute_dev.sh      
+    steps:
+      - name: Tailscale
+        uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+      - name: getting boolean status
+        run: echo ${{inputs.dry-run}}
+        shell: bash
+      - name: executing remote ssh commands using password
+        if: ${{ inputs.dry-run == false }}
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST_TS }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script_stop: true
+          script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute_dev.sh      
     
