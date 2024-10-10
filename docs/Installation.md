@@ -1,5 +1,5 @@
 ---
-status: happy
+status: recent
 ---
 
 Docker is Maintainerr's supported method of installation.
