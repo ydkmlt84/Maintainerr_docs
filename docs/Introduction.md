@@ -39,3 +39,5 @@ Maintainerr supports rules across these apps :
 - Radarr
 - Sonarr
 - Tautulli (currently available in the dev branch)
+
+:material-clock-edit: Last Updated: 10/10/24

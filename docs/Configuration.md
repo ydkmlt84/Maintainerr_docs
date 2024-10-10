@@ -66,4 +66,4 @@ Tautulli's configuration is required to use it's parameters in rules.
 | Port          | The port Tautulli runs on |
 | Api key  | Tautulli API key, should be visible in the Tautulli settings |
 
-:material-clock-edit: Last Updated: 9/30/24
+:material-clock-edit: Last Updated: 10/10/24

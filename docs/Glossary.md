@@ -527,3 +527,5 @@ The key is used for identification in Yaml rule files.
 - Key: Tautulli.sw_allEpisodesSeenBy
 - Availability: shows, seasons
 - Type: text[]
+
+:material-clock-edit: Last Updated: 10/10/24

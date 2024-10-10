@@ -120,3 +120,6 @@ When adding new UI text, please try to adhere to the following guidelines:
 ## Attribution
 
 This contribution guide was inspired by the [Overseerr](https://github.com/sct/overseerr) contribution guide.
+
+:material-clock-edit: Last Updated: 10/10/24
+
