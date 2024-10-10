@@ -57,9 +57,8 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 3. The develop branch could be unstable.
 
 ??? note "Development Images"
-        `ghcr.io/jorenn92/maintainerr:main` for the develop branch
-
-        'jorenn92/maintainerr:develop' for the Docker Hub development image.
+    - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
+    - `jorenn92/maintainerr:develop` for the Docker Hub development image.
 
 ### Updating
 
@@ -106,9 +105,8 @@ services:
 2. This is defined as `host:container`.
 
 ??? note "Development Images"
-        `ghcr.io/jorenn92/maintainerr:main` for the develop branch
-        
-        `jorenn92/maintainerr:develop` for the Docker Hub development image
+    - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
+    - `jorenn92/maintainerr:develop` for the Docker Hub development image.
 
 Save your docker-compose.yml file.
 Then, while in the directory where your docker-compose file exists, start all services defined in your Compose file:
@@ -131,4 +129,4 @@ Then, restart all services defined in the Compose file:
 docker compose up -d
 ```
 
-:material-clock-edit: Last Updated: 5/31/24
+:material-clock-edit: Last Updated: 10/10/24
