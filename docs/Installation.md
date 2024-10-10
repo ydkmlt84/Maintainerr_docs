@@ -1,3 +1,7 @@
+---
+status: happy
+---
+
 Docker is Maintainerr's supported method of installation.
 
 Images for amd64 & arm64 are available under `jorenn92/maintainerr` and `ghcr.io/jorenn92/maintainerr`.

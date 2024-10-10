@@ -1,5 +1,5 @@
 ---
-icon: fontawesome/solid/circle-exclamation
+status: new
 ---
 
 # Maintainerr API Documentation

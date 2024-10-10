@@ -115,6 +115,7 @@ extra:
   status:
     new: Recently Added
     deprecated: Deprecated
+    happy: New Updates
 # Extensions
 markdown_extensions:
   - abbr
