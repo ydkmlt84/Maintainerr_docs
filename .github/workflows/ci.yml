@@ -24,7 +24,7 @@ jobs:
     if: ${{ github.triggering_actor == github.repository_owner }}
     name: Use tailscale to connect and execute command.
     runs-on: ubuntu-24.04
-    if: github.ref == 'refs/head/main'
+    if: ${{ github.ref == 'refs/head/main' }}
     steps:
       - name: Tailscale
         uses: tailscale/github-action@v2
@@ -51,7 +51,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
           args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
-    if: github.ref == 'refs/head/develop'
+    if: ${{ github.ref == 'refs/head/develop' }}
     steps:
       - name: Tailscale
         uses: tailscale/github-action@v2
