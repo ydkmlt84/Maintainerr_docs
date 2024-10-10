@@ -22,9 +22,9 @@ on:
 jobs:
   execute-command:
     if: ${{ github.triggering_actor == github.repository_owner }}
-    name: Use tailscale to connect and execute command.
-    runs-on: ubuntu-24.04
     if: ${{ github.ref == 'refs/head/main' }}
+    name: Use tailscale to connect and execute command.
+    runs-on: ubuntu-24.04    
     steps:
       - name: Tailscale
         uses: tailscale/github-action@v2
@@ -52,6 +52,8 @@ jobs:
         with:
           args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
     if: ${{ github.ref == 'refs/head/develop' }}
+    name: Dev-Use tailscale to connect and execute command.
+    runs-on: ubuntu-24.04    
     steps:
       - name: Tailscale
         uses: tailscale/github-action@v2
