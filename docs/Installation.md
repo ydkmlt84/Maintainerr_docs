@@ -51,8 +51,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
     --restart unless-stopped \
     ghcr.io/jorenn92/maintainerr:latest # (2)!
     # ghcr.io/jorenn92/maintainerr:main for the develop branch # (3)!
-    # jorenn92/maintainerr:develop for the Docker Hub 
-      development image # (3)!
+    # jorenn92/maintainerr:develop for the Docker Hub development image # (3)!
 ```
 
 1. This is defined as `host:container`.
@@ -87,10 +86,8 @@ version: '3'
 services:
     maintainerr:
         image: ghcr.io/jorenn92/maintainerr:latest # (1)!
-        # ghcr.io/jorenn92/maintainerr:main for the develop 
-          branch # (3)!
-        # jorenn92/maintainerr:develop for the Docker Hub
-          container_name: maintainerr # (3)!
+        # ghcr.io/jorenn92/maintainerr:main for the develop branch # (3)!
+        # jorenn92/maintainerr:develop for the Docker Hub container_name: maintainerr # (3)!
         user: 1000:1000
         volumes:
           - type: bind
