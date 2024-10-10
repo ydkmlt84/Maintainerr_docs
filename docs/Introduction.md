@@ -38,4 +38,4 @@ Maintainerr supports rules across these apps :
 - Overseerr
 - Radarr
 - Sonarr
-- Tautulli
+- Tautulli (currently available in the dev branch)

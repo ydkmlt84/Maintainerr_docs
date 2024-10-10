@@ -56,7 +56,7 @@ Sonarr's configuration is required to use it's parameters in rules and to remove
 | Port          | The port Sonarr runs on |
 | Api key   | Sonarr API key, should be visible in the Sonarr settings |
 
-## Tautulli
+## Tautulli (currently only available in the dev branch)
 
 Tautulli's configuration is required to use it's parameters in rules.
 
