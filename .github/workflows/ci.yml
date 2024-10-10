@@ -21,7 +21,6 @@ on:
 
 jobs:
   execute-command:
-    if: ${{ github.triggering_actor == github.repository_owner }}
     if: ${{ github.ref == 'refs/head/main' }}
     name: Use tailscale to connect and execute command.
     runs-on: ubuntu-24.04    
