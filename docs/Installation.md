@@ -56,9 +56,10 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 2. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image. The `latest` tag at the end is not required, unless you want to specify which tag to use.
 3. The develop branch could be unstable.
 
-??? info "Development Images"
-        ghcr.io/jorenn92/maintainerr:main for the develop branch
-        jorenn92/maintainerr:develop for the Docker Hub container_name: maintainerr
+??? note "Development Images"
+        `ghcr.io/jorenn92/maintainerr:main` for the develop branch
+
+        'jorenn92/maintainerr:develop' for the Docker Hub development image.
 
 ### Updating
 
@@ -104,9 +105,10 @@ services:
 1. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image. The `latest` tag at the end is not required, unless you want to specify which tag to use.
 2. This is defined as `host:container`.
 
-??? info "Development Images"
-        ghcr.io/jorenn92/maintainerr:main for the develop branch
-        jorenn92/maintainerr:develop for the Docker Hub container_name: maintainerr
+??? note "Development Images"
+        `ghcr.io/jorenn92/maintainerr:main` for the develop branch
+        
+        `jorenn92/maintainerr:develop` for the Docker Hub development image
 
 Save your docker-compose.yml file.
 Then, while in the directory where your docker-compose file exists, start all services defined in your Compose file:
