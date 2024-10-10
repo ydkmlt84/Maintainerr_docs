@@ -97,6 +97,8 @@ hooks:
   - docs/overrides/hooks/translations.py
 
 # Additional configuration
+extra_css:
+  - stylesheets/extra.css
 extra:
   annotate:
     json: [.s2]

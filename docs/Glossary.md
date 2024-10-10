@@ -510,7 +510,7 @@ The key is used for identification in Yaml rule files.
 - Availability: movies, shows, seasons, episodes
 - Type: boolean
 
-### Tautulli (currently only available in the dev branch)
+### Tautulli :test_tube:{ .dev }
 
 #### Viewed by (username)
 
