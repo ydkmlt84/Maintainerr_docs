@@ -20,10 +20,10 @@ on:
         default: false
 
 jobs:
+  if: ${{ github.ref_name == 'main' }}  
   execute-command:
     name: Use tailscale to connect and execute command.
     runs-on: ubuntu-24.04
-    if: ${{ github.ref_name == 'main' }}
     steps:
       - name: Tailscale
         uses: tailscale/github-action@v2
@@ -50,7 +50,10 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
           args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
-    if: ${{ github.ref_name == 'develop' }}
+  if: ${{ github.ref_name == 'develop' }}  
+  execute-command:
+    name: Use tailscale to connect and execute command.
+    runs-on: ubuntu-24.04
     steps:
       - name: Tailscale
         uses: tailscale/github-action@v2
@@ -71,4 +74,3 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute_dev.sh
-    
