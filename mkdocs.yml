@@ -97,6 +97,8 @@ hooks:
   - docs/overrides/hooks/translations.py
 
 # Additional configuration
+extra_css:
+  - stylesheets/extra.css
 extra:
   annotate:
     json: [.s2]
@@ -110,7 +112,10 @@ extra:
       link: https://hub.docker.com/r/jorenn92/maintainerr/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/WP4ZW2QYwk
-
+  status:
+    new: Recently Added
+    deprecated: Deprecated
+    recent: New Updates
 # Extensions
 markdown_extensions:
   - abbr
@@ -128,6 +133,7 @@ markdown_extensions:
   #        - customization.md
   #        - insiders/changelog/*
   #        - docs/extensions/*
+  - pymdownx.critic
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:

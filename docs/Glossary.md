@@ -510,7 +510,7 @@ The key is used for identification in Yaml rule files.
 - Availability: movies, shows, seasons, episodes
 - Type: boolean
 
-### Tautulli
+### Tautulli :test_tube:{ .dev title="In dev branch only"}
 
 #### Viewed by (username)
 
@@ -527,3 +527,5 @@ The key is used for identification in Yaml rule files.
 - Key: Tautulli.sw_allEpisodesSeenBy
 - Availability: shows, seasons
 - Type: text[]
+
+:material-clock-edit: Last Updated: 10/10/24

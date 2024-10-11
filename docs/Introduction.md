@@ -38,4 +38,6 @@ Maintainerr supports rules across these apps :
 - Overseerr
 - Radarr
 - Sonarr
-- Tautulli
+- Tautulli :test_tube:{ .dev title="In dev branch only"}
+
+:material-clock-edit: Last Updated: 10/10/24

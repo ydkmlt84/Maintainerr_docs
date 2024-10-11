@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'main'
+      - 'develop'
   release:
     type: [published]
   pull_request:
@@ -18,9 +19,8 @@ on:
         description: Turn this on to skip running the SSH script.
         default: false
 
-jobs:
+jobs: 
   execute-command:
-    if: ${{ github.triggering_actor == github.repository_owner }}
     name: Use tailscale to connect and execute command.
     runs-on: ubuntu-24.04
     steps:
@@ -34,7 +34,7 @@ jobs:
         run: echo ${{inputs.dry-run}}
         shell: bash
       - name: executing remote ssh commands using password
-        if: ${{ inputs.dry-run == false }}
+        if: ${{ inputs.dry-run == false && github.ref_name == 'main'}}
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST_TS }}
@@ -43,11 +43,20 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute.sh
+      - name: Dev- executing remote ssh commands using password
+        if: ${{ inputs.dry-run == false && github.ref_name == 'develop'}}
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST_TS }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT }}
+          script_stop: true
+          script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute_dev.sh
       - name: Actions for Discord
+        if: ${{ github.ref_name == 'main'}}
         uses: Ilshidur/action-discord@0.3.2
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
           args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
-
-    

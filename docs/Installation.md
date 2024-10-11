@@ -1,3 +1,7 @@
+---
+status: recent
+---
+
 Docker is Maintainerr's supported method of installation.
 
 Images for amd64 & arm64 are available under `jorenn92/maintainerr` and `ghcr.io/jorenn92/maintainerr`.
@@ -6,7 +10,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 [tooltip]: https://docs.docker.com/storage/volumes/#start-a-container-with-a-volume "Click here to be taken to the Docker documentation page on volumes."
 
 
-> !!! info
+!!! info
     You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.
     <font color="red">See [Run](#run) and [Compose](#compose) below for examples.</font>
 
@@ -54,6 +58,11 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 
 1. This is defined as `host:container`.
 2. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image. The `latest` tag at the end is not required, unless you want to specify which tag to use.
+3. The develop branch could be unstable.
+
+??? note "Development Versions"
+    - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
+    - `jorenn92/maintainerr:develop` for the Docker Hub development image.
 
 ### Updating
 
@@ -83,7 +92,6 @@ version: '3'
 services:
     maintainerr:
         image: ghcr.io/jorenn92/maintainerr:latest # (1)!
-        container_name: maintainerr
         user: 1000:1000
         volumes:
           - type: bind
@@ -99,6 +107,10 @@ services:
 
 1. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image. The `latest` tag at the end is not required, unless you want to specify which tag to use.
 2. This is defined as `host:container`.
+
+??? note "Development Versions"
+    - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
+    - `jorenn92/maintainerr:develop` for the Docker Hub development image.
 
 Save your docker-compose.yml file.
 Then, while in the directory where your docker-compose file exists, start all services defined in your Compose file:
@@ -121,4 +133,4 @@ Then, restart all services defined in the Compose file:
 docker compose up -d
 ```
 
-:material-clock-edit: Last Updated: 5/31/24
+:material-clock-edit: Last Updated: 10/10/24

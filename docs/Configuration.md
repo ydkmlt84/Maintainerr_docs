@@ -1,3 +1,5 @@
+
+
 All configuration is done inside the application, no extra config is required in files. </br>
 At first boot you will be redirected to the settings page.
 
@@ -54,7 +56,7 @@ Sonarr's configuration is required to use it's parameters in rules and to remove
 | Port          | The port Sonarr runs on |
 | Api key   | Sonarr API key, should be visible in the Sonarr settings |
 
-## Tautulli
+## Tautulli :test_tube:{ .dev title="In dev branch only"}
 
 Tautulli's configuration is required to use it's parameters in rules.
 
@@ -64,4 +66,4 @@ Tautulli's configuration is required to use it's parameters in rules.
 | Port          | The port Tautulli runs on |
 | Api key  | Tautulli API key, should be visible in the Tautulli settings |
 
-:material-clock-edit: Last Updated: 9/30/24
+:material-clock-edit: Last Updated: 10/10/24
