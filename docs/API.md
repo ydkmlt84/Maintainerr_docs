@@ -5,4 +5,4 @@ hide:
 ---
 # Maintainerr API docs
 
-<swagger-ui supportedSubmitMethods="[]" src="./openapi-spec/sample.yaml"/>
+<swagger-ui supportedSubmitMethods="[]" src="./openapi-spec/maintainerr_api_specs.yaml"/>

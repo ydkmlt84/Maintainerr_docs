@@ -1,32 +1,17 @@
 openapi: "3.0.0"
 info:
-  version: 1.0.0
-  title: Sample OpenAPI Spec
+  title: Maintainerr API docs built with OpenAPI specs
 servers:
-  - url: http://petstore.swagger.io/v1
+  - url: http://<maintainerr_url>:<port>/api
 paths:
-  /pets:
+  /settings:
     get:
-      summary: List all pets
-      operationId: listPets
+      summary: Shows Installed Maintainerr Version
       tags:
-        - pets
-      parameters:
-        - name: limit
-          in: query
-          description: How many items to return at one time (max 100)
-          required: false
-          schema:
-            type: integer
-            format: int32
+        - settings
       responses:
         200:
-          description: An paged array of pets
-          headers:
-            x-next:
-              description: A link to the next page of responses
-              schema:
-                type: string
+          description: A text output of the currently installed version.
           content:
             application/json:    
               schema:
@@ -37,14 +22,18 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
-    post:
-      summary: Create a pet
-      operationId: createPets
+    /settings/version:
+    get:
+      summary: Shows Installed Maintainerr Version
       tags:
-        - pets
+        - settings
       responses:
-        201:
-          description: Null response
+        200:
+          description: A text output of the currently installed version.
+          content:
+            application/json:    
+              schema:
+                $ref: "#/components/schemas/Pets"
         default:
           description: unexpected error
           content:
