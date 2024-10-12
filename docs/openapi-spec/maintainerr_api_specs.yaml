@@ -22,7 +22,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Error"
-    /settings/version:
+  /settings/version:
     get:
       summary: Shows Installed Maintainerr Version
       tags:
