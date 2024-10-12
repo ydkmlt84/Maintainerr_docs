@@ -91,7 +91,8 @@ plugins:
   - social:
       cards_layout: default/variant
   - glightbox
-  - swagger-ui-tag
+  - swagger-ui-tag:
+    - supportedSubmitMethods: []
 # Hooks
 hooks:
   - docs/overrides/hooks/shortcodes.py
