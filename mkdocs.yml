@@ -91,6 +91,7 @@ plugins:
   - social:
       cards_layout: default/variant
   - glightbox
+  - swagger-ui-tag
 # Hooks
 hooks:
   - docs/overrides/hooks/shortcodes.py
@@ -188,6 +189,8 @@ nav:
   - Community:
     - Introduction.md
     - Contributing.md
+  - API:
+    - API.md  
   - Guides:
     - blog/index.md
 
