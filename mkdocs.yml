@@ -99,7 +99,7 @@ hooks:
 
 # Additional configuration
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 extra:
   annotate:
     json: [.s2]
