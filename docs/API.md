@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+status: recent
 ---
 # Maintainerr API docs
 
@@ -10,6 +11,6 @@ hide:
 
 ## API endpoints
 
-This API documentation is a work in progress. For the time being, its usefulness is in showing the endpoints and URL parameters. Moving forward, expected responses will be included.
+This API documentation is a work in progress. For the time being, its usefulness is in showing the endpoints and URL parameters. Moving forward, expected responses will also be included.
 
 <swagger-ui supportedSubmitMethods="[]" src="./openapi-spec/maintainerr_api_specs.yaml"/>
