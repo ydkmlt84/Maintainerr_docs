@@ -91,6 +91,7 @@ plugins:
   - social:
       cards_layout: default/variant
   - glightbox
+  - swagger-ui-tag
 # Hooks
 hooks:
   - docs/overrides/hooks/shortcodes.py
@@ -98,7 +99,7 @@ hooks:
 
 # Additional configuration
 extra_css:
-  - stylesheets/extra.css
+  - assets/stylesheets/extra.css
 extra:
   annotate:
     json: [.s2]
@@ -188,6 +189,8 @@ nav:
   - Community:
     - Introduction.md
     - Contributing.md
+  - API:
+    - API.md  
   - Guides:
     - blog/index.md
 
