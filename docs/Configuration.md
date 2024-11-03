@@ -26,6 +26,9 @@ If you'd like Maintainerr to communicate securely, you'll have to use your '*.pl
 | Port          | The port Plex runs on, default is 32400 |
 | Authentication| Authenticate with your Plex server using a **admin** account |
 
+!!! tip
+    The typical flow is to Authenticate with Plex -> click on the refresh icon -> choose your server from the dropdown menu -> click on Save Changes -> click on Test Saved.
+
 ## Overseerr
 
 Overseerr's configuration is required to use it's parameters in rules and to remove requests. </br>
@@ -44,6 +47,7 @@ Radarr's configuration is required to use it's parameters in rules and to remove
 | ------------- |:-------------:|
 | Hostname or IP| The domain name or local IP of the host your server runs on |
 | Port          | The port Radarr runs on |
+| Base URL      | URL Base set in Radarr settings (if set)|
 | Api key   | Radarr API key, should be visible in the Radarr settings |
 
 ## Sonarr
@@ -54,6 +58,7 @@ Sonarr's configuration is required to use it's parameters in rules and to remove
 | ------------- |:-------------:|
 | Hostname or IP| The domain name or local IP of the host your server runs on |
 | Port          | The port Sonarr runs on |
+| Base URL      | URL Base set in Sonarr Settings (if set)|
 | Api key   | Sonarr API key, should be visible in the Sonarr settings |
 
 ## Tautulli :test_tube:{ .dev title="In dev branch only"}
@@ -64,6 +69,7 @@ Tautulli's configuration is required to use it's parameters in rules.
 | ------------- |:-------------:|
 | Hostname or IP| The domain name or local IP of the host your server runs on |
 | Port          | The port Tautulli runs on |
+| Base URL      | HTTP Root set in Tautulli Settings (if set )|
 | Api key  | Tautulli API key, should be visible in the Tautulli settings |
 
-:material-clock-edit: Last Updated: 10/10/24
+:material-clock-edit: Last Updated: 11/03/24
