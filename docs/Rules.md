@@ -25,9 +25,9 @@ General info about the rule. Some of the information specified here will be show
 | Add list exclusions          | Prevent *arr import lists from re-adding media that has been removed by Maintainerr |
 | Media deleted after days     | Amount of days media will live in the collection before deletion |
 | Use rules                    | Disable the rule engine, in case you want to add media manually |
-| Force reset Overseerr record | Force resets the Overseerr record instead of relying on availability-sync. 'Enable CSRF Protection' needs to be disabled in Overseer's settings for this to work. (1) |
+| Force reset Overseerr record | Force resets the Overseerr record instead of relying on availability-sync. 'Enable CSRF Protection' needs to be disabled in Overseer's settings for this to work. # (1)! |
 | Custom collection            | Use a manual collection. Media will sync from Plex to Maintainerr. Maintainerr will never remove this collection from Plex |
-| Custom collection name       | The name of the manual collection to use (2) |
+| Custom collection name       | The name of the manual collection to use # (2)! |
 
 1. This is the old method of telling Overseerr that something has been removed. The default method now, is to tell Overseerr to initiate an `Availability Sync`, through its API. This happens automatically after something has been removed.
 2. Only shown and needed when the Custom Collection checkbox is checked.  
