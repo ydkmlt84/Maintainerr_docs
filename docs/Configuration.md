@@ -1,5 +1,4 @@
 
-
 All configuration is done inside the application, no extra config is required in files. </br>
 At first boot you will be redirected to the settings page.
 
