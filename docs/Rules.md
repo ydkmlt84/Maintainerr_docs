@@ -123,8 +123,10 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 
 <div class="grid cards" markdown>
 
-- `Contains (partial)`
+- __`Contains (partial)`__
+  
   ___
+  
   True:
   ```bash
   firstValue:
@@ -140,11 +142,11 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - er3
   ```
 
-- `Contains (partial)`
+- __`Contains (partial)`__
+  
   ___
 
   True:
-
   ```bash
   firstValue:
     - user1
