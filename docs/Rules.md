@@ -123,7 +123,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 
 <div class="grid" markdown>
 
-``` title="True `Contains (partial)'"
+``` title="True `Contains (partial)`"
 firstValue:
   - user1
   - user2
@@ -137,7 +137,7 @@ secondValue:
   - er3
 ```
 
-``` title="True 'Contains (partial)`"
+``` title="True `Contains (partial)`"
 firstValue:
   - user1
   - user2
@@ -149,64 +149,65 @@ secondValue:
   - user5
 ```
 
-``` title="False 'Contains (partial)'"
-  firstValue:
-    - user1
-    - user2
-    - user3
-  secondValue:
-    - friend
-    - james
-    - wilhelm
-    - frank
+``` title="False `Contains (partial)`"
+firstValue:
+  - user1
+  - user2
+  - user3
+secondValue:
+  - friend
+  - james
+  - wilhelm
+  - frank
 ```
 
-    ``` title="True 'Contains (exact)'"
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - user1
-      - user2
-      - user5
-    ```
+``` title="True `Contains (exact)`"
+firstValue:
+  - user1
+  - user2
+  - user3
+secondValue:
+  - user1
+  - user2
+  - user5
+```
 
-    ``` title="True 'Contains (exact)'"
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - user1
-      - user5
-      - user8
-    ```  
+``` title="True `Contains (exact)`"
+firstValue:
+  - user1
+  - user2
+  - user3
+secondValue:
+  - user1
+  - user5
+  - user8
+```  
 
-    ``` title="True 'Contains (exact)'"
-    firstValue:
-      - user1
-      - user2
-      - user3
-      - user7
-    secondValue:
-      - user1
-      - user2
-      - user7
-    ```
+``` title="True `Contains (exact)`"
+firstValue:
+  - user1
+  - user2
+  - user3
+  - user7
+secondValue:
+  - user1
+  - user2
+  - user7
+```
 
-    ``` title="False 'Contains (exact)'"
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - use
-      - friend
-      - 1
-      - 2
-      - 3
-    ``` 
+``` title="False `Contains (exact)`"
+firstValue:
+  - user1
+  - user2
+  - user3
+secondValue:
+  - use
+  - friend
+  - 1
+  - 2
+  - 3
+``` 
+
 </div>
 
 ### Custom values
