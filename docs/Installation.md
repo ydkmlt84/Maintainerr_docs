@@ -19,17 +19,17 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 
       It is possible that you will need to change permissions on the host's data directory. (1)
 
-1. The data directory location largely depends on how you are installing Maintainerr. If using docker, these are the two places where you set the host data directory.
+1. The data directory location largely depends on how you are installing Maintainerr. If using docker, these are the two places where could you set the host data directory.
 
     Docker run:
 
-          -v ./data:/opt/data \ 
+          -v <your host location>:/opt/data \ 
 
     Docker compose: 
 
           volumes:
           - type: bind
-            source: ./data
+            source: <your host location>
             target: /opt/data
 
 === "Linux Permissions Example"
@@ -49,7 +49,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
     docker run -d \
     --name maintainerr \
     -e TZ=Europe/Brussels \
-    -v ./data:/opt/data \
+    -v <yourhostlocation>:/opt/data \ # (3)!
     -u 1000:1000 \
     -p 6246:6246 \ # (1)!
     --restart unless-stopped \
@@ -58,7 +58,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 
 1. This is defined as `host:container`.
 2. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image. The `latest` tag at the end is not required, unless you want to specify which tag to use.
-3. The develop branch could be unstable.
+3. In Docker containers, you are able to bind a host directory to a directory inside the container. This allows for persistent data when a container is restarted or reset.
 
 ??? note "Development Versions"
     - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
@@ -78,7 +78,7 @@ Pull the latest image:
 docker pull ghcr.io/jorenn92/maintainerr:latest
 ```
 
-Finally, run the container with the same parameters you originally used to create the container.
+Finally, run the container with the same parameters you originally used to create/start the container.
 
 You may alternatively use a third-party updating mechanism, such as [Watchtower](https://github.com/containrrr/watchtower), to keep Maintainerr up-to-date automatically.
 
@@ -87,7 +87,6 @@ You may alternatively use a third-party updating mechanism, such as [Watchtower]
 Define the Maintainerr service in your docker-compose.yml as follows.
 
 ``` {.yaml .annotate}
-version: '3'
 
 services:
     maintainerr:
@@ -95,11 +94,11 @@ services:
         user: 1000:1000
         volumes:
           - type: bind
-            source: ./data
+            source: <your host location> # (3)!
             target: /opt/data
         environment:
           - TZ=Europe/Brussels
-#      - DEBUG=true # uncomment to enable debug logs
+   #      - DEBUG=true # uncomment (remove the hashtag) to enable debug logs
         ports:
           - 6246:6246 # (2)!
         restart: unless-stopped
@@ -107,6 +106,7 @@ services:
 
 1. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image. The `latest` tag at the end is not required, unless you want to specify which tag to use.
 2. This is defined as `host:container`.
+3. In Docker containers, you are able to bind a host directory to a directory inside the container. This allows for persistent data when a container is restarted or reset.
 
 ??? note "Development Versions"
     - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
@@ -133,4 +133,4 @@ Then, restart all services defined in the Compose file:
 docker compose up -d
 ```
 
-:material-clock-edit: Last Updated: 10/10/24
+:material-clock-edit: Last Updated: 11/06/24

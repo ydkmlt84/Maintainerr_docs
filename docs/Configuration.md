@@ -1,6 +1,6 @@
 
 All configuration is done inside the application, no extra config is required in files. </br>
-At first boot you will be redirected to the settings page.
+When you first access the webUI, you will be redirected to the settings page. If this doesn't happen, refresh the page.
 
 ## General
 
@@ -13,7 +13,7 @@ These settings are OK for most installations.
 
 ## Plex
 
-This is the only **required** configuration. Without a valid Plex connection Maintainerr won't be able to function.
+This is the only **required** configuration. Without a valid Plex connection, Maintainerr won't be able to function.
 
 When using a local Plex instance, make sure your Plex's 'secure connections' network setting is set to 'preferred' instead of 'required'.
 If you'd like Maintainerr to communicate securely, you'll have to use your '*.plex.direct' URL as the hostname. You can copy this URL from Overseerr's configuration. Make sure you include 'https://'.
@@ -30,7 +30,7 @@ If you'd like Maintainerr to communicate securely, you'll have to use your '*.pl
 
 ## Overseerr
 
-Overseerr's configuration is required to use it's parameters in rules and to remove requests. </br>
+Overseerr's configuration is required to use its parameters in rules and to remove requests. </br>
 
 | Param | Description |
 | ------------- |:-------------:|
@@ -40,7 +40,7 @@ Overseerr's configuration is required to use it's parameters in rules and to rem
 
 ## Radarr
 
-Radarr's configuration is required to use it's parameters in rules and to remove or unmonitor movies.
+Radarr's configuration is required to use its parameters in rules and to remove or unmonitor movies.
 
 | Param | Description           |
 | ------------- |:-------------:|
@@ -51,7 +51,7 @@ Radarr's configuration is required to use it's parameters in rules and to remove
 
 ## Sonarr
 
-Sonarr's configuration is required to use it's parameters in rules and to remove or unmonitor shows.
+Sonarr's configuration is required to use its parameters in rules and to remove or unmonitor shows.
 
 | Param | Description           |
 | ------------- |:-------------:|
@@ -60,9 +60,9 @@ Sonarr's configuration is required to use it's parameters in rules and to remove
 | Base URL      | URL Base set in Sonarr Settings (if set)|
 | Api key   | Sonarr API key, should be visible in the Sonarr settings |
 
-## Tautulli :test_tube:{ .dev title="In dev branch only"}
+## Tautulli
 
-Tautulli's configuration is required to use it's parameters in rules.
+Tautulli's configuration is required to use its parameters in rules.
 
 | Param | Description |
 | ------------- |:-------------:|
@@ -71,4 +71,4 @@ Tautulli's configuration is required to use it's parameters in rules.
 | Base URL      | HTTP Root set in Tautulli Settings (if set )|
 | Api key  | Tautulli API key, should be visible in the Tautulli settings |
 
-:material-clock-edit: Last Updated: 11/03/24
+:material-clock-edit: Last Updated: 11/06/24

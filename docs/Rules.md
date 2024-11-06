@@ -8,7 +8,7 @@ Once you complete and save your rule, Maintainerr will generate a collection. Th
 
 ## Creating rules
 
-### General { .annotate }
+### General
 
 General info about the rule. Some of the information specified here will be shown on the generated collection. In here you also specify how to handle the collection.
 
@@ -97,24 +97,102 @@ The output of the rule will then be passed on to the next rule.
 The action defines the way the `first value` and `second value` will be compared. </br>
 The available actions are dependent on the type of the `first value`
 
-| Action                    | Description                                                                                                                               | Types              |
-| ----------                | -----------------------------------------------------------                                                                               | ------------------ |
-| bigger                    | Is the `first value` bigger than the `second value` ?                                                                                     | number             |
-| smaller                   | Is the `first value` smaller than the `second value` ?                                                                                    | number             |
-| contains                  | Does the `first value` contain the `second value`? Lists will confirm the existence of an exact match within the `first value` list       | number, text       |
-| contains (partial)        | Does the `first value` contain the `second value` ? Lists will confirm the existence of a partial match within the `first value` list     | number, text       |
-| not contains              | Does the `first value` lack the `second value`? Lists will indicate the absence of an exact match within the `first value` list.          | number, text       |
-| not contains (partial)    | Does the `first value` lack the `second value` ? Lists will indicate the absence of a partial match within the `first value` list.        | number, text       |
-| equals                    | Is the `first value` equal to the `second value` ?                                                                                        | number, text, date |
-| not equals                | Is the `first value` unequal to the `second value` ?                                                                                      | number, text, date |
-| before                    | Does the `first value` occur before the `second value` ?                                                                                  | date               |
-| after                     | Does the `first value` occur after the `second value` ?                                                                                   | date               |
-| in last                   | Does the `first value` occur in the last x amount of days ?                                                                               | date               |
-| in next                   | Does the `first value` occur in the next x amount of days ?                                                                               | date               |
+| Action |Description | Types |
+| ---------- | ----------------------------------------------------------- | ------------------ |
+| bigger | Is the `first value` bigger than the `second value` ? | number |
+| smaller | Is the `first value` smaller than the `second value` ? | number |
+| contains | Does the `first value` contain the `second value`? Lists will confirm the existence of an exact match within the `first value` list | number, text |
+| contains (partial) | Does the `first value` contain the `second value` ? Lists will confirm the existence of a partial match within the `first value` list | number, text |
+| not contains | Does the `first value` lack the `second value`? Lists will indicate the absence of an exact match within the `first value` list. | number, text |
+| not contains (partial) | Does the `first value` lack the `second value` ? Lists will indicate the absence of a partial match within the `first value` list. | number, text |
+| equals | Is the `first value` equal to the `second value` ? | number, text, date |
+| not equals | Is the `first value` unequal to the `second value` ? | number, text, date |
+| before | Does the `first value` occur before the `second value` ? | date |
+| after | Does the `first value` occur after the `second value` ? | date |
+| in last | Does the `first value` occur in the last x amount of days ? | date |
+| in next | Does the `first value` occur in the next x amount of days ? | date |
 
 Contains in conjunction with lists will check if at least 1 value in the `second value` list matches a value in the `first value` list. So, for example, if `first value` contains the list ["test1", "test2"] and `second value` contains the list ["test3", "test1"], the result will be true because "test1" is available in both.
 
-The difference between 'Contains' and 'Contains (partial)' is only apparent with text list values. When comparing a text list, 'Contains' will only return true if the 'second value' exactly matches a value in the 'first value' list. 'Contains (partial)' will return true if the 'first value' list has a value that partially matches the 'second value' (or an item in the 'second value' list). Otherwise, both options behave the same.
+The difference between 'Contains/Contains (exact)' and 'Contains (partial)' is only apparent with list values. When comparing a text list, 'Contains (exact)' will only return true if the 'second value' *exactly* matches a value in the 'first value' list. 'Contains (partial)' will return true if the 'first value' list has a value that *partially* matches the 'second value' (or an item in the 'second value' list).
+
+=== "True: `Contains (partial)` example"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - use
+      - ser
+      - ser3
+      - user
+      - 1
+      - 3
+
+=== "True: `Contains (partial)` example"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - user1
+      - user2
+      - user3
+      - user5
+
+=== "False: `Contains (partial)` example"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - friend
+      - james
+      - wilhelm
+      - frank
+
+=== "True: `Contains (exact)` example"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - user1
+      - user2
+      - user5
+
+=== "True" `Contains (exact)` example"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - user1
+      - user5
+      - user8
+
+=== "True: `Contains (exact)` example"
+    firstValue:
+      - user1
+      - user2
+      - user3
+      - user7
+    secondValue:
+      - user1
+      - user2
+      - user7
+
+=== "False: `Contains (exact)` example"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - use
+      - friend
+      - 1
+      - 2
+      - 3
 
 ## Custom values
 
@@ -126,5 +204,5 @@ The `Second value` field allows some custom values. The available custom values 
 | Custom date | Takes a specific date | date |
 | Custom number | Takes a specific number | number |
 | Custom text | Takes a specific text | text |
+| Custom text (list) | Takes a list in JSON format | ["Jef, "Frank", "Wilhelm"] |
 
-You can incorporate text lists as custom values using JSON notation. For example, specifying ["Jef", "Frank", "Wilhelm"] will be parsed and treated as a list.
