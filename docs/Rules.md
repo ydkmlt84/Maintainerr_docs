@@ -123,43 +123,43 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 
 <div class="grid" markdown>
 
-    ``` title="True `Contains (partial)'"
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - use
-      - ser
-      - ser3
-      - user
-      - ser1
-      - er3
-    ```
+``` title="True `Contains (partial)'"
+firstValue:
+  - user1
+  - user2
+  - user3
+secondValue:
+  - use
+  - ser
+  - ser3
+  - user
+  - ser1
+  - er3
+```
 
-    ``` title="True 'Contains (partial)`"
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - user1
-      - user2
-      - user3
-      - user5
-    ```
+``` title="True 'Contains (partial)`"
+firstValue:
+  - user1
+  - user2
+  - user3
+secondValue:
+  - user1
+  - user2
+  - user3
+  - user5
+```
 
-    ``` title="False 'Contains (partial)'"
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - friend
-      - james
-      - wilhelm
-      - frank
-    ```
+``` title="False 'Contains (partial)'"
+  firstValue:
+    - user1
+    - user2
+    - user3
+  secondValue:
+    - friend
+    - james
+    - wilhelm
+    - frank
+```
 
     ``` title="True 'Contains (exact)'"
     firstValue:
