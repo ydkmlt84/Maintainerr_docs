@@ -121,7 +121,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 
 #### List Examples
 
-<div class="grid cards" markdown>
+<div class="grid" markdown>
 
   ``` title="True `Contains (partial)'"
   firstValue:
@@ -137,14 +137,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - er3
   ```
 
-</div>
-
-- __`Contains (partial)`__
-  
-  ___
-
-  True:
-  ```bash
+  ``` title="True 'Contains (partial)`"
   firstValue:
     - user1
     - user2
@@ -156,12 +149,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - user5
   ```
 
-- `Contains (partial)`
-  ___
-
-  False:
-
-  ```bash
+  ``` title="False 'Contains (partial)'"
   firstValue:
     - user1
     - user2
@@ -173,11 +161,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - frank
   ```
 
-- `Contains (exact)`
-  ___
-
-  True:
-  ```bash
+  ``` title="True 'Contains (exact)'"
   firstValue:
     - user1
     - user2
@@ -187,7 +171,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - user2
     - user5
   ```
-
+</div>
 === "(2) True: `Contains (exact)`"
     ```
     firstValue:
