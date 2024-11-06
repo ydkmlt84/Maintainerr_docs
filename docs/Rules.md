@@ -125,9 +125,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 
 - `Contains (partial)`
   ___
-
   True:
-
   ```bash
   firstValue:
     - user1
@@ -180,7 +178,6 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
   ___
 
   True:
-  
   ```bash
   firstValue:
     - user1
