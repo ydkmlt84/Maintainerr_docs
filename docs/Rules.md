@@ -4,7 +4,7 @@ When media exists in the collection for a specified amount of time, they'll be d
 
 Once you complete and save your rule, Maintainerr will generate a collection. The collection will only be visible/synced to Plex if it contains media.
 
-???+ note "Rule Handling"
+??? note "Rule Handling"
     Rule handling is a batch process that runs every 8 hours. You can manually trigger it with the `Run rules` button on the 'rules' page.
 
 ## Creating rules
@@ -36,11 +36,11 @@ General info about the rule. Some of the information specified here will be show
 
 #### TV media type
 
-With the 'Media type' parameter you're able to specify the type of media that should be used for a TV library. This allows to run rules on either a selection of shows, seasons or episodes.
+With the *Media type* parameter you're able to specify the type of media that should be used for a TV library. This allows to run rules on either a selection of shows, seasons or episodes.
 
 For instance, this makes it possible to create rule groups that select & delete old/watched seasons of a tv show, without removing the newer seasons.
 
-!!! info
+??? info
     - Because you can't mix media types on a Plex collection, Maintainerr also doesn't allow the use of multiple types on a rule group / collection.
 
     - Executing rules on episodes takes a lot longer than shows & seasons because Maintainerr has to sift through more data.
@@ -48,16 +48,16 @@ For instance, this makes it possible to create rule groups that select & delete 
 #### Disabling rules & manual collections
 
 In case you want to manage the collection manually, or with another program, there's the possibility to disable Maintainerr's collection system by specifying a manual collection.
-Maintainerr will sync all media added/removed from the Plex collection into it's internal collection.
+Maintainerr will sync all media added/removed from the Plex collection into its internal collection.
 
 !!! warning
     If media is excluded in Maintainerr, but is added manually to the Plex collection, the exclude will be ignored.
 
-Additionally, you can disable the rule system by unchecking the 'use rules' checkbox.
+Additionally, you can disable the rule system by unchecking the *use rules* checkbox.
 
 ## Adding rules
 
-Adding a rule is done by using the `Add` button next to a section title. If the button is not available, it means your current rule isn't finished yet.
+Adding a rule is done by using the *Add* button next to a section title. If the button is not available, it means your current rule isn't finished yet.
 
 A rule consists of at least 4 values. If the `second value` contains a custom value, a `custom value` parameter will also pop up.
 
@@ -73,15 +73,15 @@ Starting from the second rule or section, a `operator` parameter is also require
 
 ### Sections
 
-A section is a group of rules. What happens to the result of a section depends on the choice of `Operator` in the section's first rule.
+A section is a group of rules. What happens to the result of a section depends on the choice of *Operator* in the section's first rule.
 
 ### Adding new sections
 
-The `New section` button, at the bottom of the form, is only available if all rules are completed.
+The *New section* button, at the bottom of the form, is only available if all rules are completed.
 
 ### Operators
 
-There are 2 operator choices, both explained below. </br>
+There are 2 operator choices, both explained below.
 The choice of operator defines what happens to the result of each section or rule.
 
 #### AND
@@ -91,7 +91,7 @@ The output of the rule will then be passed on to the next rule.
 
 #### OR
 
-Using this operator, the rule will start off with all media and add it's result to the previous rule (or section) result.
+Using this operator, the rule will start off with all media and add its result to the previous rule (or section) result.
 The output of the rule will then be passed on to the next rule.
 
 ### Actions
@@ -114,7 +114,7 @@ The available actions are dependent on the type of the `first value`
 | in last | Does the `first value` occur in the last x amount of days ? | date |
 | in next | Does the `first value` occur in the next x amount of days ? | date |
 
-The difference between 'Contains/Contains (exact)' and 'Contains (partial)' is only apparent with list values. When comparing a text list, 'Contains (exact)' will only return true if the 'second value' *exactly* matches any value in the 'first value' list. 'Contains (partial)' will return true if the 'first value' list has a value that *partially* matches any value in the 'second value' list.
+The difference between ***Contains/Contains (exact)*** and ***Contains (partial)*** is only apparent with list values. When comparing a text list, ***Contains (exact)*** will only return true if the `second value` *exactly* matches any value in the `first value` list. ***Contains (partial)*** will return true if the `first value` list has a value that *partially* matches any value in the `second value` list.
 
 #### List Examples
 
@@ -171,7 +171,7 @@ The difference between 'Contains/Contains (exact)' and 'Contains (partial)' is o
       - user5
     ```
 
-=== "(2) True" `Contains (exact)`"
+=== "(2) True: `Contains (exact)`"
     ```
     firstValue:
       - user1
@@ -212,7 +212,7 @@ The difference between 'Contains/Contains (exact)' and 'Contains (partial)' is o
 
 ### Custom values
 
-The `Second value` field allows some custom values. The available custom values are dependent on the type of `first value`.
+The `second value` field allows some custom values. The available custom values are dependent on the type of `first value`.
 
 | Action | Description | Types |
 | ------------- |------------- | ------------- |
@@ -220,4 +220,4 @@ The `Second value` field allows some custom values. The available custom values 
 | Custom date | Takes a specific date | date |
 | Custom number | Takes a specific number | number |
 | Custom text | Takes a specific text | text |
-| Custom text (list) | Takes a list in JSON format | ["Jef, "Frank", "Wilhelm"] |
+| Custom text (list) | Takes a list in JSON format | ["Jef", "Frank", "Wilhelm"] |
