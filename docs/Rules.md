@@ -123,57 +123,56 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 
 <div class="grid" markdown>
 
-  ``` title="True `Contains (partial)'"
-  firstValue:
-    - user1
-    - user2
-    - user3
-  secondValue:
-    - use
-    - ser
-    - ser3
-    - user
-    - ser1
-    - er3
-  ```
-
-  ``` title="True 'Contains (partial)`"
-  firstValue:
-    - user1
-    - user2
-    - user3
-  secondValue:
-    - user1
-    - user2
-    - user3
-    - user5
-  ```
-
-  ``` title="False 'Contains (partial)'"
-  firstValue:
-    - user1
-    - user2
-    - user3
-  secondValue:
-    - friend
-    - james
-    - wilhelm
-    - frank
-  ```
-
-  ``` title="True 'Contains (exact)'"
-  firstValue:
-    - user1
-    - user2
-    - user3
-  secondValue:
-    - user1
-    - user2
-    - user5
-  ```
-</div>
-=== "(2) True: `Contains (exact)`"
+    ``` title="True `Contains (partial)'"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - use
+      - ser
+      - ser3
+      - user
+      - ser1
+      - er3
     ```
+
+    ``` title="True 'Contains (partial)`"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - user1
+      - user2
+      - user3
+      - user5
+    ```
+
+    ``` title="False 'Contains (partial)'"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - friend
+      - james
+      - wilhelm
+      - frank
+    ```
+
+    ``` title="True 'Contains (exact)'"
+    firstValue:
+      - user1
+      - user2
+      - user3
+    secondValue:
+      - user1
+      - user2
+      - user5
+    ```
+
+    ``` title="True 'Contains (exact)'"
     firstValue:
       - user1
       - user2
@@ -184,8 +183,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
       - user8
     ```  
 
-=== "(3) True: `Contains (exact)`"
-    ```
+    ``` title="True 'Contains (exact)'"
     firstValue:
       - user1
       - user2
@@ -197,8 +195,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
       - user7
     ```
 
-=== "(4) False: `Contains (exact)`"
-    ```
+    ``` title="False 'Contains (exact)'"
     firstValue:
       - user1
       - user2
@@ -209,7 +206,8 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
       - 1
       - 2
       - 3
-    ```  
+    ``` 
+</div>
 
 ### Custom values
 
