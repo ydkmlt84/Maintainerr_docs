@@ -122,7 +122,8 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 #### List Examples
 
 <div class="grid cards" markdown>
-- {.sm .middle} __True: `Contains (partial)`__
+
+- __True: `Contains (partial)`__
   ___
   
   ```bash
@@ -135,47 +136,53 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - ser
     - ser3
     - user
-    - 1
-    - 3
+    - ser1
+    - er3
   ```
-</div>
-=== "(2) True: `Contains (partial)`"
-    ```
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - user1
-      - user2
-      - user3
-      - user5
+
+- __True: `Contains (partial)`__
+  ___
+
+  ```bash
+  firstValue:
+    - user1
+    - user2
+    - user3
+  secondValue:
+    - user1
+    - user2
+    - user3
+    - user5
+  ```
+
+- __False: `Contains (partial)`__
+  ___
+
+  ```bash
+  firstValue:
+    - user1
+    - user2
+    - user3
+  secondValue:
+    - friend
+    - james
+    - wilhelm
+    - frank
     ```
 
-=== "(1) False: `Contains (partial)`"
-    ```
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - friend
-      - james
-      - wilhelm
-      - frank
-    ```
-
-=== "(1) True: `Contains (exact)`"
-    ```
-    firstValue:
-      - user1
-      - user2
-      - user3
-    secondValue:
-      - user1
-      - user2
-      - user5
-    ```
+- __True: `Contains (exact)`__
+  ___
+  
+  ```bash
+  firstValue:
+    - user1
+    - user2
+    - user3
+  secondValue:
+    - user1
+    - user2
+    - user5
+  ```
 
 === "(2) True: `Contains (exact)`"
     ```
