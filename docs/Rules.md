@@ -1,3 +1,6 @@
+---
+status: recent
+---
 
 Rules are the engine of Maintainerr. Media will be tested against the rule parameters and added to a collection, if they are a match.
 When media exists in the collection for a specified amount of time, they'll be deleted from disk & external applications.

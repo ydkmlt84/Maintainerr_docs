@@ -1,8 +1,8 @@
 ---
 status: new
 ---
-> !!! info
-    These are not going to solve *every* problem and the suggested solutions might not correct your problem. If you have tried what is laid out here and it still isn't working as expected. Please reach out on [Discord](https://discord.gg/WP4ZW2QYwk).
+!!! info
+    These are not going to solve *every* problem and the suggested solutions might not correct your problem. If you have tried what is laid out here, and it still isn't working as expected. Please reach out on [Discord](https://discord.gg/WP4ZW2QYwk).
 
 ## Spinning Circle
 
@@ -57,6 +57,6 @@ Q. When I try to load the Community Rules I get a spinning circle and they never
 A. Some of these services are self-hosted and some are hosted elsewhere. There are downtimes, but we try to minimize them as much as possible.
 
 ??? example "See The Fix?"
-    There is a website where you can see the status of our services. https://status.maintainerr.info
+    There is a website where you can see the status of our services. [Service Monitoring Site](https://status.maintainerr.info)
 
 :material-clock-edit: Last Updated: 10/10/24
