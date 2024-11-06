@@ -168,11 +168,11 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - james
     - wilhelm
     - frank
-    ```
+  ```
 
 - __True: `Contains (exact)`__
   ___
-  
+
   ```bash
   firstValue:
     - user1
@@ -183,7 +183,8 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - user2
     - user5
   ```
-
+  
+</div>
 === "(2) True: `Contains (exact)`"
     ```
     firstValue:
