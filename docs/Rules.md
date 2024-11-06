@@ -123,9 +123,11 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
 
 <div class="grid cards" markdown>
 
-- __True: `Contains (partial)`__
+- `Contains (partial)`
   ___
-  
+
+  True:
+
   ```bash
   firstValue:
     - user1
@@ -140,8 +142,10 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - er3
   ```
 
-- __True: `Contains (partial)`__
+- `Contains (partial)`
   ___
+
+  True:
 
   ```bash
   firstValue:
@@ -155,8 +159,10 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - user5
   ```
 
-- __False: `Contains (partial)`__
+- `Contains (partial)`
   ___
+
+  False:
 
   ```bash
   firstValue:
@@ -170,9 +176,11 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - frank
   ```
 
-- __True: `Contains (exact)`__
+- `Contains (exact)`
   ___
 
+  True:
+  
   ```bash
   firstValue:
     - user1
@@ -183,7 +191,7 @@ The difference between ***Contains/Contains (exact)*** and ***Contains (partial)
     - user2
     - user5
   ```
-  
+
 </div>
 === "(2) True: `Contains (exact)`"
     ```
