@@ -177,23 +177,23 @@ firstValue:
   - user1
   - user2
   - user3
-secondValue:
-  - user1
-  - user5
-  - user8
-```  
-
-``` title="True `Contains (exact)`"
-firstValue:
-  - user1
-  - user2
-  - user3
   - user7
 secondValue:
   - user1
   - user2
   - user7
 ```
+
+``` title="True `Contains (exact)`"
+firstValue:
+  - user1
+  - user2
+  - user3
+secondValue:
+  - user1
+  - user5
+  - user8
+```  
 
 ``` title="False `Contains (exact)`"
 firstValue:
