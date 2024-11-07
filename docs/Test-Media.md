@@ -12,8 +12,8 @@ The first thing you must do, in order to use this function, is to create a rule.
 
 <div class="grid" markdown>
 
-[Rules](https://docs.maintainerr.info/Rules/){.card .md-button}
+[Rules](https://docs.maintainerr.info/Rules/){.card .md-button .md-button--primary }
 
-<a href="https://docs.maintainerr.info/blog" target="_blank" class=".card">Walkthroughs</a>
+[Walkthroughs](https://docs.maintainerr.info/blog/){.card .md-button .md-button--primary }
 
 </div>
