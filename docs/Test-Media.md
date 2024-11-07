@@ -10,7 +10,7 @@ Maintainerr comes with a built-in feature to test your ruleset against your medi
 
 The first thing you must do, in order to use this function, is to create a rule. More on that can be found in the Rules documentation, as well as in the Walkthroughs.
 
-<p align="center">
+<p align="center" markdown>
 
 [Rules](https://docs.maintainerr.info/Rules/){ .md-button .md-button--primary }
 
