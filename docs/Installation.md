@@ -45,6 +45,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 
 
 ## Run
+
 ``` {.bash .annotate}
     docker run -d \
     --name maintainerr \
@@ -57,7 +58,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 ```
 
 1. This is defined as `host:container`.
-2. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image. The `latest` tag at the end is not required, unless you want to specify which tag to use.
+2. For this line, you could also use `jorenn92/maintainerr` instead, to use the DockerHub image.
 3. In Docker containers, you are able to bind a host directory to a directory inside the container. This allows for persistent data when a container is restarted or reset.
 
 ??? note "Development Versions"
@@ -82,12 +83,26 @@ Finally, run the container with the same parameters you originally used to creat
 
 You may alternatively use a third-party updating mechanism, such as [Watchtower](https://github.com/containrrr/watchtower), to keep Maintainerr up-to-date automatically.
 
+### Enabling Debugging
+To produce some more informational logging output, either the whole time Maintainerr is running or while you are troubleshooting a specific issue, we recommend turning on debug logging.
+
+``` bash hl_lines="4"
+    docker run -d \
+    --name maintainerr \
+    -e TZ=Europe/Brussels \
+    -e DEBUG=true\
+    -v <yourhostlocation>:/opt/data \
+    -u 1000:1000 \
+    -p 6246:6246 \
+    --restart unless-stopped \
+    ghcr.io/jorenn92/maintainerr:latest
+```
+
 ## Compose
 
 Define the Maintainerr service in your docker-compose.yml as follows.
 
-``` {.yaml .annotate}
-
+``` yaml {.annotate}
 services:
     maintainerr:
         image: ghcr.io/jorenn92/maintainerr:latest # (1)!
@@ -131,6 +146,26 @@ Then, restart all services defined in the Compose file:
 
 ```bash
 docker compose up -d
+```
+
+### Enabling Debugging
+To produce some more informational logging output, either the whole time Maintainerr is running or while you are troubleshooting a specific issue, we recommend turning on debug logging.
+
+``` yaml hl_lines="9-11"
+services:
+    maintainerr:
+        image: ghcr.io/jorenn92/maintainerr:latest # (1)!
+        user: 1000:1000
+        volumes:
+          - type: bind
+            source: <your host location> # (3)!
+            target: /opt/data
+        environment:
+          - TZ=Europe/Brussels
+          - DEBUG=true
+        ports:
+          - 6246:6246 # (2)!
+        restart: unless-stopped
 ```
 
 :material-clock-edit: Last Updated: 11/06/24
