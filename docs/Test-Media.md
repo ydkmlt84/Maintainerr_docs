@@ -8,5 +8,9 @@ Maintainerr comes with a built-in feature to test your ruleset against your medi
 
 ## Test Media button
 
-The first thing you must do, in order to use this function, is to create a rule. More on that can be found in the [Rules :simple-googledocs:](https://docs.maintainerr.info/Rules/){ .md-button .md-button--primary .sm} documentation, as well as in the [Guides :material-television-guide:](https://docs.maintainerr.info/blog){ .md-button .md-button--primary .sm}.
+The first thing you must do, in order to use this function, is to create a rule. More on that can be found in the Rules documentation, as well as in the Walkthroughs.
 
+<div class="grid">
+[Rules :simple-googledocs:](https://docs.maintainerr.info/Rules/){ .md-button }
+[Walkthroughs :material-television-guide:](https://docs.maintainerr.info/blog){ .md-button }
+</div>
