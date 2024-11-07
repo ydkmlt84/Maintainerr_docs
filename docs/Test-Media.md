@@ -94,5 +94,14 @@ As you can see the overall test result was false. This is because this specific 
 
 Test media results show you the `firstValue` which is the information returned from the service, in this case Overseerr.
 
-The results also show you the `secondValue` which is the custom text that you put in the rule to look for. In this case the `firstValue` returned a null value because this item was not requested in Overseerr, therefore there is no data on who requested it in Overseerr.
+Then it shows you the comparative, the `secondValue`, which is the custom text that you put in the rule to look for.
 
+In this case the `firstValue` returned a null value because this item was not requested in Overseerr, therefore there is no data on who requested it in Overseerr.
+
+## Test Media results
+
+Using this information we can tell that this specific Movie would not be added to this rule's collection, because it did not meet the criteria that we setup in the rule. If we expected to see this Movie in the collection, we now know why it wouldn't have been added.
+
+If we did not know why a tested item was added to the collection, we can use Test Media to see why it was.
+
+This is helpful when you are trying to test a specific rule, usually one that is complex. You can test against a Movie to see if, when that rule would be executed, would it add a specific Movie to the collection. Or, would it not add it if that is what we are testing.
