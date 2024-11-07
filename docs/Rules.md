@@ -147,8 +147,10 @@ secondValue:
   - user2
   - user3
   - user5
-<br />
-<br />
+&nbsp;
+
+&nbsp;
+
 ```
 
 ``` title="False `Contains (partial)`"
