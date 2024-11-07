@@ -28,6 +28,7 @@ Click on the name of the collection that you want to test rules for. You will be
 
 Depending on what type of library/media this collection is for, you will have different options at the top of this popup.
 
+| ----- | -------- |
 | Media | Name of a Movie or TVShow that you want to test |
 | Season | Select which season you want to test (if TV) |
 | Episode | Select the episode you want to test (if TV) |
@@ -77,19 +78,24 @@ Below is an example of your test's output.
 
 ### Test Output breakdown
 
-- ``` yaml title="this is the plexid of the tested item, and the overall result"
-    - plexId: 73061
+<div class="grid" markdown>
+
+``` title="this is the plexid of the tested item, and the overall result"
+- plexId: 73061
+  result: false
+```
+
+``` title="this is the output of the rule's section 1"
+- id: 0
+  result: false
+  ruleResults:
+    - operator: OR
+      action: equals
+      firstValueName: Overseerr - Requested in Overseerr
+      firstValue: null
+      secondValueName: boolean
+      secondValue: 1
       result: false
-  ```
-- ``` yaml title="this is the output of the rule's section 1"
-    - id: 0
-      result: false
-      ruleResults:
-        - operator: OR
-          action: equals
-          firstValueName: Overseerr - Requested in Overseerr
-          firstValue: null
-          secondValueName: boolean
-          secondValue: 1
-          result: false
-  ```        
+```
+
+</div>
