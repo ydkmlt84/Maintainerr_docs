@@ -19,7 +19,7 @@ If the `Show on home` option was checked, the Plex Collection will be shown on a
 
 You can manually add media to a collection on the `Overview` page, by using the `Add` button on the media. Using the button will open a popup where you are able to pick the collection you wish to add the media to.
 
-!!! warning ""
+!!! warning
     Please note that the first option selected is to **remove** media from all collections. However, if the media was added by the rule handler, it will be added again. If you wish to counter this behaviour, you must also exclude it from all collections.
 
 ### Removing
@@ -28,7 +28,7 @@ As mentioned in the section above, you are able to remove media from all collect
 
 However, if you wish to just remove media from 1 collection it's easier to click on the collection's name on the `collections` page. This will show all media currently added to the collection. There you're able to remove specific media from the collection by using the `Remove` button.
 
-!!! note ""
+!!! note
     This will also exclude media from rule handling for this collection, so it won't be added again.
 
 ### Excluding
@@ -48,4 +48,3 @@ When media has exclusions, an `Excl` badge will be shown on the top-right side o
 - You could add media directly to the Plex collection within Plex. Maintainerr will sync Media with the Plex collection. (The Plex collection might not always be available in case you're using an automatic collection)
 
 :material-clock-edit: Last Updated: 10/10/24
-

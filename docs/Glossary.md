@@ -496,7 +496,6 @@ The key is used for identification in Yaml rule files.
 - Key: Sonarr.part_of_latest_season
 - Availability: seasons, episodes
 - Type: boolean
--
 
 #### Base file path
 
