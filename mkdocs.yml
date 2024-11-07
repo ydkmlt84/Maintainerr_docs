@@ -187,7 +187,9 @@ nav:
   - Rules:
     - Rule Explanations: Rules.md
     - Rules Glossary: Glossary.md
-  - Collections: Collections.md
+  - Collections: 
+    - Collections: Collections.md
+    - Test Media: Test-Media.md
   - Community:
     - Introduction.md
     - Contributing.md
