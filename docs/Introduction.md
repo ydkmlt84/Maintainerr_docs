@@ -17,7 +17,8 @@
 
 **Maintainerr** makes managing your media easy. No longer do you have to worry about your precious hard drive space being taken up by Movies and TVShows, that aren't even being watched.
 
-> Maintainerr is beta software, please report any bugs or issues.
+!!! note ""
+    Maintainerr is beta software, please report any bugs or issues.
 
 ## Features
 
