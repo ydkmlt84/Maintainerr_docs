@@ -24,14 +24,72 @@ Click on the name of the collection that you want to test rules for. You will be
 
  ![test-media](images/test-media-button.png)
 
-## Test Media screen
+## Test Media popup
 
 Depending on what type of library/media this collection is for, you will have different options at the top of this popup.
 
-| Field | Value |
-| ----- | ----- |
-| Media | Name of a movie or TVShow that you want to test |
+| Media | Name of a Movie or TVShow that you want to test |
 | Season | Select which season you want to test (if TV) |
 | Episode | Select the episode you want to test (if TV) |
 | Output | The test results in YAML format |
 
+### Test your media
+
+When you first come to the Test Media page the media field will say `Start typing...`. This is where you will start typing the name of a Movie or TVShow. As you type there will be options that popup (from your library), similar to how Google search works. You can search for any Movie or any TVShow, regardless of what library the rule is tied to, as long as the type is the same. You can't search for a Movie if the type of library is TV. Select the item, choose the season and episode if applicable, then click on test at the bottom.
+
+### Test output
+
+Below is an example of your test's output.
+
+```yaml
+- plexId: 73061
+  result: false
+  sectionResults:
+    - id: 0
+      result: false
+      ruleResults:
+        - operator: OR
+          action: equals
+          firstValueName: Overseerr - Requested in Overseerr
+          firstValue: null
+          secondValueName: boolean
+          secondValue: 1
+          result: false
+    - id: 1
+      result: false
+      operator: OR
+      ruleResults:
+        - operator: OR
+          action: before
+          firstValueName: Plex - Date added
+          firstValue: 2022-11-14T03:07:53.000Z
+          secondValueName: custom_days
+          secondValue: 2024-09-08T19:12:59.844Z
+          result: true
+        - operator: AND
+          action: equals
+          firstValueName: Overseerr - Requested in Overseerr
+          firstValue: null
+          secondValueName: boolean
+          secondValue: 1
+          result: false
+```
+
+### Test Output breakdown
+
+- ``` yaml title="this is the plexid of the tested item, and the overall result"
+    - plexId: 73061
+      result: false
+  ```
+- ``` yaml title="this is the output of the rule's section 1"
+    - id: 0
+      result: false
+      ruleResults:
+        - operator: OR
+          action: equals
+          firstValueName: Overseerr - Requested in Overseerr
+          firstValue: null
+          secondValueName: boolean
+          secondValue: 1
+          result: false
+  ```        
