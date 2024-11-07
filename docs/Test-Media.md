@@ -28,7 +28,8 @@ Click on the name of the collection that you want to test rules for. You will be
 
 Depending on what type of library/media this collection is for, you will have different options at the top of this popup.
 
-| ----- | -------- |
+| Item  | Value   |
+| ----- | ------- |
 | Media | Name of a Movie or TVShow that you want to test |
 | Season | Select which season you want to test (if TV) |
 | Episode | Select the episode you want to test (if TV) |
