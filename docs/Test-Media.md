@@ -12,7 +12,7 @@ The first thing you must do, in order to use this function, is to create a rule.
 
 <div class="grid" markdown>
 
-[Rules](https://docs.maintainerr.info/Rules/){.card}
+[Rules](https://docs.maintainerr.info/Rules/){.card .md-button}
 
 <a href="https://docs.maintainerr.info/blog" target="_blank" class=".card">Walkthroughs</a>
 
