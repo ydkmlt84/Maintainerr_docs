@@ -37,7 +37,11 @@ Depending on what type of library/media this collection is for, you will have di
 
 ### Test your media
 
-When you first come to the Test Media page the media field will say `Start typing...`. This is where you will start typing the name of a Movie or TVShow. As you type there will be options that popup (from your library), similar to how Google search works. You can search for any Movie or any TVShow, regardless of what library the rule is tied to, as long as the type is the same. You can't search for a Movie if the type of library is TV. Select the item, choose the season and episode if applicable, then click on test at the bottom.
+When you first come to the Test Media page the media field will say `Start typing...`. This is where you will start typing the name of a Movie or TVShow. As you type there will be options that popup (from your library), similar to how Google search works. 
+
+You can search for any Movie or any TVShow, regardless of what library the rule is tied to, as long as the type is the same. You can't search for a Movie if the type of library is TV. 
+
+Select the item, choose the season and episode if applicable, then click on test at the bottom.
 
 ### Test output
 
@@ -51,29 +55,11 @@ Below is an example of your test's output.
       result: false
       ruleResults:
         - operator: OR
-          action: equals
-          firstValueName: Overseerr - Requested in Overseerr
+          action: contains_partial
+          firstValueName: Overseerr - Requested by user (Plex or local username)
           firstValue: null
-          secondValueName: boolean
-          secondValue: 1
-          result: false
-    - id: 1
-      result: false
-      operator: OR
-      ruleResults:
-        - operator: OR
-          action: before
-          firstValueName: Plex - Date added
-          firstValue: 2022-11-14T03:07:53.000Z
-          secondValueName: custom_days
-          secondValue: 2024-09-08T19:12:59.844Z
-          result: true
-        - operator: AND
-          action: equals
-          firstValueName: Overseerr - Requested in Overseerr
-          firstValue: null
-          secondValueName: boolean
-          secondValue: 1
+          secondValueName: text
+          secondValue: ydkmlt84
           result: false
 ```
 
@@ -86,17 +72,27 @@ Below is an example of your test's output.
   result: false
 ```
 
-``` title="this is the output of the rule's section 1"
+``` title="this is the overall result of the rule's section 1 (with an `id` of 0)"
 - id: 0
   result: false
-  ruleResults:
-    - operator: OR
-      action: equals
-      firstValueName: Overseerr - Requested in Overseerr
-      firstValue: null
-      secondValueName: boolean
-      secondValue: 1
-      result: false
+```
+
+``` title="this is the output of the rule from that section"
+ruleResults:
+  - operator: OR
+    action: contains_partial
+    firstValueName: Overseerr - Requested by user (Plex or local username)
+    firstValue: null
+    secondValueName: text
+    secondValue: ydkmlt84
+    result: false
 ```
 
 </div>
+
+As you can see the overall test result was false. This is because this specific rule is testing to see if `Overseerr - Requested by user (Plex or local username)` contains_partial `ydkmlt84`. Which it did not.
+
+Test media results show you the `firstValue` which is the information returned from the service, in this case Overseerr.
+
+The results also show you the `secondValue` which is the custom text that you put in the rule to look for. In this case the `firstValue` returned a null value because this item was not requested in Overseerr, therefore there is no data on who requested it in Overseerr.
+
