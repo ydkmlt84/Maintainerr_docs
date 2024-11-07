@@ -10,7 +10,7 @@ Maintainerr comes with a built-in feature to test your ruleset against your medi
 
 The first thing you must do, in order to use this function, is to create a rule. More on that can be found in the Rules documentation, as well as in the Walkthroughs.
 
-<div class="grid">
-[Rules :simple-googledocs:](https://docs.maintainerr.info/Rules/){ .md-button }
-[Walkthroughs :material-television-guide:](https://docs.maintainerr.info/blog){ .md-button }
+<div class="grid" markdown>
+<a href="https://docs.maintainerr.info/Rules/" class="card">Rules</a>
+<a href="https://docs.maintainerr.info/blog" class="card">Walkthroughs</a>
 </div>
