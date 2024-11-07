@@ -48,10 +48,11 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script_stop: true
           script: /bin/sh /home/thatoneguy99/.docker/mkdocs/action_execute_dev.sh
-      - name: Actions for Discord
-        if: ${{ github.ref_name == 'main'}}
-        uses: Ilshidur/action-discord@0.3.2
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-        with:
-          args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
+      #- Saving the Discord notifications for later when there are less updates.    
+      #- name: Actions for Discord
+      #  if: ${{ github.ref_name == 'main'}}
+      #  uses: Ilshidur/action-discord@0.3.2
+      #  env:
+      #    DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      #  with:
+      #    args: 'The docs have been updated. Take a look. https://docs.maintainerr.info'
