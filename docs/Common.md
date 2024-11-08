@@ -16,9 +16,9 @@ A. This is due to a permissions problem. The container runs by default as user 1
 
 ## Webpage is stuck
 
-Q. When I open the page for the first time I can click on  things but nothing is happening.
+Q. When I open the page for the first time I can click on things but nothing is happening.
 
-A. When the Maintainerr page loads up for the very first time, it is supposed to auto-direct to the Plex settings page. Sometimes it doesn't work and the page looks stuck.
+A. When the Maintainerr page loads up for the very first time, it is supposed to auto-direct to the Plex settings page. Sometimes it doesn't happen and the page looks stuck.
 
 ??? example "See The Fix?"
     refresh the page
@@ -45,14 +45,14 @@ A. Maintainerrs original design was to mirror Netflix's going away soon category
 
 Q. Is there a set of pre-made rules somewhere that I can use as a starting point?
 
-A. There is a Community button when you are inside of a new rule. You can pull Community uploaded rules from there. There is a vote feature to show if a rule is good/popular or if it doesn't work as expected. These rules are not tested are guaranteed to work as advertised. The Community is free to upload as they wish.
+A. There is a `Community` button when you are inside of a new rule. You can pull Community uploaded rules from there. There is a vote feature to show if a rule is good/popular, or if it doesn't work as expected. These rules are not tested or guaranteed to work as advertised. The Community is free to upload as they wish.
 
 ??? example "See The Fix?"
     ![Community Button](images/community_button.png)
 
 ## Status of Services
 
-Q. When I try to load the Community Rules I get a spinning circle and they never load. The Feature Request page isn't loading.
+Q. When I try to load the Community Rules I get a spinning circle and they never load. The Feature Requests page isn't loading.
 
 A. Some of these services are self-hosted and some are hosted elsewhere. There are downtimes, but we try to minimize them as much as possible.
 
