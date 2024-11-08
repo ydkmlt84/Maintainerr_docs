@@ -105,3 +105,15 @@ Using this information we can tell that this specific Movie would not be added t
 If we did not know why a tested item was added to the collection, we can use Test Media to see why it was.
 
 This is helpful when you are trying to test a specific rule, usually one that is complex. You can test against a Movie to see if, when that rule would be executed, would it add a specific Movie to the collection. Or, would it not add it if that is what we are testing.
+
+## Note about Test Media Results
+
+Test Media results do not always include the result of every rule in your ruleset. As mentioned elsewhere, the rules run in order.
+
+For example:  If Rule 2 is an AND to Rule 1, and Rule 1 is determined to be `FALSE`, then only the output of Rule 1 will be shown. This is because Maintainerr didn't even test Rule 2.
+
+It is logically impossible for something to be `1 AND 2`, if it is not `1` to begin with. There is no point in testing Rule 2, because it will not have an impact on the results.
+
+This same thing occurs between Sections as well.
+
+The only time this will not be the case is when the OR operator is used. It IS logically possible for the results to be 2, even when it isn't 1, when using `1 OR 2` logic.
