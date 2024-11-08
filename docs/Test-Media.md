@@ -90,7 +90,7 @@ ruleResults:
 
 </div>
 
-As you can see the overall test result was false. This is because this specific rule is testing to see if `Overseerr - Requested by user (Plex or local username)` contains_partial `ydkmlt84`. Which it did not.
+As you can see, the overall test result was false. This is because this specific rule is testing to see if `Overseerr - Requested by user (Plex or local username)` contains_partial `ydkmlt84`. Which it did not.
 
 Test media results show you the `firstValue` which is the information returned from the service, in this case Overseerr.
 
