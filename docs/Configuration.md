@@ -2,6 +2,12 @@
 All configuration is done inside the application, no extra config is required in files. </br>
 When you first access the webUI, you will be redirected to the settings page. If this doesn't happen, refresh the page.
 
+!!! info
+    All Base URL settings are to be entered without the leading slash.
+
+    - Right: `tautulli`
+    - Wrong: `/tautulli`
+
 ## General
 
 These settings are OK for most installations.
