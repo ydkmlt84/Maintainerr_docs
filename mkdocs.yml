@@ -193,6 +193,7 @@ nav:
   - Community:
     - Introduction.md
     - Contributing.md
+    - Testing.md
   - API:
     - API.md  
   - Walkthroughs:
