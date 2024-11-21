@@ -13,7 +13,7 @@ We have implemented a way to test a specific pull request (new feature), using *
 
 ### Install Method
 
-In order to test these PR images, a dev would first need to create one. After the image is created, you can see its image name at the GHCR link here. [GHCR images](https://github.com/jorenn92/Maintainerr/pkgs/container/maintainerr). Again, docker is the only current method for testing these images.
+In order to test these PR images, a dev would first need to create one. After the image is created, you can see its image name at the GHCR link here -> [GHCR images](https://github.com/jorenn92/Maintainerr/pkgs/container/maintainerr). Again, Docker is the only method for testing these images.
 
 ### Getting Started
 
@@ -21,7 +21,7 @@ You can run the PR image using either docker run, or docker compose. Compose is 
 
 !!! info
       If you need too much more than what is outlined in this page, as far as installing the PR image...maybe you shouldn't be testing such bleeding edge features. Anywhere you see `<xxxx-xxxx>`, is considered a placeholder for *variable* information. Don't exactly copy and paste what is here, as it won't work without you making some changes first.
-      All of the same applies as far as file/folder permissions from the main [Installation](Installation.md) page.
+      All of the same applies, as far as file/folder permissions, from the main [Installation](Installation.md) page.
 
 #### Docker Run
 
@@ -58,16 +58,16 @@ services:
 
 ### Reporting Issues
 
-You should only be here because you're either a specified tester, or a dev has asked you to test a new feature. If either of these are the case, remember that we need your feedback. Take a look at what the PR is for, what feature it is implementing, and what testing we are looking for.
+Remember, we need your feedback! Take a look at what the PR is for, what feature it is implementing, and what testing we are looking for.
 
-Reports should only be made in one of the two ways:
+Reports should be made in one of the two ways:
 
 - [Github PR page](https://github.com/jorenn92/Maintainerr/pulls)
 
-- [Discord pr-testers](https://discord.com/channels/1152219249549512724/1308806484343132250)
+- [Discord](https://discord.gg/WP4ZW2QYwk)
 
 ??? note "Discord Link"
-      If the **Discord pr-testers** link doesn't work for you, it is because you need to be a member of the testers role. Message ydkmlt84 on Discord and he can help you out.
+      If the **Discord** link doesn't work for you, message ydkmlt84 on Discord and he can help you out.
 
 Pay special attention to how you are submitting reports to the PR, or in Discord. We need specific information, we need logs, we need all of the information you can give us so we can recreate the problem on our end.
 
