@@ -62,6 +62,10 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 3. In Docker containers, you are able to bind a host directory to a directory inside the container. This allows for persistent data when a container is restarted or reset.
 
 ??? note "Development Versions"
+    Whilst the development version contains all of the latest features and bug fixes, there is a chance things will break. By using a development version you must be willing to report any issues you come across to the development team and provide them as much information as possible to help us resolve the issue.
+
+    Changing from a development version to a stable version is not supported.
+
     - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
     - `jorenn92/maintainerr:develop` for the Docker Hub development image.
 
@@ -124,6 +128,10 @@ services:
 3. In Docker containers, you are able to bind a host directory to a directory inside the container. This allows for persistent data when a container is restarted or reset.
 
 ??? note "Development Versions"
+    Whilst the development version contains all of the latest features and bug fixes, there is a chance things will break. By using a development version you must be willing to report any issues you come across to the development team and provide them as much information as possible to help us resolve the issue.
+
+    Changing from a development version to a stable version is not supported.
+
     - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
     - `jorenn92/maintainerr:develop` for the Docker Hub development image.
 
