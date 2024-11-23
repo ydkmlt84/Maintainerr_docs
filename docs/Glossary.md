@@ -591,4 +591,68 @@ The key is used for identification in Yaml rule files.
 - Availability: shows, seasons
 - Type: text[]
 
+#### Users that watch the show/season/episode
+
+!!! info ""
+    List of users who watch (according to Tautulli) the Plex item. The percentage for an episode to be considered as viewed is configured in the Tautulli settings. This rule is only available for shows.
+
+- Key: Tautulli.sw_watchers
+- Availability: shows, seasons, episodes
+- Type: text[]
+
+#### Date added
+
+!!! info ""
+    The date when the Plex item was added to the server.
+
+- Key: Tautulli.addDate
+- Availability: movies, shows, seasons, episodes
+- Type: date
+
+#### Times viewed
+
+!!! info ""
+    The number of times the Plex item has been viewed (according to Tautulli). The percentage for the Plex item to be considered as viewed is configured in the Tautulli settings.
+
+- Key: Tautulli.viewCount
+- Availability: movies, shows, seasons, episodes
+- Type: number
+
+#### Total views
+
+!!! info ""
+    The total number of views (according to Tautulli) for the Plex item. The percentage for an episode to be considered as viewed is configured in the Tautulli settings. This rule is only available for shows.
+
+- Key: Tautulli.sw_amountOfViews
+- Availability: shows, seasons, episodes
+- Type: number
+
+#### Last view date
+
+!!! info ""
+    The date when the Plex item was last viewed (according to Tautulli). The percentage for the Plex item to be considered as viewed is configured in the Tautulli settings.
+
+- Key: Tautulli.lastViewedAt
+- Availability: movies, shows, seasons, episodes
+- Type: date
+
+#### Amount of watched episodes
+
+!!! info ""
+    The number of episodes that have been watched (according to Tautulli) for the Plex item. The percentage for an episode to be considered as viewed is configured in the Tautulli settings. This rule is only available for shows.
+
+- Key: Tautulli.sw_viewedEpisodes
+- Availability: shows, seasons
+- Type: number
+
+#### Newest episode view date
+
+!!! info ""
+    The date when the newest episode of the Plex item was viewed (according to Tautulli). The percentage for an episode to be considered as viewed is configured in the Tautulli settings. This rule is only available for shows.
+
+- Key: Tautulli.sw_lastWatched
+- Availability: shows, seasons
+- Type: date
+
+
 :material-clock-edit: Last Updated: 10/10/24
