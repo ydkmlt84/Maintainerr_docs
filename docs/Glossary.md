@@ -38,7 +38,8 @@ The key is used for identification in Yaml rule files.
 
 !!! info ""
     The user rating of the Plex item on a scale of 1 to 10.
-    ** Currently, only checks for the server owner's ratings.**
+
+    Currently, only checks for the server owner's ratings.
 
 - Key: Plex.rating_user
 - Availability: movies, shows, seasons, episodes
