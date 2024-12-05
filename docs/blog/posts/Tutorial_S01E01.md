@@ -61,18 +61,18 @@ We will start from the top of a new rule.
 - 2: Self explanatory but you can put whatever you want here. It will be shown in Plex when you open the collection.
      <p align="center"><img alt"screenshot_plex" src="https://docs.maintainerr.info/images/screenshot_plex_collection.png" width="75%"></p>
 - 3: Drop-down list of your Plex Libraries. Which library is this rule going to be run against?
-- 4: This will not be shown if you select a `Movies` library in #3. If you selected a `TVShow` library, your options will be shows/seasons/episodes. What type of TVShow media are we going to run the rule against? An entire show, just seasons, or just episodes? Different options will be made available to you or taken away, depending on what you select here.
-- 5: Sonarr/Radarr action is what is going to happen after the `action after days` set in #6. Options are dependent on the library and media type from above. `Delete` will remove the files and the item from Sonarr/Radarr. `Unmonitor and delete` will unmonitor (not remove) the item from Sonarr/Radarr but delete the files. `Unmonitor and keep` will unmonitor the item from Sonarr/Radarr and <u>**keep**</u> the files.
-- 6: Think of this as a "delay" setting. How many days after this rule is ran, items have been matched to this rules filter parameters and added to the collection, will we execute the action set in #5?
+- 4: This will not be shown if you select a `Movies` library in Step 3. If you selected a `TVShow` library, your options will be shows/seasons/episodes. What type of TVShow media are we going to run the rule against? An entire show, just seasons, or just episodes? Different options will be made available to you or taken away, depending on what you select here.
+- 5: Sonarr/Radarr action is what is going to happen after the `action after days` set in step6. Options are dependent on the library and media type from above. `Delete` will remove the files and the item from Sonarr/Radarr. `Unmonitor and delete` will unmonitor (not remove) the item from Sonarr/Radarr but delete the files. `Unmonitor and keep` will unmonitor the item from Sonarr/Radarr and <u>**keep**</u> the files.
+- 6: Think of this as a "delay" setting. How many days after this rule is ran, items have been matched to this rules filter parameters and added to the collection, will we execute the action set in step 5?
 
 <p align="center"><img alt="screenshot-2"src="https://docs.maintainerr.info/images/screenshot-2.png" width="75%"></img></p>
 
 - 7: How many months are we going to keep logs of this collections actions?
 - 8: Is this Rule active? Will it be one of the rules ran either by a manual run, or through periodic runs?
 - 9: Is this collection going to be shown on the Plex Home screen, or are you only going to be able to see it through the Plex Library screen?
-- 10: When the action set in #5 is taken, will Maintainerr also send a hit back to Sonarr/Radarr that excludes this item from being automatically added by any import lists?
+- 10: When the action set in step 5 is taken, will Maintainerr also send a hit back to Sonarr/Radarr that excludes this item from being automatically added by any import lists?
 - 11: :warning: It is recommended to keep this option off as it uses an outdated method. Maintainerr now automatically does this.
-  - When the action set in #5 is taken, will we tell Overseerr that this item is no longer available and can be requested again?
+  - When the action set in step 5 is taken, will we tell Overseerr that this item is no longer available and can be requested again?
 - 12: You can toggle the rule system off and on. This is useful if you have collections in Plex that you want to see in Maintainerr, but don't want any actions taken on the collection.
 - 13: You can create a collection in Plex, and then use that collection in Maintainerr. If you are doing that, tick this Custom Collection box to on. This can be useful if there is a collection made by say PMM or by you, and you want to execute some rules against it.
 
