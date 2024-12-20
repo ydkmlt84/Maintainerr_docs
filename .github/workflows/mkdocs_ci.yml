@@ -24,8 +24,7 @@ jobs:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
-            mkdocs-material-
-      - run: apt-get install pngquant 
+            mkdocs-material- 
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: mkdocs gh-deploy --force
 env:
