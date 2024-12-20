@@ -92,7 +92,7 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - social:
       cards_layout: default/variant
-  - glightbox
+  #- glightbox
   - swagger-ui-tag
 # Hooks
 hooks:
