@@ -184,6 +184,7 @@ nav:
     - Installation: Installation.md
     - Configuring Maintainerr: Configuration.md
     - Common Issues: Common.md
+    - Reverse Proxy Config: ReverseProxy.md
   - Rules:
     - Rule Explanations: Rules.md
     - Rules Glossary: Glossary.md
