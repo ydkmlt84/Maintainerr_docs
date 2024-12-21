@@ -25,6 +25,8 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material- 
+      - run: pip install mkdocs-glightbox
+      - run: pip install mkdocs-swagger-ui-tag
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: mkdocs gh-deploy --force
 env:
