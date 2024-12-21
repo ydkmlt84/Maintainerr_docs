@@ -25,7 +25,7 @@ site_url: https://docs.maintainerr.info
 site_author: ydkmlt84
 site_description: >-
   Documentation for the wildly popular Maintainerr project.
-use_directory_urls: false
+use_directory_urls: true
 # Repository
 repo_name: jorenn92/maintainerr
 repo_url: https://github.com/jorenn92/maintainerr
@@ -92,8 +92,8 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - social:
       cards_layout: default/variant
-  #- glightbox
-  #- swagger-ui-tag
+  - glightbox
+  - swagger-ui-tag
 # Hooks
 hooks:
   - docs/overrides/hooks/shortcodes.py
