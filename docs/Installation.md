@@ -176,4 +176,17 @@ services:
         restart: unless-stopped
 ```
 
-:material-clock-edit: Last Updated: 11/06/24
+## Environment Variables
+
+A list of all available environment variables are below. No other env variables are officially supported by Maintainerr. These are added either into the compose file or your docker run command.
+
+| Variable | Default Value |
+|----------|-------|
+| TZ | Europe/Brussels |
+| DEBUG | false |
+| API_PORT | 3001 |
+| UI_PORT | 6246 |
+| UI_HOSTNAME | 0.0.0.0 |
+| BASE_PATH | `empty` |
+
+:material-clock-edit: Last Updated: 12/20/24
