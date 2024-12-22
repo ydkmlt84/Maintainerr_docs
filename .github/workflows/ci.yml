@@ -1,11 +1,6 @@
 name: pushed_updates
 run-name: ${{ github.actor }} Update docs after changes are pushed.
-on:
-  push:
-    branches:
-      - 'main'
-  release:
-    type: [published]       
+on:    
   workflow_dispatch:
     inputs:
       dry-run:
