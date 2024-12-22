@@ -5,7 +5,7 @@ status: recent
 Docker is Maintainerr's supported method of installation.
 
 Images for amd64 & arm64 are available under `jorenn92/maintainerr` and `ghcr.io/jorenn92/maintainerr`.
-The containers data location is set as /opt/data. A docker [volume][tooltip] is strongly encouraged to persist your configuration.
+The containers data location is set as /opt/data. A Docker [volume][tooltip] is strongly encouraged to persist your configuration.
 
 [tooltip]: https://docs.docker.com/storage/volumes/#start-a-container-with-a-volume "Click here to be taken to the Docker documentation page on volumes."
 
@@ -19,7 +19,7 @@ The containers data location is set as /opt/data. A docker [volume][tooltip] is 
 
       It is possible that you will need to change permissions on the host's data directory. (1)
 
-1. The data directory location largely depends on how you are installing Maintainerr. If using docker, these are the two places where could you set the host data directory.
+1. The data directory location largely depends on how you are installing Maintainerr. If using Docker, these are the two places where could you set the host data directory.
 
     Docker run:
 
@@ -180,13 +180,13 @@ services:
 
 A list of all available environment variables are below. No other env variables are officially supported by Maintainerr. These are added either into the compose file or your docker run command.
 
-| Variable | Default Value |
-|----------|-------|
-| TZ | Europe/Brussels |
-| DEBUG | false |
-| API_PORT | 3001 |
-| UI_PORT | 6246 |
-| UI_HOSTNAME | 0.0.0.0 |
-| BASE_PATH | `empty` |
+| Variable | Default Value | Description |
+|----------|-------|----------|
+| TZ | *host timezone* | Controls date formatting in logs. |
+| DEBUG | false | Toggles debug logging. |
+| UI_HOSTNAME | 0.0.0.0 | The listen host of the UI web server. Can be set to :: for IPv6. |
+| UI_PORT | 6246 | The listen port of the UI web server. |
+| API_PORT | 3001 | The listen port of the API server. |
+| BASE_PATH | *<empty>* | If reverse proxying with a subfolder you'll want to set this. Must be in the format of `/subfolder` |
 
-:material-clock-edit: Last Updated: 12/20/24
+:material-clock-edit: Last Updated: 12/22/24
