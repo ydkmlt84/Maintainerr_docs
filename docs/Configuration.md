@@ -50,6 +50,7 @@ Radarr's configuration is required to use its parameters in rules and to remove 
 
 | Param | Description           |
 | ------------- |:-------------:|
+| Server Name   | A friendly name to help identify the server |
 | Hostname or IP| The domain name or local IP of the host your server runs on |
 | Port          | The port Radarr runs on |
 | Base URL      | URL Base set in Radarr settings (if set)|
@@ -61,6 +62,7 @@ Sonarr's configuration is required to use its parameters in rules and to remove 
 
 | Param | Description           |
 | ------------- |:-------------:|
+| Server Name   | A friendly name to help identify the server |
 | Hostname or IP| The domain name or local IP of the host your server runs on |
 | Port          | The port Sonarr runs on |
 | Base URL      | URL Base set in Sonarr Settings (if set)|

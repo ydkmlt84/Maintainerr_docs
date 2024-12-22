@@ -193,7 +193,7 @@ nav:
     - Test Media: Test-Media.md
   - Community:
     - Introduction.md
-    - Contributing.md
+    - Contributing: https://github.com/jorenn92/Maintainerr/blob/main/CONTRIBUTING.md
     - Testing.md
   - API:
     - API.md  
