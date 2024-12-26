@@ -38,7 +38,7 @@ The data directory location largely depends on how you are installing Maintainer
     ``` markdown
     volumes:
       - type: bind
-        source: `<your host location>`
+        source: <your host location>
         target: /opt/data
     ```   
 
