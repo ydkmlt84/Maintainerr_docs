@@ -111,7 +111,7 @@ hooks:
 # Additional configuration
 extra_javascript:
   - assets/javascripts/consent.js
-  - assets/javascrtips/feedback.js
+  - assets/javascripts/feedback.js
 extra_css:
   - assets/stylesheets/extra.css
 extra:
