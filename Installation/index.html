@@ -856,10 +856,10 @@ The containers data location is set as /opt/data. A Docker <a href="https://docs
 <p class="admonition-title">Tip</p>
 <p><strong>Make sure your data volume is read/writeable by this UID:GID!</strong></p>
 <p>It is possible that you will need to change permissions on the host's data directory.</p>
-<p><code>chown -R 1000:1000 /opt/data</code>  This is a "change owner" command that changes the owner of /opt/data to 1000:1000.</p>
+<p><code>chown -R 1000:1000 /opt/data</code>  This is a "change owner" command that changes the owner of <code>/opt/data</code> to <code>1000:1000</code>.</p>
 </div>
-<p>The data directory location largely depends on how you are installing Maintainerr. If using Docker, these are the two places where could you set the host data directory.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="run_1" name="__tabbed_1" type="radio"><input id="compose_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="run_1">Run</label><label for="compose_1">Compose</label></div>
+<p>Setting the host data directory largely depends on how you are installing Maintainerr. If using Docker, these are the two places where you would set the host data directory, depending on your method.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="run-command" name="__tabbed_1" type="radio"><input id="compose_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="run-command">Run Command</label><label for="compose_1">Compose</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><code>-v &lt;your host location&gt;:/opt/data \</code></p>
