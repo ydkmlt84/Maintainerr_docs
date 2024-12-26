@@ -47,3 +47,4 @@ status: new
     }
     ```
     [^1]: Ensure that your SWAG version is up to date, as the older versions have pre-2.0 Maintainerr setup.
+    
