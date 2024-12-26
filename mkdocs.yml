@@ -146,10 +146,7 @@ extra:
       - manage
     cookies:
       analytics: matomo
-      custom: _pk_id
-      custom: _pk_ses
-      custom: _pk_ref
-      custom: _pk_testcookie
+      custom: feedback_tracking
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jorenn92/maintainerr
@@ -158,7 +155,7 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/WP4ZW2QYwk
     - icon: material/cookie-cog
-      link: https://docs.maintainerr.info/#__consent
+      link: '#__consent'
     - icon: material/gavel
       link: https://github.com/jorenn92/Maintainerr/blob/main/LICENSE
   status:
