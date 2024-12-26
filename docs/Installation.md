@@ -9,7 +9,6 @@ The containers data location is set as /opt/data. A Docker [volume][tooltip] is 
 
 [tooltip]: https://docs.docker.com/storage/volumes/#start-a-container-with-a-volume "Click here to be taken to the Docker documentation page on volumes."
 
-
 !!! info
     You have the <font color="orange"> option </font> to define a User and Group ID for running the container. Maintainerr will utilize the user:group setting as it's running user (inside the container), and any files it generates within your host data volume will be associated with this designated user and group. If not explicitly specified, the default UID:GID is set to 1000:1000.
     <font color="red">See [Run](#run) and [Compose](#compose) below for examples.</font>
@@ -25,7 +24,7 @@ The containers data location is set as /opt/data. A Docker [volume][tooltip] is 
 
           -v <your host location>:/opt/data \ 
 
-    Docker compose: 
+    Docker compose:
 
           volumes:
           - type: bind
@@ -33,16 +32,15 @@ The containers data location is set as /opt/data. A Docker [volume][tooltip] is 
             target: /opt/data
 
 === "Linux Permissions Example"
-          chown -R 1000:1000 /opt/data
+    chown -R 1000:1000 /opt/data
 
 === "Windows Permissions"
-	
-		1. Right-click the file or folder you want to set permissions for and select "Properties".
-		2. Navigate to the "Security" tab.
-		3. Click on the "Edit" button to change permissions.
-		4. In the permissions window, select a user or group from the list. Then, check or uncheck the boxes in the "Permissions for [username]" section to grant or deny specific permissions (like "Read", "Write", etc.).
-		5. Click "OK" to apply the changes.
 
+    1. Right-click the file or folder you want to set permissions for and select "Properties".
+    2. Navigate to the "Security" tab.
+    3. Click on the "Edit" button to change permissions.
+    4. In the permissions window, select a user or group from the list. Then, check or uncheck the boxes in the "Permissions for [username]" section to grant or deny specific permissions (like "Read", "Write", etc.).
+    5. Click "OK" to apply the changes.
 
 ## Run
 
@@ -88,6 +86,7 @@ Finally, run the container with the same parameters you originally used to creat
 You may alternatively use a third-party updating mechanism, such as [Watchtower](https://github.com/containrrr/watchtower), to keep Maintainerr up-to-date automatically.
 
 ### Enabling Debug Logging
+
 To produce some more informational logging output, either the whole time Maintainerr is running or while you are troubleshooting a specific issue, we recommend turning on debug logging.
 
 ``` bash hl_lines="4"
@@ -157,6 +156,7 @@ docker compose up -d
 ```
 
 ### Enabling Debug Logging
+
 To produce some more informational logging output, either the whole time Maintainerr is running or while you are troubleshooting a specific issue, we recommend turning on debug logging.
 
 ``` yaml hl_lines="9-11"
@@ -187,4 +187,4 @@ A list of all available environment variables are below. No other env variables 
 | UI_HOSTNAME | 0.0.0.0 | The listen host of the UI web server. Can be set to :: for IPv6. |
 | UI_PORT | 6246 | The listen port of the UI web server. |
 | API_PORT | 3001 | The listen port of the API server. |
-| BASE_PATH | *<empty>* | If reverse proxying with a subfolder you'll want to set this. Must be in the format of `/subfolder` |
+| BASE_PATH || If reverse proxying with a subfolder you'll want to set this. Must be in the format of `/subfolder` |
