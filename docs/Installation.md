@@ -1,6 +1,3 @@
----
-status: recent
----
 
 Docker is Maintainerr's supported method of installation.
 
@@ -19,9 +16,11 @@ The containers data location is set as /opt/data. A Docker [volume][tooltip] is 
     It is possible that you will need to change permissions on the host's data directory.
 
     === "Linux Permissions Example"
+
         `chown -R 1000:1000 /opt/data`
 
     === "Windows Permissions"
+
         1. Right-click the file or folder you want to set permissions for and select "Properties".
         2. Navigate to the "Security" tab.
         3. Click on the "Edit" button to change permissions.
@@ -31,13 +30,17 @@ The containers data location is set as /opt/data. A Docker [volume][tooltip] is 
 The data directory location largely depends on how you are installing Maintainerr. If using Docker, these are the two places where could you set the host data directory.
 
 === "Run"
+
     `-v <your host location>:/opt/data \`
 
 === "Compose"
+
+    ``` markdown
     volumes:
       - type: bind
         source: `<your host location>`
         target: /opt/data
+    ```   
 
 ## Run
 
