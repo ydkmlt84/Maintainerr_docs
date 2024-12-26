@@ -29,7 +29,7 @@ use_directory_urls: true
 # Repository
 repo_name: jorenn92/maintainerr
 repo_url: https://github.com/jorenn92/maintainerr
-copyright: Copyright &copy; Jorenn92 <a href="https://github.com/jorenn92/Maintainerr/blob/main/LICENSE">License</a> <a href="#__consent">Change cookie settings</a>
+copyright: Copyright &copy; Jorenn92
 
 # Configuration
 theme:
@@ -120,6 +120,19 @@ extra:
   analytics:
     provider: matomo
     property: docs
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: fontawesome/thumbs-up
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: fontawesome/thumbs-down
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Please let us know on <a href="https://discord.gg/WP4ZW2QYwk">Discord</a> where the issue was.
   consent:
     title: Cookie consent
     description: >- 
@@ -144,6 +157,10 @@ extra:
       link: https://hub.docker.com/r/jorenn92/maintainerr/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/WP4ZW2QYwk
+    - icon: fontawesome/cookie
+      link: #__consent
+    - icon: fontawesome/gavel
+      link: https://github.com/jorenn92/Maintainerr/blob/main/LICENSE
   status:
     new: Recently Added
     deprecated: Deprecated
