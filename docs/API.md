@@ -2,7 +2,9 @@
 hide:
   - navigation
   - toc
+  - feedback
 status: recent
+
 ---
 # Maintainerr API docs
 
