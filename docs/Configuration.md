@@ -78,4 +78,3 @@ Tautulli's configuration is required to use its parameters in rules.
 | Port          | The port Tautulli runs on |
 | Base URL      | HTTP Root set in Tautulli Settings (if set )|
 | Api key  | Tautulli API key, should be visible in the Tautulli settings |
-

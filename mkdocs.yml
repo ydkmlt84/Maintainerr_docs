@@ -29,6 +29,7 @@ use_directory_urls: true
 # Repository
 repo_name: jorenn92/maintainerr
 repo_url: https://github.com/jorenn92/maintainerr
+copyright: Copyright &copy; Jorenn92 <a href="https://github.com/jorenn92/Maintainerr/blob/main/LICENSE">License</a> <a href="#__consent">Change cookie settings</a>
 
 # Configuration
 theme:
@@ -108,6 +109,9 @@ hooks:
   - docs/overrides/hooks/translations.py
 
 # Additional configuration
+extra_javascript:
+  - assets/javascripts/consent.js
+  - assets/javascrtips/feedback.js
 extra_css:
   - assets/stylesheets/extra.css
 extra:
@@ -116,6 +120,23 @@ extra:
   analytics:
     provider: matomo
     property: docs
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - reject
+      - manage
+    cookies:
+      analytics: matomo
+      custom: _pk_id
+      custom: _pk_ses
+      custom: _pk_ref
+      custom: _pk_testcookie
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jorenn92/maintainerr
@@ -200,9 +221,9 @@ nav:
     - Collections: Collections.md
     - Test Media: Test-Media.md
   - Community:
-    - Introduction.md
-    - Contributing.md
-    - Testing.md
+    - Introduction: Introduction.md
+    - Contributing to Maintainerr: Contributing.md
+    - Development Testing: Testing.md
   - API:
     - API.md  
   - Walkthroughs:
