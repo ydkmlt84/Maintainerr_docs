@@ -42,7 +42,7 @@
     })
   })
 </script>
-<script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+<script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
 <meta content="website" property="og:type">
 <meta content="Reverse Proxy Config - Maintainerr Documentation" property="og:title">
 <meta content="Documentation for the wildly popular Maintainerr project." property="og:description">
@@ -70,6 +70,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#reverse-proxy-setups">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -298,8 +301,6 @@
 
     
   </span>
-<span class="md-status md-status--recent" title="New Updates">
-</span>
 </a>
 </li>
 <li class="md-nav__item">
@@ -330,6 +331,19 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Reverse Proxy Config
+  
+
+    
+  </span>
+<span class="md-status md-status--new" title="Recently Added">
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
@@ -342,6 +356,23 @@
 <span class="md-status md-status--new" title="Recently Added">
 </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nginx">
+<span class="md-ellipsis">
+      
+        NGINX
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -490,7 +521,7 @@
 <span class="md-ellipsis">
     
   
-    Contributions to the project
+    Contributing to Maintainerr
   
 
     
@@ -502,7 +533,7 @@
 <span class="md-ellipsis">
     
   
-    Testing
+    Development Testing
   
 
     
@@ -669,13 +700,77 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nginx">
+<span class="md-ellipsis">
+      
+        NGINX
+      
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Reverse Proxy Config</h1>
+<h1 id="reverse-proxy-setups">Reverse Proxy Setups<a class="headerlink" href="#reverse-proxy-setups" title="Permanent link">¶</a></h1>
+<h2 id="nginx">NGINX<a class="headerlink" href="#nginx" title="Permanent link">¶</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="nginx-swag" name="__tabbed_1" type="radio"><input id="nginx-subdomain" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="nginx-swag">Swag</label><label for="nginx-subdomain">Subdomain</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The LinuxServer.io <a href="https://docs.linuxserver.io/general/swag/">SWAG</a> project comes built in with many pre-configured reverse proxy options <sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>. One of them is for Maintainerr, and the file is named <code>maintainerr.subdomain.conf.sample</code>. You simply need to ensure that your container is named Maintainerr and that you have a DNS CNAME set for the Maintainerr subdomain you are going to use. <a href="https://github.com/linuxserver/reverse-proxy-confs/blob/master/README.md">Need More Information?</a></p>
+<p>If your container is not named Maintainerr, but you still want to use their pre-configured config file, you will need to change this line, <code>set $upstream_app maintainerr;</code>.</p>
+<p>If you don't want your address to be <code>maintainerr.example.com</code>, you will need to change this line, <code>server_name maintainerr.*;</code>.</p>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>server {
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>    listen 80;
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>    server_name maintainerr.example.com;
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>    return 301 https://$server_name$request_uri;
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>}
+</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>server {
+</span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>    listen 443 ssl;
+</span><span id="__span-0-9"><a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>    server_name maintainerr.example.com;
+</span><span id="__span-0-10"><a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>
+</span><span id="__span-0-11"><a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>    ssl_certificate /etc/letsencrypt/live/maintainerr.example.com/fullchain.pem;
+</span><span id="__span-0-12"><a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>    ssl_certificate_key /etc/letsencrypt/live/maintainerr.example.com/privkey.pem;
+</span><span id="__span-0-13"><a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>    proxy_set_header Referer $http_referer;
+</span><span id="__span-0-15"><a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>    proxy_set_header Host $host;
+</span><span id="__span-0-16"><a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a>    proxy_set_header X-Real-IP $remote_addr;
+</span><span id="__span-0-17"><a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a>    proxy_set_header X-Real-Port $remote_port;
+</span><span id="__span-0-18"><a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a>    proxy_set_header X-Forwarded-Host $host:$remote_port;
+</span><span id="__span-0-19"><a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a>    proxy_set_header X-Forwarded-Server $host;
+</span><span id="__span-0-20"><a href="#__codelineno-0-20" id="__codelineno-0-20" name="__codelineno-0-20"></a>    proxy_set_header X-Forwarded-Port $remote_port;
+</span><span id="__span-0-21"><a href="#__codelineno-0-21" id="__codelineno-0-21" name="__codelineno-0-21"></a>    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+</span><span id="__span-0-22"><a href="#__codelineno-0-22" id="__codelineno-0-22" name="__codelineno-0-22"></a>    proxy_set_header X-Forwarded-Proto $scheme;
+</span><span id="__span-0-23"><a href="#__codelineno-0-23" id="__codelineno-0-23" name="__codelineno-0-23"></a>    proxy_set_header X-Forwarded-Ssl on;
+</span><span id="__span-0-24"><a href="#__codelineno-0-24" id="__codelineno-0-24" name="__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a href="#__codelineno-0-25" id="__codelineno-0-25" name="__codelineno-0-25"></a>    location / {
+</span><span id="__span-0-26"><a href="#__codelineno-0-26" id="__codelineno-0-26" name="__codelineno-0-26"></a>        proxy_pass http://&lt;maintainerr_url&gt;:6246;
+</span><span id="__span-0-27"><a href="#__codelineno-0-27" id="__codelineno-0-27" name="__codelineno-0-27"></a>    }
+</span><span id="__span-0-28"><a href="#__codelineno-0-28" id="__codelineno-0-28" name="__codelineno-0-28"></a>}
+</span></code></pre></div>
+</div>
+</div>
+</input></input></div>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p>Ensure that your SWAG version is up to date, as the older versions have pre-2.0 Maintainerr setup. <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
@@ -687,7 +782,7 @@
 <span class="md-icon" title="Created">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 21, 2024</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">
@@ -697,6 +792,9 @@
 <nav>
 <a class="md-author" href="https://github.com/ydkmlt84" title="@ydkmlt84">
 <img alt="ydkmlt84" src="https://avatars.githubusercontent.com/u/2887742?v=4&amp;size=72"/>
+</a>
+<a class="md-author" href="https://github.com/web-flow" title="@web-flow">
+<img alt="web-flow" src="https://avatars.githubusercontent.com/u/19864447?v=4&amp;size=72"/>
 </a>
 </nav>
 </span>
@@ -715,6 +813,9 @@
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © Jorenn92 <a href="https://github.com/jorenn92/Maintainerr/blob/main/LICENSE">License</a> <a href="#__consent">Change cookie settings</a>
+</div>
   
   
     Made with
@@ -741,8 +842,51 @@
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+<div class="md-consent" data-md-component="consent" hidden="" id="__consent">
+<div class="md-consent__overlay"></div>
+<aside class="md-consent__inner">
+<form class="md-consent__form md-grid md-typeset" name="consent">
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" id="__settings" type="checkbox"/>
+<div class="md-consent__settings">
+<ul class="task-list">
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="analytics" type="checkbox"/>
+<span class="task-list-indicator"></span>
+          matomo
+        </label>
+</li>
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="custom" type="checkbox"/>
+<span class="task-list-indicator"></span>
+          _pk_testcookie
+        </label>
+</li>
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="github" type="checkbox"/>
+<span class="task-list-indicator"></span>
+          GitHub
+        </label>
+</li>
+</ul>
+</div>
+<div class="md-consent__controls">
+<button class="md-button md-button--primary">Accept</button>
+<button class="md-button md-button--primary" type="reset">Reject</button>
+<label class="md-button" for="__settings">Manage settings</label>
+</div>
+</form>
+</aside>
+</div>
+<script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
 <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "content.footnote.tooltips", "content.tabs.link", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "toc.follow"], "search": "../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
 <script src="../assets/javascripts/bundle.b71cdcd1.min.js"></script>
+<script src="../assets/javascripts/consent.js"></script>
+<script src="../assets/javascrtips/feedback.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script><script>document$.subscribe(() => {
