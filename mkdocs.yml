@@ -157,9 +157,9 @@ extra:
       link: https://hub.docker.com/r/jorenn92/maintainerr/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/WP4ZW2QYwk
-    - icon: fontawesome/cookie
+    - icon: material/cookie-cog
       link: https://docs.maintainerr.info/#__consent
-    - icon: fontawesome/gavel
+    - icon: material/gavel
       link: https://github.com/jorenn92/Maintainerr/blob/main/LICENSE
   status:
     new: Recently Added
