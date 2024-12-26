@@ -16,11 +16,11 @@ The containers data location is set as /opt/data. A Docker [volume][tooltip] is 
 
     It is possible that you will need to change permissions on the host's data directory.
 
-    `chown -R 1000:1000 /opt/data`  This is a "change owner" command that changes the owner of /opt/data to 1000:1000.
+    `chown -R 1000:1000 /opt/data`  This is a "change owner" command that changes the owner of `/opt/data` to `1000:1000`.
 
-The data directory location largely depends on how you are installing Maintainerr. If using Docker, these are the two places where could you set the host data directory.
+Setting the host data directory largely depends on how you are installing Maintainerr. If using Docker, these are the two places where you would set the host data directory, depending on your method.
 
-=== "Run"
+=== "Run Command"
 
     `-v <your host location>:/opt/data \`
 
