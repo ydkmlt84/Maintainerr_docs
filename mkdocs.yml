@@ -58,6 +58,8 @@ theme:
     - search.share
     - toc.follow
     # - toc.integrate
+  icon:
+    repo: material/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -88,6 +90,12 @@ plugins:
         kwds:
           case: lower
   #- meta
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - git-committers:
+      repository: ydkmlt84/Maintainerr_docs
+      branch: main
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - social:
@@ -193,7 +201,7 @@ nav:
     - Test Media: Test-Media.md
   - Community:
     - Introduction.md
-    - Contributing: https://github.com/jorenn92/Maintainerr/blob/main/CONTRIBUTING.md
+    - Contributing.md
     - Testing.md
   - API:
     - API.md  

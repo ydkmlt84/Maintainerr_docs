@@ -655,6 +655,3 @@ The key is used for identification in Yaml rule files.
 - Key: Tautulli.sw_lastWatched
 - Availability: shows, seasons
 - Type: date
-
-
-:material-clock-edit: Last Updated: 10/10/24

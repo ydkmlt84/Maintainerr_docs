@@ -188,5 +188,3 @@ A list of all available environment variables are below. No other env variables 
 | UI_PORT | 6246 | The listen port of the UI web server. |
 | API_PORT | 3001 | The listen port of the API server. |
 | BASE_PATH | *<empty>* | If reverse proxying with a subfolder you'll want to set this. Must be in the format of `/subfolder` |
-
-:material-clock-edit: Last Updated: 12/22/24

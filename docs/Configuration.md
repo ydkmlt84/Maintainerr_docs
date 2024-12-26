@@ -79,4 +79,3 @@ Tautulli's configuration is required to use its parameters in rules.
 | Base URL      | HTTP Root set in Tautulli Settings (if set )|
 | Api key  | Tautulli API key, should be visible in the Tautulli settings |
 
-:material-clock-edit: Last Updated: 11/06/24

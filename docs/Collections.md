@@ -46,5 +46,3 @@ When media has exclusions, an `Excl` badge will be shown on the top-right side o
 - Maintainerr will never remove the collection from Plex if you specified a manual collection.
 
 - You could add media directly to the Plex collection within Plex. Maintainerr will sync Media with the Plex collection. (The Plex collection might not always be available in case you're using an automatic collection)
-
-:material-clock-edit: Last Updated: 10/10/24

@@ -99,5 +99,3 @@ Pay special attention to how you are submitting reports to the PR, or in Discord
 - screenshots of test media results
 - no logs
 - none of the stuff from Good reports above.
-
-:material-clock-edit: Last Updated: 11/20/24
