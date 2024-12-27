@@ -109,9 +109,6 @@ hooks:
   - docs/overrides/hooks/translations.py
 
 # Additional configuration
-extra_javascript:
-  - assets/javascripts/consent.js
-  - assets/javascripts/feedback.js
 extra_css:
   - assets/stylesheets/extra.css
 extra:
@@ -120,19 +117,6 @@ extra:
   analytics:
     provider: matomo
     property: docs
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: fontawesome/solid/thumbs-up
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: fontawesome/solid/thumbs-down
-          name: This page could be improved
-          data: 0
-          note: >- 
-            Thanks for your feedback! Please let us know on <a href="https://discord.gg/WP4ZW2QYwk">Discord</a> where the issue was.
   consent:
     title: Cookie consent
     description: >- 
@@ -146,18 +130,22 @@ extra:
       - manage
     cookies:
       analytics: matomo
-      custom: feedback_tracking
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jorenn92/maintainerr
+      name: Github
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/jorenn92/maintainerr/
+      name: Docker Hub
     - icon: fontawesome/brands/discord
       link: https://discord.gg/WP4ZW2QYwk
+      name: Discord
     - icon: material/cookie-cog
       link: '#__consent'
+      name: Cookie Settings
     - icon: material/gavel
       link: https://github.com/jorenn92/Maintainerr/blob/main/LICENSE
+      name: License
   status:
     new: Recently Added
     deprecated: Deprecated
