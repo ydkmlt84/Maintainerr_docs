@@ -118,7 +118,6 @@ extra:
     provider: matomo
     property: docs
   consent:
-    title: ""
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jorenn92/maintainerr
