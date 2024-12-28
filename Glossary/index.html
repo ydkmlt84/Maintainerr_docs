@@ -20,8 +20,6 @@
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
 <link href="../assets/stylesheets/extra.css" rel="stylesheet"/>
 <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<!-- Determine analytics provider -->
-<!-- Set up analytics provider -->
 <script>
   /* Add custom analytics integration here, e.g. */
   var property = "docs" 
@@ -45,14 +43,7 @@
     })
   })
 </script>
-<!-- Consent necessary -->
-<script>
-      if (typeof __md_analytics !== "undefined") {
-        var consent = __md_get("__consent")
-        if (consent && consent.analytics)
-          __md_analytics()
-      }
-    </script>
+<script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
 <meta content="website" property="og:type">
 <meta content="Rules Glossary - Maintainerr Documentation" property="og:title">
 <meta content="Documentation for the wildly popular Maintainerr project." property="og:description">
@@ -2885,32 +2876,9 @@ Each rule contains the media type it applies to, the key and the data type of th
 <div class="md-consent__overlay"></div>
 <aside class="md-consent__inner">
 <form class="md-consent__form md-grid md-typeset" name="consent">
-<h4>Cookie consent</h4>
-<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
-<input class="md-toggle" id="__settings" type="checkbox"/>
-<div class="md-consent__settings">
-<ul class="task-list">
-<li class="task-list-item">
-<label class="task-list-control">
-<input checked="" name="analytics" type="checkbox"/>
-<span class="task-list-indicator"></span>
-          matomo
-        </label>
-</li>
-<li class="task-list-item">
-<label class="task-list-control">
-<input checked="" name="github" type="checkbox"/>
-<span class="task-list-indicator"></span>
-          GitHub
-        </label>
-</li>
-</ul>
-</div>
-<div class="md-consent__controls">
-<button class="md-button md-button--primary">Accept</button>
-<button class="md-button md-button--primary" type="reset">Reject</button>
-<label class="md-button" for="__settings">Manage settings</label>
-</div>
+<script defer="" src="https://maintainerr.info/klaro_config/klaro_config.js" type="application/javascript"></script>
+<script data-config="klaroConfig" defer="" src="https://maintainerr.info/klaro_config/klaro.js" type="application/javascript">
+</script>
 </form>
 </aside>
 </div>
