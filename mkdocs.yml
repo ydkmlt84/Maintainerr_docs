@@ -44,9 +44,9 @@ theme:
     # - header.autohide
     # - navigation.expand
     - navigation.indexes
-    - navigation.instant
+    #- navigation.instant
     # - navigation.instant.prefetch
-    - navigation.instant.progress
+    #- navigation.instant.progress
     # - navigation.instant.preview
     # - navigation.path
     # - navigation.prune
