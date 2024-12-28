@@ -144,6 +144,9 @@ extra:
       make our documentation better.
     cookies:
       analytics: matomo
+    actions:
+      - accept
+      - reject
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jorenn92/maintainerr
