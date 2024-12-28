@@ -23,13 +23,15 @@
 <!-- Determine analytics provider -->
 <!-- Set up analytics provider -->
 <!-- Matomo Tag Manager -->
-<script>
-  var _mtm = window._mtm = window._mtm || [];
-  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-  (function __md_analytics() {
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src='https://analytics.maintainerr.info/js/container_jpsy0nfz.js'; s.parentNode.insertBefore(g,s);
-  })();
+<script id="__analytics">
+  function __md_analytics() {
+    var _mtm = window._mtm = window._mtm || [];
+    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true; 
+    g.src = 'https://analytics.maintainerr.info/js/container_jpsy0nfz.js'; 
+    s.parentNode.insertBefore(g, s);
+  }
 </script>
 <!-- End Matomo Tag Manager -->
 <!-- Consent necessary -->
