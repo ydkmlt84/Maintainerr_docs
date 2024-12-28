@@ -112,7 +112,6 @@ hooks:
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
-  - assets/javascripts/consent.js
   - assets/javascripts/feedback.js
 extra:
   annotate:
