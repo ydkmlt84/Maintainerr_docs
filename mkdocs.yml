@@ -111,8 +111,6 @@ hooks:
 # Additional configuration
 extra_css:
   - assets/stylesheets/extra.css
-extra_javascript:
-  - assets/javascripts/feedback.js
 extra:
   annotate:
     json: [.s2]
