@@ -137,7 +137,7 @@ extra:
     description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation. With your consent, you're helping us to
-      make our documentation better. <a href="https://maintainerr.info/privacy.html target="_blank">Privacy Policy</a>
+      make our documentation better. <a href="https://maintainerr.info/privacy.html" target="_blank">Privacy Policy</a>
     cookies:
       analytics: Maintainerr's self-hosted analytics system (Matomo).
     actions:
