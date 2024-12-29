@@ -82,14 +82,15 @@
     // Check initial consent and load analytics
     var consent = __md_get("__consent");
     if (consent && consent.analytics) {
-      console.log('We have analytics liftoff. Value of analytics consent = ${consent.analytics}');
+      console.log(`We have analytics liftoff. Value of consent = "${consent.analytics}`);
       window._paq.push(['rememberCookieConsentGiven']); // Remember consent
       __md_analytics(); // Load Matomo if consent is given
     } else if (!consent) { // Load consent popup
+      console.log('It looks like you have not explicity consented to analytics. Let us fix that.')
       window.location.href = "#__consent";
     }
     else if (consent && !consent.analytics){
-      console.log("The user has previously revoked consent so we aren't loading analytics.")
+      console.log(`The launch of analytics are postponed. Value of consent = ${consent.analytics}`)
     }
 
     // Monitor local storage for changes in consent
@@ -104,7 +105,7 @@
         } else {
           // Consent revoked or not set
           window._paq.push(['forgetCookieConsentGiven']);
-          console.log("Analytics consent revoked. Cookies deleted.");
+          console.log(`Analytics consent revoked. Consent value = ${updatedConsent.analytics}. Analytics disabled.`);
         }
       }
     });
@@ -1565,7 +1566,7 @@
   
 
 <h4>Help us, help you!</h4>
-<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation. With your consent, you're helping us to make our documentation better. <a href="https://maintainerr.info/privacy.html target="_blank">Privacy Policy</a></p>
 <input class="md-toggle" type="checkbox" id="__settings" checked>
 <div class="md-consent__settings">
   <ul class="task-list">
@@ -1579,7 +1580,7 @@
         <label class="task-list-control">
           <input type="checkbox" name="analytics" checked>
           <span class="task-list-indicator"></span>
-          matomo
+          Maintainerr's self-hosted analytics system (Matomo).
         </label>
       </li>
     
