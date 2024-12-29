@@ -38,18 +38,21 @@
     // Initialize Matomo's _paq array
     window._paq = window._paq || [];
     window._paq.push(['requireCookieConsent']);
+    
     // Check initial consent and load analytics
     var consent = __md_get("__consent");
+
     if (consent && consent.analytics) {
-      console.log(`We have analytics liftoff. Value of consent = "${consent.analytics}`);
+      console.log(`We have analytics liftoff. Value of consent, ${consent.analytics}`);
       window._paq.push(['rememberCookieConsentGiven']); // Remember consent
       __md_analytics(); // Load Matomo if consent is given
-    } else if (!consent) { // Load consent popup
+    }
+     else if (!consent) { // Load consent popup
       console.log('It looks like you have not explicity consented to analytics. Let us fix that.')
       window.location.href = "#__consent";
     }
-    else if (consent && !consent.analytics){
-      console.log(`The launch of analytics are postponed. Value of consent = ${consent.analytics}`)
+     else if (consent && !consent.analytics) {
+      console.log(`The launch of our analytics rocket is postponed. Value of consent, ${consent.analytics}`)
     }
 
     // Monitor local storage for changes in consent
@@ -996,7 +999,7 @@
 <div class="md-consent__overlay"></div>
 <aside class="md-consent__inner">
 <form class="md-consent__form md-grid md-typeset" name="consent">
-<h4>Help us, help you!</h4>
+<h4>Help us, help you! (consent to cookies)</h4>
 <p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation. With your consent, you're helping us to make our documentation better. <a href="https://maintainerr.info/privacy.html" target="_blank">Privacy Policy</a></p>
 <input checked="" class="md-toggle" id="__settings" type="checkbox"/>
 <div class="md-consent__settings">
@@ -1027,6 +1030,7 @@
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
 <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "content.footnote.tooltips", "content.tabs.link", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "toc.follow"], "search": "../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
 <script src="../assets/javascripts/bundle.b71cdcd1.min.js"></script>
+<script src="../javascripts/feedback.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script><script>document$.subscribe(() => {
