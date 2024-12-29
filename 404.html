@@ -74,6 +74,7 @@
 </script>
 <!-- End Matomo Tag Manager -->
 
+  
   <script>
     // Initialize Matomo's _paq array
     window._paq = window._paq || [];
@@ -81,10 +82,14 @@
     // Check initial consent and load analytics
     var consent = __md_get("__consent");
     if (consent && consent.analytics) {
+      console.log(consent.analytics);
       window._paq.push(['rememberCookieConsentGiven']); // Remember consent
       __md_analytics(); // Load Matomo if consent is given
-    } else if (!consent || !consent.analytics) {
-      window._paq.push(['forgetCookieConsentGiven']); // Forget consent
+    } else if (!consent) { //Load consent popup
+      window.location.href = "#__consent";
+    }
+    else if (consent && !consent.analytics){
+      console.log("The user has previously revoked consent so we won't load analytics.")
     }
 
     // Monitor local storage for changes in consent
@@ -104,19 +109,6 @@
       }
     });
   </script>
-
-  <!-- Consent necessary -->
-  
-    <script>
-      if (typeof __md_analytics !== "undefined") {
-        var consent = __md_get("__consent");
-        if (consent && consent.analytics) {
-          __md_analytics();
-        }
-      }
-    </script>
-
-  <!-- Consent unnecessary -->
   
 
     
