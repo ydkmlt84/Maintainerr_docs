@@ -111,6 +111,8 @@ hooks:
 # Additional configuration
 extra_css:
   - assets/stylesheets/extra.css
+extra_javascript:
+  - javascripts/feedback.js
 extra:
   annotate:
     json: [.s2]
@@ -133,7 +135,7 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   consent:
-    title: Help us, help you!
+    title: Help us, help you! (consent to cookies)
     description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation. With your consent, you're helping us to
