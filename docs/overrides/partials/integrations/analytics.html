@@ -6,7 +6,6 @@
 <!-- Set up analytics provider -->
 {% if provider %}
   {% include "partials/integrations/analytics/" ~ provider ~ ".html" %}
-  {% include "assets/javascripts/" ~ provider ~ "_feedback.js" %}
 
   {% if config.extra.consent %}
   <script>
@@ -21,7 +20,6 @@
       console.log(`We have analytics liftoff. Value of consent, ${consent.analytics}`);
       window._paq.push(['rememberCookieConsentGiven']); // Remember consent
       __md_analytics(); // Load Matomo if consent is given
-      __md_feedback(); // Load Feedback widget if consent was given
     }
      else if (!consent) { // Load consent popup
       console.log('It looks like you have not explicity consented to analytics. Let us fix that.')
