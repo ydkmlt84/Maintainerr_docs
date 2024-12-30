@@ -47,7 +47,7 @@
           var page = document.location.pathname
           var data = this.getAttribute("data-md-value")
           console.log(page, data)
-          window._paq.push(['trackEvent','Ratings','Feedback_Provided',{page}, {data}])
+          window._paq.push(['trackEvent','Ratings','Feedback_Provided',page,data])
 
           /* Disable form and show note, if given */
           feedback.firstElementChild.disabled = true
