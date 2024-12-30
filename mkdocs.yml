@@ -100,7 +100,7 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - social:
-      cards_layour_dir: layouts
+      cards_layout_dir: layouts
       cards_layout: cards
   - glightbox
   - swagger-ui-tag
