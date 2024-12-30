@@ -96,7 +96,7 @@ Below the *Community* button there are two other buttons. Import and Export. You
 
 Understanding rules and sections can be crucial to getting your rule setup properly and achieving your desired outcome.
 
-When you first start, you will be in the first *section*. Section #1 - Rule #1. A section is a grouped set of rules with one output over the whole section, depending on what was matched in the rules *within* that section.
+When you first start, you will be in the first *section*. Section 1 - Rule 1. A section is a grouped set of rules with one output over the whole section, depending on what was matched in the rules *within* that section.
 
 ### AND
 
