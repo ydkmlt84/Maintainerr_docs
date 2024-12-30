@@ -195,7 +195,7 @@ layers:
 
   # Background
   - background:
-      image: *background_image
+      image: "docs/images/docs_image_v2.png"
       color: "#1b1a24ff"
 
   # Page icon
