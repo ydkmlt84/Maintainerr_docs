@@ -45,8 +45,8 @@
 
           /* Retrieve and send data */
           var page = document.location.pathname
-          var data = this.getAttribute('data-md-value')
-          window._paq.push('event', 'feedback', { page, data })
+          var data = ev.submitter.getAttribute("data-md-value")
+          window._paq.push('trackEvent','Ratings','Feedback_Provided','feedback', { page, data })
 
           /* Disable form and show note, if given */
           feedback.firstElementChild.disabled = true
