@@ -31,6 +31,36 @@
     g.async = true; 
     g.src = 'https://analytics.maintainerr.info/js/container_jpsy0nfz.js'; 
     s.parentNode.insertBefore(g, s);
+
+    /* Set up feedback, i.e. "Was this page helpful?" */
+    document$.subscribe(function() {
+        var feedback = document.forms.feedback
+        if (typeof feedback === "undefined")
+          return
+
+        /* Send feedback to Analytics */
+        for (var button of feedback.querySelectorAll("[type=submit]")) {
+          button.addEventListener("click", function(ev) {
+            ev.preventDefault()
+
+            /* Retrieve and send data */
+            var page = document.location.pathname
+            var data = this.getAttribute("data-md-value")
+            window._paq.push("event", "feedback", { page, data })
+
+            /* Disable form and show note, if given */
+            feedback.firstElementChild.disabled = true
+            var note = feedback.querySelector(
+              ".md-feedback__note [data-md-value='" + data + "']"
+            )
+            if (note)
+              note.hidden = false
+          })
+
+          /* Show feedback */
+          feedback.hidden = false
+        }
+      })
   }
 </script>
 <!-- End Matomo Tag Manager -->
@@ -974,7 +1004,6 @@
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
 <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "../../..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "content.footnote.tooltips", "content.tabs.link", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "toc.follow"], "search": "../../../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.b71cdcd1.min.js"></script>
-<script src="../../../assets/javascripts/feedback.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script><script>document$.subscribe(() => {
