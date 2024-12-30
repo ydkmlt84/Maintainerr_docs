@@ -196,7 +196,7 @@ layers:
   # Background
   - background:
       image: "docs/images/docs_image_v2.png"
-      color: "#1b1a24ff"
+      color: "#1b1a249f"
 
   # Page icon
   - size: { width: 630, height: 630 }
