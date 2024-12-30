@@ -10,6 +10,7 @@
     s.parentNode.insertBefore(g, s);
 
   /* Set up feedback, i.e. "Was this page helpful?" */
+  document.subscribe(function() {
   var feedback = document.forms.feedback
   if (typeof feedback === 'undefined') return
 
@@ -34,6 +35,7 @@
     /* Show feedback */
     feedback.hidden = false
     }
+  })  
 }
 </script>
 <!-- End Matomo Tag Manager -->
