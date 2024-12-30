@@ -100,9 +100,11 @@ plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - social:
-      cards_layout: default/variant
+      cards_layour_dir: layouts
+      cards_layout: cards
   - glightbox
   - swagger-ui-tag
+  - optimize
 # Hooks
 hooks:
   - docs/overrides/hooks/shortcodes.py
