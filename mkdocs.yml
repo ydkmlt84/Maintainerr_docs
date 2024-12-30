@@ -122,13 +122,13 @@ extra:
       ratings:
         - icon: fontawesome/solid/thumbs-up
           name: This page was helpful
-          data: good
+          data: 1
           note: >-
             Thanks for your feedback!
 
         - icon: fontawesome/solid/thumbs-down
           name: This page could be improved
-          data: bad
+          data: 0
           note: >-
             Thanks for your feedback! Help us improve this page by
             submitting an issue to the docs repo. <a href="https://github.com/ydkmlt84/Maintainerr_docs/issues/new/choose" target="_blank">Docs Repo New Issue</a>
