@@ -101,7 +101,7 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - social:
       cards_layout: custom_card
-      cards_layout_dir: docs/layouts
+      cards_layout_dir: layouts
   - glightbox
   - swagger-ui-tag
   - optimize
