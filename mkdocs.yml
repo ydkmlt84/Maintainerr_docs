@@ -241,6 +241,7 @@ nav:
     - Introduction: Introduction.md
     - Contributing to Maintainerr: Contributing.md
     - Development Testing: Testing.md
+    - Maintainerr changelog: https://raw.githubusercontent.com/jorenn92/Maintainerr/refs/heads/main/CHANGELOG.md
   - API:
     - API.md  
   - Walkthroughs:
