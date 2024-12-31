@@ -22,7 +22,7 @@
       __md_analytics(); // Load Matomo if consent is given
     }
      else if (!consent) { // Load consent popup
-      console.log('It looks like you have not explicity consented to analytics. Let us fix that.')
+      console.log('It looks like you have not explicitly consented to analytics. Let us fix that.')
       window.location.href = "#__consent";
     }
      else if (consent && !consent.analytics) {
