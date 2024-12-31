@@ -1,5 +1,6 @@
 ---
 status: new
+description: Information on how to use the Test Media function.
 ---
 
 # Test Media

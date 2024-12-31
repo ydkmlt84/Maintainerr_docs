@@ -1,6 +1,8 @@
 ---
 status: new
+description: Common problems, and their solutions.
 ---
+
 !!! info
     These are not going to solve *every* problem and the suggested solutions might not correct your problem. If you have tried what is laid out here, and it still isn't working as expected. Please reach out on [Discord](https://discord.gg/WP4ZW2QYwk).
 

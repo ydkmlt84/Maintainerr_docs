@@ -1,4 +1,5 @@
 ---
+description: Documentation of the Maintainerr API and its endpoints.
 hide:
   - navigation
   - toc

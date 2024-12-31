@@ -1,3 +1,6 @@
+---
+description: Information on how to get Maintainerr up and running.
+---
 
 All configuration is done inside the application, no extra config is required in files. </br>
 When you first access the webUI, you will be redirected to the settings page. If this doesn't happen, refresh the page.

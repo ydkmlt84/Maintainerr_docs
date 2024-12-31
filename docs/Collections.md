@@ -1,4 +1,6 @@
-
+---
+description: Information about Collection generation, syncing with Plex, and manual actions.
+---
 A collection is auto generated when defining a rule. A collection holds all media that either got picked up by the handling of the corresponding rule or got manually added.
 
 When the specified amount of days that media must live in the collection is passed, the collection handler job will perform the necessary cleanup actions.

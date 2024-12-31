@@ -1,3 +1,6 @@
+---
+description: Install methods and information.
+---
 
 Docker is Maintainerr's supported method of installation.
 

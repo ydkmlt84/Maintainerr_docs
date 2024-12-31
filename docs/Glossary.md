@@ -1,3 +1,7 @@
+---
+description: Definitions of each rule and what they do and are used for.
+---
+
 ## Rule glossary
 
 This glossary describes the available rules that can be used in maintainerr.

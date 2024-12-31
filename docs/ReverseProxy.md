@@ -1,5 +1,6 @@
 ---
 status: new
+description: Working configurations that should get you started.
 ---
 
 # Reverse Proxy Setups
