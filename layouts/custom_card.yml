@@ -222,7 +222,7 @@ layers:
     offset: { x: 62, y: 192 }
     typography:
       content: *page_title
-      align: middle
+      align: center
       color: *color
       line:
         amount: 2
