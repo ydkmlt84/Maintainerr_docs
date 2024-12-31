@@ -218,14 +218,14 @@ layers:
         style: Bold
 
   # Page title
-  - size: { width: 800, height: 448 }
+  - size: { width: 800, height: 350 }
     offset: { x: 62, y: 192 }
     typography:
       content: *page_title
       align: center
       color: *color
       line:
-        amount: 1
+        amount: 2
         height: 2.25
       font:
         family: Oswald
