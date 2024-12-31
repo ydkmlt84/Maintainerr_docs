@@ -236,12 +236,12 @@ layers:
         amount: 3
         height: 1.25
       font:
-        family: *font_family
+        family: Oswald
         variant: *font_variant
         style: Bold
 
   # Page description
-  - size: { width: 864, height: 64 }
+  - size: { width: 864, height: 84 }
     offset: { x: 64, y: 512 }
     typography:
       content: *page_description
@@ -249,8 +249,8 @@ layers:
       color: *color
       line:
         amount: 2
-        height: 2
+        height: 2.25
       font:
-        family: *font_family
-        variant: *font_variant
+        family: Ubuntu
+        variant: mono
         style: Regular
