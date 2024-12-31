@@ -1,5 +1,6 @@
 ---
 description: Information on how to get Maintainerr up and running.
+title: Configuration
 ---
 
 All configuration is done inside the application, no extra config is required in files. </br>

@@ -1,6 +1,6 @@
 ---
 date: 2024-05-10
-title: All About Sections (S01E03)
+title: Sections (S01E03)
 categories:
   - Tutorials
 authors:

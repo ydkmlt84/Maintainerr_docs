@@ -1,8 +1,7 @@
 ---
 description: Definitions of each rule and what they do and are used for.
+title: Rule Glossary
 ---
-
-## Rule glossary
 
 This glossary describes the available rules that can be used in maintainerr.
 Each rule contains the media type it applies to, the key and the data type of the returned value.

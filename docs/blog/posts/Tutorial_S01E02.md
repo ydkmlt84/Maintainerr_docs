@@ -1,6 +1,6 @@
 ---
 date: 2024-03-25
-title: Basic Rule Understanding (S01E02)
+title: Rule Creation (S01E02)
 categories:
   - Tutorials
 authors:

@@ -1,5 +1,6 @@
 ---
 description: Information about Collection generation, syncing with Plex, and manual actions.
+title: Collections
 ---
 A collection is auto generated when defining a rule. A collection holds all media that either got picked up by the handling of the corresponding rule or got manually added.
 

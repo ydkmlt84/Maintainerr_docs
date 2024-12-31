@@ -227,21 +227,21 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting started:
-    - Installation: Installation.md
-    - Configuring Maintainerr: Configuration.md
-    - Common Issues: Common.md
-    - Reverse Proxy Config: ReverseProxy.md
+    - Installation.md
+    - Configuration.md
+    - Common.md
+    - ReverseProxy.md
   - Rules:
-    - Rule Explanations: Rules.md
-    - Rules Glossary: Glossary.md
+    - Rules.md
+    - Glossary.md
   - Collections: 
-    - Collections: Collections.md
-    - Test Media: Test-Media.md
+    - Collections.md
+    - Test-Media.md
   - Community:
-    - Introduction: Introduction.md
-    - Contributing to Maintainerr: Contributing.md
-    - Development Testing: Testing.md
-    - Maintainerr changelog: https://raw.githubusercontent.com/jorenn92/Maintainerr/refs/heads/main/CHANGELOG.md
+    - Introduction.md
+    - Contributing.md
+    - Testing.md
+    - https://raw.githubusercontent.com/jorenn92/Maintainerr/refs/heads/main/CHANGELOG.md
   - API:
     - API.md  
   - Walkthroughs:

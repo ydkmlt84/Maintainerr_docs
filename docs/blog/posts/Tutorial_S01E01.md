@@ -1,6 +1,6 @@
 ---
 date: 2024-03-01
-title: Getting Started with Rules (S01E01)
+title: Getting Started (S01E01)
 categories:
   - Tutorials
 authors:

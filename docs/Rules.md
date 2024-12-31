@@ -1,6 +1,7 @@
 ---
 status: recent
 description: Rules configurations and basic information about using rules.
+title: Rules
 ---
 
 Rules are the engine of Maintainerr. Media will be tested against the rule parameters and added to a collection, if they are a match.

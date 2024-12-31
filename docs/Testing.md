@@ -1,9 +1,9 @@
 ---
-title: Testing
+title: Testing 
 status: new
 description: Information on testing a specific pull request image. Something not in a develop branch yet and not in a released.
 ---
-# Testing Pull Requests
+
 
 We have implemented a way to test a specific pull request (new feature), using *Docker*. This can help us to find bugs and issues before being pushed to the develop image and eventually, the latest release.
 

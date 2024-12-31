@@ -1,4 +1,4 @@
 ---
 template: homepage/home.html
-title: Maintainerr Documentation
+title: Maintainerr Docs
 ---

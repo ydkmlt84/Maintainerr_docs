@@ -1,3 +1,8 @@
+---
+description: Basic information about Maintainerr
+title: Introduction
+---
+
 <p align="center" >
   <a href="https://discord.gg/WP4ZW2QYwk" target="blank"><img alt="Discord" src="https://img.shields.io/discord/1152219249549512724?style=flat&logo=discord&logoColor=white&label=Maintainerr"></a>
   <picture><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jorenn92/maintainerr/.github%2Fworkflows%2Fbuild.yml?branch=main&style=flat&logo=github&label=Latest%20Build"></picture>

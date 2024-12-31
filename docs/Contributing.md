@@ -1,7 +1,7 @@
 ---
 description: Contributing to Maintainerr in some way? Look no further. All you need to get started is here in this page.
+title: Contributing
 ---
-# Contributions to the project
 
 ## Want to improve Maintainerr?
 
