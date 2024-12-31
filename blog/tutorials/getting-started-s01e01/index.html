@@ -7,12 +7,11 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Documentation for the wildly popular Maintainerr project." name="description"/>
 <meta content="ydkmlt84" name="author"/>
-<link href="https://docs.maintainerr.info/blog/tutorials/basic-rule-understanding-s01e02/" rel="canonical"/>
-<link href="../getting-started-with-rules-s01e01/" rel="prev"/>
-<link href="../all-about-sections-s01e03/" rel="next"/>
+<link href="https://docs.maintainerr.info/blog/tutorials/getting-started-s01e01/" rel="canonical"/>
+<link href="../rule-creation-s01e02/" rel="next"/>
 <link href="../../../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.49+insiders-4.53.14" name="generator"/>
-<title>Basic Rule Understanding (S01E02) - Maintainerr Documentation</title>
+<title>Getting Started (S01E01) - Maintainerr Documentation</title>
 <link href="../../../assets/stylesheets/main.6f50c755.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -106,15 +105,15 @@
   </script>
 <meta content="website" property="og:type">
 <meta content="Documentation for the wildly popular Maintainerr project." property="og:description">
-<meta content="https://docs.maintainerr.info/assets/images/social/blog/tutorials/basic-rule-understanding-s01e02.png" property="og:image">
+<meta content="https://docs.maintainerr.info/assets/images/social/blog/tutorials/getting-started-s01e01.png" property="og:image">
 <meta content="image/png" property="og:image:type">
 <meta content="1200" property="og:image:width">
 <meta content="600" property="og:image:height"/>
-<meta content="https://docs.maintainerr.info/blog/tutorials/basic-rule-understanding-s01e02/" property="og:url"/>
+<meta content="https://docs.maintainerr.info/blog/tutorials/getting-started-s01e01/" property="og:url"/>
 <meta content="summary_large_image" property="twitter:card"/>
-<meta content="Basic Rule Understanding (S01E02) - Maintainerr Documentation" property="twitter:title"/>
+<meta content="Getting Started (S01E01) - Maintainerr Documentation" property="twitter:title"/>
 <meta content="Documentation for the wildly popular Maintainerr project." property="twitter:description"/>
-<meta content="https://docs.maintainerr.info/assets/images/social/blog/tutorials/basic-rule-understanding-s01e02.png" property="twitter:image"/>
+<meta content="https://docs.maintainerr.info/assets/images/social/blog/tutorials/getting-started-s01e01.png" property="twitter:image"/>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -130,7 +129,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#examples">
+<a class="md-skip" href="#rule-setup">
           Skip to content
         </a>
 </div>
@@ -154,7 +153,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Basic Rule Understanding (S01E02)
+              Getting Started (S01E01)
             
           </span>
 </div>
@@ -368,7 +367,7 @@
 <span class="md-ellipsis">
     
   
-    Configuring Maintainerr
+    Configuration
   
 
     
@@ -380,7 +379,7 @@
 <span class="md-ellipsis">
     
   
-    Common Issues
+    Common Problems
   
 
     
@@ -394,7 +393,7 @@
 <span class="md-ellipsis">
     
   
-    Reverse Proxy Config
+    Reverse Proxy
   
 
     
@@ -434,7 +433,7 @@
 <span class="md-ellipsis">
     
   
-    Rule Explanations
+    Rules
   
 
     
@@ -448,7 +447,7 @@
 <span class="md-ellipsis">
     
   
-    Rules Glossary
+    Rule Glossary
   
 
     
@@ -550,7 +549,7 @@
 <span class="md-ellipsis">
     
   
-    Contributing to Maintainerr
+    Contributing
   
 
     
@@ -562,7 +561,7 @@
 <span class="md-ellipsis">
     
   
-    Development Testing
+    Testing
   
 
     
@@ -576,7 +575,7 @@
 <span class="md-ellipsis">
     
   
-    Maintainerr changelog
+    None
   
 
     
@@ -614,7 +613,7 @@
 <span class="md-ellipsis">
     
   
-    Maintainerr API docs
+    API Docs
   
 
     
@@ -747,51 +746,56 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#simple-rule">
+<a class="md-nav__link" href="#rule-setup">
 <span class="md-ellipsis">
       
-        Simple Rule
+        Rule Setup
       
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#simple-and">
+<a class="md-nav__link" href="#rule-configuration">
 <span class="md-ellipsis">
       
-        Simple AND
+        Rule Configuration
       
     </span>
 </a>
-<nav aria-label="Simple AND" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rules-and-sections">
+<span class="md-ellipsis">
+      
+        Rules and Sections
+      
+    </span>
+</a>
+<nav aria-label="Rules and Sections" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#visual-example">
+<a class="md-nav__link" href="#and">
 <span class="md-ellipsis">
       
-        Visual Example
+        AND
       
     </span>
 </a>
 </li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#simple-or">
+<a class="md-nav__link" href="#or">
 <span class="md-ellipsis">
       
-        Simple OR
+        OR
       
     </span>
 </a>
-<nav aria-label="Simple OR" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#visual-example_1">
+<a class="md-nav__link" href="#andor">
 <span class="md-ellipsis">
       
-        Visual Example
+        AND/OR
       
     </span>
 </a>
@@ -845,7 +849,7 @@
 <li class="md-nav__item">
 <div class="md-nav__link">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"></path></svg>
-<time class="md-ellipsis" datetime="2024-03-25 00:00:00+00:00">March 25, 2024</time>
+<time class="md-ellipsis" datetime="2024-03-01 00:00:00+00:00">March 1, 2024</time>
 </div>
 </li>
 <li class="md-nav__item">
@@ -862,7 +866,7 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"></path></svg>
 <span class="md-ellipsis">
                             
-                              4 min read
+                              7 min read
                             
                           </span>
 </div>
@@ -876,14 +880,15 @@
 </div>
 </div>
 <article class="md-content__inner md-typeset">
-<p><strong>Let's go a little further into Rules with some simple examples to get you started.</strong></p>
-<p>In episode 1 we went over a super basic outline of rules and sections, operators, and general rule setup. In today's episode we will go over some simple rules examples. You could setup a few AND rules and roll with it, but then you wouldn't be using Maintainerr to its full potential. This episode should give you a good base of rule knowledge to build off of.</p>
+<h1>Getting Started (S01E01)</h1>
+<p><strong>Ok so you installed Maintainerr and don't know where to start.</strong></p>
+<p>The rule system behind Maintainerr is quite complex, and therefore powerful.  Getting started can be a little daunting at first. That is only because it is new to you. When you get the hang of it, you will be cleaning up that mess you call a library in no time. This will be the first in a series of tutorials that should help you get more familiar with the rules and rule setup.</p>
 <!-- more -->
-<p>Let's bring back the Movie from episode 1, that we wanted to add into our new collection.</p>
+<p></p>
 <p>
 <a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="https://docs.maintainerr.info/images/movie_poster.png"><img alt="poster" height="250" src="https://docs.maintainerr.info/images/movie_poster.png" width="150"/></a>
 </p>
-<p>This movie has the following attributes across Plex, Overseerr, and Radarr:</p>
+<p>Let's take the above movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, Overseerr, and Radarr:</p>
 <p><strong>Plex</strong> -</p>
 <table>
 <thead>
@@ -937,59 +942,95 @@
 </tr>
 </tbody>
 </table>
-<p>With this information, we have quite a few options that we can use as rule parameters/filters.</p>
-<h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">¶</a></h1>
-<h2 id="simple-rule">Simple Rule<a class="headerlink" href="#simple-rule" title="Permanent link">¶</a></h2>
+<p></p>
+<blockquote>
+<p><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a1.svg" title=":bulb:"> This information can be looked at for an actual item in your Plex library. You can do it through the Plex UI or you can parse through the XML of an item.
+<a href="https://support.plex.tv/articles/201998867-investigate-media-information-and-formats/#:~:text=Open%20the%20Media,the%20XML%20information"> 🌐 → Link to see how to get your Plex Media Info and XML data</a></img></p>
+</blockquote>
+<p>We want to make a rule that would add this movie to it's collection.</p>
+<p><img alt="📝" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4dd.svg" title=":memo:"> There are many more attributes available in the API responses of Plex, Sonarr/Radarr, and Overseerr. We are only looking at these specific ones for the tutorial.</img></p>
+<p>Also, this won't be the only movie in the collection. However, all of the other movies that will be added into this collection matched the rule-set for the same reason/s.</p>
+<hr/>
+<h2 id="rule-setup">Rule Setup<a class="headerlink" href="#rule-setup" title="Permanent link">¶</a></h2>
+<p>We will start from the top of a new rule.</p>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="https://docs.maintainerr.info/images/screenshot-1.png"><img alt="screenshot-1" src="https://docs.maintainerr.info/images/screenshot-1.png" width="80%"/></a></p>
 <ul>
-<li>1: We can use one rule that states <code>Plex-Date Added</code> <code>before</code> <code>amount of days</code> <code>60</code>.</li>
-<li>This will match in our special tutorial scenario because the day the Movie was added to Plex happened 60 days or more "before" today's date.</li>
-<li>2: We could use a rule that states <code>Plex-Times Viewed</code> <code>bigger</code> <code>number</code> <code>3</code>.</li>
-<li>This would get added because it has a <em>Times Viewed</em> value of 4, which is bigger than 3.</li>
-<li>3: We could also use a rule that states <code>Plex-Audience Rating (scale 1-10)</code> <code>bigger</code> <code>number</code> <code>5</code>.</li>
-<li>This rule would catch our movie because it's <em>Audience Rating</em> is 7.3. Which is bigger than 5.</li>
+<li>1: This is the name of the Rule, and will eventually be the name of the Collection that gets created.</li>
+<li>2: Self explanatory but you can put whatever you want here. It will be shown in Plex when you open the collection.
+     <p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="https://docs.maintainerr.info/images/screenshot_plex_collection.png"><img alt"screenshot_plex"="" src="https://docs.maintainerr.info/images/screenshot_plex_collection.png" width="75%"/></a></p></li>
+<li>3: Drop-down list of your Plex Libraries. Which library is this rule going to be run against?</li>
+<li>4: This will not be shown if you select a <code>Movies</code> library in step 3. If you selected a <code>TVShow</code> library, your options will be shows/seasons/episodes. What type of TVShow media are we going to run the rule against? An entire show, just seasons, or just episodes? Different options will be made available to you or taken away, depending on what you select here.</li>
+<li>5: Sonarr/Radarr action is what is going to happen after the <code>action after days</code> set in step 6. Options are dependent on the library and media type from above. <code>Delete</code> will remove the files and the item from Sonarr/Radarr. <code>Unmonitor and delete</code> will unmonitor (not remove) the item from Sonarr/Radarr but delete the files. <code>Unmonitor and keep</code> will unmonitor the item from Sonarr/Radarr and <u><strong>keep</strong></u> the files.</li>
+<li>6: Think of this as a "delay" setting. How many days after this rule is ran, items have been matched to this rules filter parameters and added to the collection, will we execute the action set in step 5?</li>
 </ul>
-<h2 id="simple-and">Simple AND<a class="headerlink" href="#simple-and" title="Permanent link">¶</a></h2>
+<p align="center"><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="https://docs.maintainerr.info/images/screenshot-2.png"><img alt="screenshot-2" src="https://docs.maintainerr.info/images/screenshot-2.png" width="75%"/></a></p>
 <ul>
-<li>1: We could add Rule 1 that states <code>Plex-Date Added</code> <code>before</code> <code>amount of days</code> <code>60</code>. Rule 2 that states AND <code>Plex-Times Viewed</code> <code>bigger</code> <code>number</code> <code>5</code>.</li>
-<li>This would not catch our movie because it has a <em>Times Viewed</em> value of 4 and we need it to match <font color="yellow"> (rule 1 AND rule 2)</font>. It does match rule 1 but it does not match rule 2. If another movie in the library was added 60 days ago or more <strong>AND</strong> it had a view count of more than 5. It <strong>WOULD</strong> get added to this rule.
-  </li>
+<li>7: How many months are we going to keep logs of this collections actions?</li>
+<li>8: Is this Rule active? Will it be one of the rules ran either by a manual run, or through periodic runs?</li>
+<li>9: Is this collection going to be shown on the Plex Home screen, or are you only going to be able to see it through the Plex Library screen?</li>
+<li>10: When the action set in step 5 is taken, will Maintainerr also send a hit back to Sonarr/Radarr that excludes this item from being automatically added by any import lists?</li>
+<li>11: <img alt="⚠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/26a0.svg" title=":warning:"> It is recommended to keep this option off as it uses an outdated method. Maintainerr now automatically does this.</img></li>
+<li>When the action set in step 5 is taken, will we tell Overseerr that this item is no longer available and can be requested again?</li>
+<li>12: You can toggle the rule system off and on. This is useful if you have collections in Plex that you want to see in Maintainerr, but don't want any actions taken on the collection.</li>
+<li>13: You can create a collection in Plex, and then use that collection in Maintainerr. If you are doing that, tick this Custom Collection box to on. This can be useful if there is a collection made by say PMM or by you, and you want to execute some rules against it.</li>
 </ul>
-<p><strong>Let's try one more.</strong></p>
+<blockquote>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="https://docs.maintainerr.info/images/screenshot_discord_comment.png"><img alt="screenshot-discord" src="https://docs.maintainerr.info/images/screenshot_discord_comment.png" width="85%"/></a></p>
+</blockquote>
+<hr/>
+<h2 id="rule-configuration">Rule Configuration<a class="headerlink" href="#rule-configuration" title="Permanent link">¶</a></h2>
+<p>Now we are getting into the nitty gritty. After the settings above have been configured to your liking, you start to craft the rule logic. There is a button labeled Community, which are rule setups that have been shared by others. Clicking on this button will list the <em>uploaded</em> rules, and you can use one of these rules if you wish. Clicking on a rule and then clicking on the info button down below, will give you the uploader's description of that rule and possibly how it works.</p>
+<blockquote>
+<p><img alt="📝" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4dd.svg" title=":memo:"> Community rules are just that, from the community. They may not work like they say they do. They may not be formatted properly. It can be a nice place to start, but I personally wouldn't rely on them as everyone's situation is different.</img></p>
+</blockquote>
+<p>Below the <em>Community</em> button there are two other buttons. Import and Export. You can import a rule from a txt file in YAML format (this is an advanced method but it is an option).</p>
+<blockquote>
+<p><img alt="💡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4a1.svg" title=":bulb:"/> If you want to go down this path, I would choose one of the Community rules, doesn't really matter which one, and then use the export button. You will get a generated YAML format of the rule. If you are familiar with YAML this will be a good place to start. Take a look at this page for the proper syntax of each parameter → <a href="../../../Glossary/">Rules Glossary</a>.</p>
+</blockquote>
+<p>If you are looking at a rule that you have already created, you can export the rule in YAML format, in order to share it or textually edit it.</p>
+<hr/>
+<h2 id="rules-and-sections">Rules and Sections<a class="headerlink" href="#rules-and-sections" title="Permanent link">¶</a></h2>
+<p>Understanding rules and sections can be crucial to getting your rule setup properly and achieving your desired outcome.</p>
+<p>When you first start, you will be in the first <em>section</em>. Section 1 - Rule 1. A section is a grouped set of rules with one output over the whole section, depending on what was matched in the rules <em>within</em> that section.</p>
+<h3 id="and">AND<a class="headerlink" href="#and" title="Permanent link">¶</a></h3>
+<p>So let's try an <strong>AND</strong> example...</p>
 <ul>
-<li>2: Rule 1 states <code>Plex-Times Viewed</code> <code>bigger</code> <code>number</code> <code>3</code>. Rule 2 states AND <code>Overseerr-Amount of Requests</code> <code>equals</code> <code>Plex-Times Viewed</code>.</li>
-<li>This rule-set <strong>WOULD</strong> add our movie because it's <em>Times Viewed</em> amount is 4 (bigger than 3), <strong>AND</strong> the <em>Amount of Requests</em>(4) from Overseerr <strong>EQUALS</strong> the <em>Times Viewed</em>(4) amount from Plex. <font color="yellow">(Rule1 AND Rule2)</font></li>
+<li>Our rule 1 setup gains us output X and output Y.</li>
+<li>Our rule 2 setup gains us output X.</li>
+<li>Our rule 2 is setup with an AND operator to rule 1.</li>
+<li>The output of this section would be X only.</li>
+<li>Since X was matched by rule 1 AND rule 2 but Y was only matched by rule 1, it will not be included in the sections output because we said we want the output of the <em>section</em> to be everthing that matched <font color="yellow">(rule 1 AND rule 2)</font>.</li>
 </ul>
-<p>Those are some fairly simple AND examples, and hopefully it is starting to become obvious what is going on. Within a <em>section</em>, and only using AND operators, each item also needs to match the rule before it to be counted as a match and added to the collection.</p>
-<p>Another way to look at these examples, is that within a <em>section</em>, each rule is making a list. The next rule is checking that list to see if anything ALSO has that value, plus the value of it's own rule.</p>
-<h3 id="visual-example">Visual Example<a class="headerlink" href="#visual-example" title="Permanent link">¶</a></h3>
-<pre class="mermaid"><code>graph LR
-title:&gt;Rule-set: Rule1 AND Rule2]
-   A([Has it been viewed in Plex more than 3 times?]) --&gt;|Yes|B([AND is it monitored in Radarr?])
-   B --&gt;|Yes| C([Add it to the collection])
-   B --&gt;|No| D([Don't add to the collection.])</code></pre>
-<h2 id="simple-or">Simple OR<a class="headerlink" href="#simple-or" title="Permanent link">¶</a></h2>
-<p>We don't have to go too far in-depth with this because of what we have already learned. We will just give a quick example, then a visual.</p>
+<h3 id="or">OR<a class="headerlink" href="#or" title="Permanent link">¶</a></h3>
+<p>Now an <strong>OR</strong> example...</p>
 <ul>
-<li>1: We can use one rule that states <code>Plex-Date Added</code> <code>before</code> <code>amount of days</code> <code>90</code>.</li>
-<li>This will not match in our special tutorial scenario because the day the Movie was added to Plex happened only <em>60</em> days BEFORE today's date. Not quite <em>90</em> days yet.</li>
-<li>2: Our next rule states OR <code>Overseerr-Requested by user (Plex or local username)</code> <code>Contains (Partial list match)</code> <code>text</code> <code>user_girl123</code>.</li>
-<li>This would match because as we can see, that is who requested the movie.</li>
-<li>3: This rule-set <strong>WOULD</strong> add our movie because it meets one <strong>OR</strong> the other of our criteria. It was added <em>60</em> days ago so it does not meet our criteria of <em>BEFORE</em> <em>90</em> days, AKA the day it was added has not yet been 90 days <em>BEFORE</em> today's date. It did however match the Overseerr requested by user rule. It gets added because we said we wanted <font color="yellow">(Rule 1 OR Rule 2)</font>.
-Now let's get a visual.</li>
+<li>Our rule 1 setup gains us output X and output Y.</li>
+<li>Our rule 2 setup gains us output X and output Z.</li>
+<li>Our rule 2 is setup with an OR operator to rule 1.</li>
+<li>The output of this section would be X, Y, and Z.</li>
+<li>Since X and Y were matched by rule 1, and X and Z were matched by rule 2, they are all included because we said we want the output of the <em>section</em> to be everything that matched <font color="yellow">(rule 1 OR rule 2)</font>.</li>
 </ul>
-<h3 id="visual-example_1">Visual Example<a class="headerlink" href="#visual-example_1" title="Permanent link">¶</a></h3>
-<pre class="mermaid"><code>graph LR
-title:&gt;Rule-set: Rule1 OR Rule2]
-A([Was it added to Plex before 90 days?]) --&gt;|No|B([Did it match one OR the other]);
- C([Was it requested by user_girl123]) --&gt;|Yes|B;
- B --&gt;|Yes|D([Add it to the collection]); </code></pre>
-<p>Again, I hope this is starting to come together. In our next episode we will be going over the use of sections and when they can be useful. Stay tuned.</p>
+<p>This is probably the simplest form of a rule setup that you can get. Well, unless of course you are only using one rule because anything matched by that one rule becomes the output.</p>
+<h3 id="andor">AND/OR<a class="headerlink" href="#andor" title="Permanent link">¶</a></h3>
+<p>Now let's try a mixed <strong>AND</strong> / <strong>OR</strong> example...</p>
+<ul>
+<li>Rule 1 setup gains us output X and output Y.</li>
+<li>Rule 2 setup gains us output X.</li>
+<li>Rule 2 is setup with an AND operator to rule 1.</li>
+<li>The output is X, as before.</li>
+<li>Rule 3 setup gains us output G and output M.</li>
+<li>Rule 3 is setup with an OR operator to rule 2.</li>
+<li>The output of the whole <em>section</em> would be X, G, and M.</li>
+<li>Since X was matched by rule 1 AND rule 2 but Y was only matched by rule 1, the output of rule 2 will be only X. Since G and M were matched by rule 3, and we said we want the output of the <em>section</em> to be anything that matches <font color="yellow">((rule 1 AND 2 ) OR rule 3)</font>... we get X, G, and M.</li>
+</ul>
+<hr/>
+<p>This is a very good jumping off point for you to start making rules. If you are still not 100% confident yet, or just want/need more, take a look at <a href="../rule-creation-s01e02/">S01E02</a> and go even deeper down the rabbit-hole.</p>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 31, 2024</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Created">
@@ -1003,11 +1044,14 @@ A([Was it added to Plex before 90 days?]) --&gt;|No|B([Did it match one OR the o
 </span>
 <span>GitHub</span>
 <nav>
-<a class="md-author" href="https://github.com/benscobie" title="@benscobie">
-<img alt="benscobie" src="https://avatars.githubusercontent.com/u/944312?v=4&amp;size=72"/>
+<a class="md-author" href="https://github.com/ydkmlt84" title="@ydkmlt84">
+<img alt="ydkmlt84" src="https://avatars.githubusercontent.com/u/2887742?v=4&amp;size=72"/>
 </a>
 <a class="md-author" href="https://github.com/web-flow" title="@web-flow">
 <img alt="web-flow" src="https://avatars.githubusercontent.com/u/19864447?v=4&amp;size=72"/>
+</a>
+<a class="md-author" href="https://github.com/benscobie" title="@benscobie">
+<img alt="benscobie" src="https://avatars.githubusercontent.com/u/944312?v=4&amp;size=72"/>
 </a>
 </nav>
 </span>
