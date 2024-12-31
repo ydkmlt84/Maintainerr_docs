@@ -233,24 +233,24 @@ layers:
       align: start
       color: *color
       line:
-        amount: 3
-        height: 1.25
+        amount: 2
+        height: 2.25
       font:
         family: Oswald
         variant: *font_variant
         style: Bold
 
   # Page description
-  - size: { width: 864, height: 120 }
-    offset: { x: 64, y: 512 }
-    typography:
-      content: *page_description
-      align: start
-      color: *color
-      line:
-        amount: 3.25
-        height: 2.25
-      font:
-        family: Ubuntu
-        variant: mono
-        style: Regular
+  #- size: { width: 864, height: 75 }
+  #  offset: { x: 64, y: 512 }
+  #  typography:
+  #    content: *page_description
+  #    align: start
+  #    color: *color
+  #    line:
+  #      amount: 1
+  #      height: 2.25
+  #    font:
+  #      family: Ubuntu
+  #      variant: mono
+  #      style: Regular
