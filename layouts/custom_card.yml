@@ -171,7 +171,6 @@ tags:
 
   # Open Graph
   og:type: website
-  og:title: *page_title_with_site_name
   og:description: *page_description
   og:image: "{{ image.url }}"
   og:image:type: "{{ image.type }}"
@@ -219,15 +218,15 @@ layers:
         style: Bold
 
   # Page title
-  - size: { width: 864, height: 256 }
+  - size: { width: 864, height: 320 }
     offset: { x: 62, y: 192 }
     typography:
       content: *page_title
-      align: start
+      align: middle
       color: *color
       line:
         amount: 2
-        height: 2.25
+        height: 3.0
       font:
         family: Oswald
         variant: *font_variant
