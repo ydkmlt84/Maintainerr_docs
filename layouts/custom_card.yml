@@ -241,14 +241,14 @@ layers:
         style: Bold
 
   # Page description
-  - size: { width: 864, height: 84 }
+  - size: { width: 864, height: 120 }
     offset: { x: 64, y: 512 }
     typography:
       content: *page_description
       align: start
       color: *color
       line:
-        amount: 2
+        amount: 3.25
         height: 2.25
       font:
         family: Ubuntu
