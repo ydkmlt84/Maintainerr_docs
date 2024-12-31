@@ -218,7 +218,7 @@ layers:
         style: Bold
 
   # Page title
-  - size: { width: 864, height: 320 }
+  - size: { width: 1200, height: 320 }
     offset: { x: 62, y: 192 }
     typography:
       content: *page_title
@@ -226,7 +226,7 @@ layers:
       color: *color
       line:
         amount: 2
-        height: 3.0
+        height: 4.0
       font:
         family: Oswald
         variant: *font_variant
