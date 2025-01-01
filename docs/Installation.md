@@ -157,17 +157,17 @@ To produce some more informational logging output, either the whole time Maintai
 ``` yaml hl_lines="9-11"
 services:
     maintainerr:
-        image: ghcr.io/jorenn92/maintainerr:latest # (1)!
+        image: ghcr.io/jorenn92/maintainerr:latest
         user: 1000:1000
         volumes:
           - type: bind
-            source: <your host location> # (3)!
+            source: <your host location>
             target: /opt/data
         environment:
           - TZ=Europe/Brussels
           - DEBUG=true
         ports:
-          - 6246:6246 # (2)!
+          - 6246:6246
         restart: unless-stopped
 ```
 
