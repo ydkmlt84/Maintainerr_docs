@@ -206,8 +206,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
-      auto_append:
-        - includes/mkdocs.md
+      #auto_append:
+      #  - includes/mkdocs.md
+      url_download: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -241,7 +242,7 @@ nav:
     - Introduction.md
     - Contributing.md
     - Testing.md
-    - https://raw.githubusercontent.com/jorenn92/Maintainerr/refs/heads/main/CHANGELOG.md
+    - Changelog.md
   - API:
     - API.md  
   - Walkthroughs:
