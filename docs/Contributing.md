@@ -3,8 +3,4 @@ description: Contributing to Maintainerr in some way? Look no further. All you n
 title: Contributing
 ---
 
-## Want to improve Maintainerr?
-
-Head over to the repo, where you will find helpful information to get you started.
-
-[Contributing documentation](https://github.com/jorenn92/Maintainerr/blob/main/CONTRIBUTING.md)
+--8<-- "https://raw.githubusercontent.com/jorenn92/Maintainerr/refs/heads/main/CONTRIBUTING.md"
