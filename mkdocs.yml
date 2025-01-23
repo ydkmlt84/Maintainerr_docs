@@ -21,7 +21,7 @@
 
 # Project information
 site_name: Maintainerr Documentation
-site_url: https://docs.maintainerr.info
+site_url: https://docs.maintainerr.info/
 site_author: ydkmlt84
 site_description: >-
   Documentation for the wildly popular Maintainerr project.
@@ -90,7 +90,15 @@ plugins:
       categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
-  #- meta
+  - mike:
+      # These fields are all optional; the defaults are as below...
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: docs/stylesheets
+      javascript_dir: docs/assets/javascripts
   - git-revision-date-localized:
       enable_creation_date: true
       type: date
@@ -165,6 +173,8 @@ extra:
     new: Recently Added
     deprecated: Deprecated
     recent: New Updates
+  version:
+    provider: mike
 # Extensions
 markdown_extensions:
   - abbr
