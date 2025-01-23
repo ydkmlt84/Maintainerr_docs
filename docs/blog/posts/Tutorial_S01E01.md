@@ -36,12 +36,10 @@ Let's take the above movie as an example. This isn't a real movie, but for the p
 | ------------ | ------------ | ------- |
 | 31Oct2023 | True | 114 minutes |
 
-
 </br>
 
 > :bulb: This information can be looked at for an actual item in your Plex library. You can do it through the Plex UI or you can parse through the XML of an item.
 <a href="https://support.plex.tv/articles/201998867-investigate-media-information-and-formats/#:~:text=Open%20the%20Media,the%20XML%20information"> 🌐 &rarr; Link to see how to get your Plex Media Info and XML data</a>
-
 
 We want to make a rule that would add this movie to it's collection.
 
@@ -136,4 +134,3 @@ Now let's try a mixed **AND** / **OR** example...
 ---
 
 This is a very good jumping off point for you to start making rules. If you are still not 100% confident yet, or just want/need more, take a look at [S01E02](Tutorial_S01E02.md) and go even deeper down the rabbit-hole.
-
