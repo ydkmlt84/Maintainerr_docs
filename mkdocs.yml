@@ -175,6 +175,7 @@ extra:
     recent: New Updates
   version:
     provider: mike
+    default: latest
 # Extensions
 markdown_extensions:
   - abbr
