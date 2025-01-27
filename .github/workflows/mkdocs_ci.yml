@@ -27,10 +27,10 @@ jobs:
       - name: Extract Version Number
         id: extract_version
         run: |
-        echo "version=$(grep -oP 'version: \K.*' docs/index.md)" >> $GITHUB_ENV
+          echo "version=$(grep -oP 'version: \K.*' docs/index.md)" >> $GITHUB_ENV
       - name: Log Extracted Version
         run: |
-        echo "Extracted version: ${{ steps.extract_version.outputs.version }}"
+          echo "Extracted version: ${{ env.version }}"
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
