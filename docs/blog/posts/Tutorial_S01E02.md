@@ -15,9 +15,8 @@ In episode 1 we went over a super basic outline of rules and sections, operators
 Let's bring back the Movie from episode 1, that we wanted to add into our new collection.
 
 <p>
-<img alt="poster" src="https://docs.maintainerr.info/images/movie_poster.png" width="150" height="250"></img>
+<img alt="poster" src="../../images/movie_poster.png" width="150" height="250"></img>
 </p>
-
 
 This movie has the following attributes across Plex, Overseerr, and Radarr:
 
