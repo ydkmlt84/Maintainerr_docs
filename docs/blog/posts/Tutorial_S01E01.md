@@ -13,7 +13,7 @@ The rule system behind Maintainerr is quite complex, and therefore powerful.  Ge
 
 </br>
 <p>
-<img alt="poster" src="../../images/movie_poster.png" width="150" height="250"></img>
+<img alt="poster" src="https://docs.maintainerr.info/latest/images/movie_poster.png" width="150" height="250"></img>
 </p>
 
 Let's take the above movie as an example. This isn't a real movie, but for the purposes of this tutorial we are going to pretend. This movie has the following attributes across Plex, Overseerr, and Radarr:
@@ -53,17 +53,17 @@ We want to make a rule that would add this movie to it's collection.
 
 We will start from the top of a new rule.
 
-<p align="center"><img alt="screenshot-1" src="../../images/screenshot-1.png" width="80%"></img></p>
+<p align="center"><img alt="screenshot-1" src="https://docs.maintainerr.info/latest/images/screenshot-1.png" width="80%"></img></p>
 
 - 1: This is the name of the Rule, and will eventually be the name of the Collection that gets created.
 - 2: Self explanatory but you can put whatever you want here. It will be shown in Plex when you open the collection.
-     <p align="center"><img alt"screenshot_plex" src="../../latest/images/screenshot_plex_collection.png" width="75%"></p>
+     <p align="center"><img alt"screenshot_plex" src="https://docs.maintainerr.info/latest/images/screenshot_plex_collection.png" width="75%"></p>
 - 3: Drop-down list of your Plex Libraries. Which library is this rule going to be run against?
 - 4: This will not be shown if you select a `Movies` library in step 3. If you selected a `TVShow` library, your options will be shows/seasons/episodes. What type of TVShow media are we going to run the rule against? An entire show, just seasons, or just episodes? Different options will be made available to you or taken away, depending on what you select here.
 - 5: Sonarr/Radarr action is what is going to happen after the `action after days` set in step 6. Options are dependent on the library and media type from above. `Delete` will remove the files and the item from Sonarr/Radarr. `Unmonitor and delete` will unmonitor (not remove) the item from Sonarr/Radarr but delete the files. `Unmonitor and keep` will unmonitor the item from Sonarr/Radarr and <u>**keep**</u> the files.
 - 6: Think of this as a "delay" setting. How many days after this rule is ran, items have been matched to this rules filter parameters and added to the collection, will we execute the action set in step 5?
 
-<p align="center"><img alt="screenshot-2"src="../../images/screenshot-2.png" width="75%"></img></p>
+<p align="center"><img alt="screenshot-2"src="https://docs.maintainerr.info/latest/images/screenshot-2.png" width="75%"></img></p>
 
 - 7: How many months are we going to keep logs of this collections actions?
 - 8: Is this Rule active? Will it be one of the rules ran either by a manual run, or through periodic runs?
@@ -74,7 +74,7 @@ We will start from the top of a new rule.
 - 12: You can toggle the rule system off and on. This is useful if you have collections in Plex that you want to see in Maintainerr, but don't want any actions taken on the collection.
 - 13: You can create a collection in Plex, and then use that collection in Maintainerr. If you are doing that, tick this Custom Collection box to on. This can be useful if there is a collection made by say PMM or by you, and you want to execute some rules against it.
 
-   > <img alt="screenshot-discord" src="../../images/screenshot_discord_comment.png" width=85%></img>
+   > <img alt="screenshot-discord" src="https://docs.maintainerr.info/latest/images/screenshot_discord_comment.png" width=85%></img>
 
 ---
 
