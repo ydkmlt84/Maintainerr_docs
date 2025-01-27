@@ -1,8 +1,16 @@
 name: mkdocs
 on:
-  push:
-    branches:
-      - main
+  repository_dispatch:
+    types: [maintainerr-release]
+    inputs:
+    versionInput:
+      description: 'Input version from Maintainerr release'
+      required: true
+  workflow_dispatch:
+    inputs:
+      versionInput:
+        description: 'Input version from Maintainerr release'
+        required: true
 permissions:
   contents: write
 jobs:
@@ -38,7 +46,7 @@ jobs:
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-committers-plugin-2
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: mike deploy --update-aliases 2.8.0 latest
-      - run: mike set-default --push latest
+      - run: mike deploy --update-aliases ${{github.event.inputs.versionInput}} latest
+      - run: mike set-default --push --allow-empty latest
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
