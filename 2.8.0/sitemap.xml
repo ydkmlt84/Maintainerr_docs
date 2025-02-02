@@ -2,82 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/API/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Changelog/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Collections/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Common/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Configuration/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Contributing/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Glossary/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Installation/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Introduction/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/ReverseProxy/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Rules/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Test-Media/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/Testing/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.maintainerr.info/2.8.0/Works/</loc>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/blog/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/blog/tutorials/getting-started-s01e01/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/blog/tutorials/rule-creation-s01e02/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/blog/tutorials/sections-s01e03/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/blog/archive/2024/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
     <url>
          <loc>https://docs.maintainerr.info/2.8.0/blog/category/tutorials/</loc>
-         <lastmod>2025-01-27</lastmod>
+         <lastmod>2025-02-02</lastmod>
     </url>
 </urlset>

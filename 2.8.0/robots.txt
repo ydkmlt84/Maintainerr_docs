@@ -9,4 +9,4 @@ Disallow: /private/
 Disallow: /temp/
 
 # Specify the location of your sitemap
-Sitemap: https://docs.maintainerr.info/sitemap.xml
+Sitemap: https://docs.maintainerr.info/latest/sitemap.xml

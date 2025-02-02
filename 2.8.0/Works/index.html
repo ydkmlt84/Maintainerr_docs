@@ -5,14 +5,14 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Basic information about Maintainerr" name="description"/>
+<meta content="Explanation of the basics and how Maintainerr was designed to be used." name="description"/>
 <meta content="ydkmlt84" name="author"/>
-<link href="https://docs.maintainerr.info/2.8.0/Introduction/" rel="canonical"/>
-<link href="../Test-Media/" rel="prev"/>
-<link href="../Contributing/" rel="next"/>
+<link href="https://docs.maintainerr.info/2.8.0/Works/" rel="canonical"/>
+<link href="../Configuration/" rel="prev"/>
+<link href="../Common/" rel="next"/>
 <link href="../images/favicon.ico" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.1+insiders-4.53.15" name="generator"/>
-<title>Introduction - Maintainerr Documentation</title>
+<title>How it works - Maintainerr Documentation</title>
 <link href="../assets/stylesheets/main.957d08c0.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -105,16 +105,16 @@
     });
   </script>
 <meta content="website" property="og:type">
-<meta content="Basic information about Maintainerr" property="og:description">
-<meta content="https://docs.maintainerr.info/2.8.0/assets/images/social/Introduction.png" property="og:image">
+<meta content="Explanation of the basics and how Maintainerr was designed to be used." property="og:description">
+<meta content="https://docs.maintainerr.info/2.8.0/assets/images/social/Works.png" property="og:image">
 <meta content="image/png" property="og:image:type">
 <meta content="1200" property="og:image:width">
 <meta content="600" property="og:image:height"/>
-<meta content="https://docs.maintainerr.info/2.8.0/Introduction/" property="og:url"/>
+<meta content="https://docs.maintainerr.info/2.8.0/Works/" property="og:url"/>
 <meta content="summary_large_image" property="twitter:card"/>
-<meta content="Introduction - Maintainerr Documentation" property="twitter:title"/>
-<meta content="Basic information about Maintainerr" property="twitter:description"/>
-<meta content="https://docs.maintainerr.info/2.8.0/assets/images/social/Introduction.png" property="twitter:image"/>
+<meta content="How it works - Maintainerr Documentation" property="twitter:title"/>
+<meta content="Explanation of the basics and how Maintainerr was designed to be used." property="twitter:description"/>
+<meta content="https://docs.maintainerr.info/2.8.0/assets/images/social/Works.png" property="twitter:image"/>
 <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
@@ -130,7 +130,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#features">
+<a class="md-skip" href="#basic-idea">
           Skip to content
         </a>
 </div>
@@ -156,7 +156,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Introduction
+              How it works
             
           </span>
 </div>
@@ -230,7 +230,7 @@
 
       </a>
 </li>
-<li class="md-tabs__item">
+<li class="md-tabs__item md-tabs__item--active">
 <a class="md-tabs__link" href="../Installation/">
           
   
@@ -260,8 +260,8 @@
 
         </a>
 </li>
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../Introduction/">
           
   
     
@@ -330,9 +330,9 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
 <span class="md-ellipsis">
     
   
@@ -343,7 +343,7 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
             
@@ -377,8 +377,22 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Works/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    How it works
+  
+
+    
+  </span>
+<span class="md-status md-status--new" title="Recently Added">
+</span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     
   
@@ -390,6 +404,76 @@
 <span class="md-status md-status--new" title="Recently Added">
 </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#basic-idea">
+<span class="md-ellipsis">
+      
+        Basic Idea
+      
+    </span>
+</a>
+<nav aria-label="Basic Idea" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quick-rundown">
+<span class="md-ellipsis">
+      
+        Quick Rundown
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#take-action-after-days">
+<span class="md-ellipsis">
+      
+        Take action after days
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tldr">
+<span class="md-ellipsis">
+      
+        TLDR;
+      
+    </span>
+</a>
+<nav aria-label="TLDR;" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requirementslimitations">
+<span class="md-ellipsis">
+      
+        Requirements/Limitations
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#helpful-links">
+<span class="md-ellipsis">
+      
+        Helpful links
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Common/">
@@ -526,9 +610,9 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -539,7 +623,7 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             
@@ -549,46 +633,17 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    
-  
-    Introduction
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
-<span class="md-ellipsis">
-    
-  
-    Introduction
-  
-
-    
-  </span>
-</a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#features">
+<a class="md-nav__link" href="../Introduction/">
 <span class="md-ellipsis">
-      
-        Features
-      
-    </span>
+    
+  
+    Introduction
+  
+
+    
+  </span>
 </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../Contributing/">
@@ -794,10 +849,63 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#features">
+<a class="md-nav__link" href="#basic-idea">
 <span class="md-ellipsis">
       
-        Features
+        Basic Idea
+      
+    </span>
+</a>
+<nav aria-label="Basic Idea" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quick-rundown">
+<span class="md-ellipsis">
+      
+        Quick Rundown
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#take-action-after-days">
+<span class="md-ellipsis">
+      
+        Take action after days
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tldr">
+<span class="md-ellipsis">
+      
+        TLDR;
+      
+    </span>
+</a>
+<nav aria-label="TLDR;" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#requirementslimitations">
+<span class="md-ellipsis">
+      
+        Requirements/Limitations
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#helpful-links">
+<span class="md-ellipsis">
+      
+        Helpful links
       
     </span>
 </a>
@@ -809,59 +917,94 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Introduction</h1>
-<p align="center">
-<a href="https://discord.gg/WP4ZW2QYwk" target="blank"><img alt="Discord" src="https://img.shields.io/discord/1152219249549512724?style=flat&amp;logo=discord&amp;logoColor=white&amp;label=Maintainerr"/></a>
-<picture><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jorenn92/maintainerr/.github%2Fworkflows%2Fbuild.yml?branch=main&amp;style=flat&amp;logo=github&amp;label=Latest%20Build"/></picture>
-<a href="https://github.com/jorenn92/Maintainerr/releases" target="blank"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/jorenn92/maintainerr?style=flat&amp;logo=github&amp;logoColor=white&amp;label=Latest%20Release"/></a>
-<picture><img alt="GitHub commits since latest release" src="https://img.shields.io/github/commits-since/jorenn92/maintainerr/latest?style=flat&amp;logo=github&amp;logoColor=white"/></picture>
-<picture><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/jorenn92/maintainerr?style=flat&amp;logo=github&amp;logoColor=white&amp;label=Stars"/></picture>
-<a href="https://hub.docker.com/r/jorenn92/maintainerr" target="blank"><img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/jorenn92/maintainerr?style=flat&amp;logo=docker&amp;logoColor=white&amp;label=Docker%20Pulls"/></a>
-<picture><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/jorenn92/maintainerr?style=flat&amp;logo=github&amp;logoColor=white&amp;label=COMMITS"/></picture>
-<picture><img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-closed/jorenn92/maintainerr?style=flat&amp;logo=github&amp;logoColor=white"/></picture>
-<picture><img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/jorenn92/maintainerr?style=flat&amp;logo=github&amp;logoColor=white"/></picture>
-<a href="https://github.com/sponsors/jorenn92" target="blank"><img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/JORENN92?style=flat&amp;logo=github%20sponsors&amp;logoColor=white&amp;label=sponsors"/></a>
-<a href="https://ko-fi.com/maintainerr_app" target="blank"><img alt="Static Badge" src="https://img.shields.io/badge/DONATE-kofi-red?style=flat&amp;logo=ko-fi&amp;logoColor=white"/></a>
-<picture><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="https://img.shields.io/github/license/jorenn92/maintainerr?style=flat"><img alt="GitHub License" src="https://img.shields.io/github/license/jorenn92/maintainerr?style=flat"/></a></picture>
-</p>
-<p><strong>Maintainerr</strong> makes managing your media easy. No longer do you have to worry about your precious hard drive space being taken up by Movies and TVShows, that aren't even being watched.</p>
-<div class="admonition note">
-<p class="admonition-title">Beta</p>
-<p>Maintainerr is beta software, please report any bugs or issues.</p>
-</div>
-<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">¶</a></h2>
+<h1>How it works</h1>
+<h2 id="basic-idea">Basic Idea<a class="headerlink" href="#basic-idea" title="Permanent link">¶</a></h2>
+<p>Some people come to Maintainerr because they heard it was the solution to whatever problem they were having. Not everyone understands completly, what Maintainerr even is and how to use it.</p>
+<h3 id="quick-rundown">Quick Rundown<a class="headerlink" href="#quick-rundown" title="Permanent link">¶</a></h3>
+<p>Maintainerr looks through your Plex media, to find items that match against the given ruleset. Rulesets can be as easy or as complex as you want.</p>
+<details class="note">
+<summary>Rule example</summary>
+<p>Here is a quick example:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>Plex- Date added before 90 days
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>AND
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>Plex- Viewed by username contains Overseerr- requested by username
+</span></code></pre></div>
+There are more examples and explanations of each option here → <a href="https://docs.maintainerr.info/latest/Glossary">Rule Glossary</a> and here → <a href="https://docs.maintainerr.info/blog">Walkthroughs</a>.</p>
+</details>
+<p>Once the rule is setup and the rule handler has ran (every 8 hours by default), Maintainerr will add all of this rules matches to a Collection. This collection, once it has matched items inside of it, will get synced to Plex. There are various options as to where you want this collection displayed on your Plex server, but at the very least they will be inside of your library on the Collections tab.</p>
+<h3 id="take-action-after-days">Take action after days<a class="headerlink" href="#take-action-after-days" title="Permanent link">¶</a></h3>
+<p>Within the rule creation page there is a setting called <code>Take action after days</code> along with a setting called Sonarr/Radarr/Plex action. Which actions that are available depends on the Library and if you chose a configured Sonarr or Radarr server. An in-depth look at the rule creation settings can be found here → <a href="https://docs.maintainerr.info/latest/blog/tutorials/getting-started-s01e01/#rule-setup">Walkthrough S01E01</a></p>
+<p>Take action after days is how long media will be in this collection before action is taken against it. The action is setup by you when creating the rule. Options include <code>delete, unmonitor and delete, unmonitor and keep, delete season, unmonitor season and keep files, etc.</code></p>
+<p>Maintainerr will periodically run its Collection handler task (every 12 hours by default), and anything in a collection that meets the <code>Take action after days</code> deadline, action will be taken against it.</p>
+<h2 id="tldr">TLDR;<a class="headerlink" href="#tldr" title="Permanent link">¶</a></h2>
+<p>Maintainerr creates collections, synced with Plex, of items that match your ruleset. These items sit in the collection, displayed in various places on your Plex server, and once a set amount of time has passed, the items are removed/unmonitored. If you setup a rule to catch unwatched items, something got added to a collection, and then the item was watched...Maintainerr will remove it from the collection as it no longer meets the rule criteria (i.e. it is no longer queued for removal).</p>
+<h3 id="requirementslimitations">Requirements/Limitations<a class="headerlink" href="#requirementslimitations" title="Permanent link">¶</a></h3>
 <ul>
-<li>Make Plex collections from a specific set of rules, defined by you.</li>
-<li>Configure those rules to match your needs. (i.e. <code>Plex last viewed 30 days ago</code>)</li>
-<li>See an overview of your Plex library contents.</li>
-<li>Manually add an item to one of the above mentioned collections.</li>
-<li>Manually exclude an item from one of the collections, even if it meets the rule criteria.</li>
-<li>Show your new collection on the <em>Plex Home</em> screen.</li>
-<li>Set a number of days the collection will exist before it is deleted.</li>
-<li>Set Radarr and Sonarr to either <strong>remove</strong> or <strong>unmonitor</strong> media in the collection.</li>
-<li>Auto clear requests from Overseerr</li>
-<li>Remove media from disk</li>
+<li>Maintainerr uses Plex as its source of media. Everything has to be in your Plex server for Maintainerr to do anything with it.</li>
+<li>Setting <code>Take action after days</code> to 0 will not trigger anything based on a schedule. However, it does let you manually take action with the Handle Collections button. 1 is the minimum.</li>
+<li>You do not have to have Radarr or Sonarr setup in Maintainerr. However, you do have to if you want to use those rules.</li>
+<li>Maintainerr does have multiple *arr instance capability. We do not currently support mixed HD and UHD Plex libraries from within the same rule.</li>
+<li>Certain rules are only available based off the Library and Media type (show/season/episode).</li>
+<li>The data location within the container is <code>/opt/data</code>. This is where your log files live as well as the sqlite file that holds all of your settings.</li>
+<li>If you do not have a persistent host volume tied to this location, when you update Maintainerr, it will all be gone. <a href="https://docs.maintainerr.info/latest/Installation/">Installation</a>.</li>
+<li>The rule handler runs rules from top to bottom. Pay special attention to the order of your rules, to acheive the desired outcome.</li>
+<li>Maintainerr does not have authentication. <a href="https://maintainerr.info/#:~:text=Does%20Maintainerr%20have%20authentication%3F">Authentication Suggestion</a> and <a href="https://features.maintainerr.info/posts/6/add-authentication-into-the-app">Feature Request</a></li>
 </ul>
-<p>Maintainerr supports rules across these apps :</p>
-<ul>
-<li>Plex</li>
-<li>Overseerr</li>
-<li>Radarr</li>
-<li>Sonarr</li>
-<li>Tautulli</li>
-</ul>
+<h2 id="helpful-links">Helpful links<a class="headerlink" href="#helpful-links" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th style="text-align: center;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/Rules">Rules</a></td>
+<td style="text-align: center;">Basic overview of rules</td>
+</tr>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/Glossary">Rules Glossary</a></td>
+<td style="text-align: center;">Outline of the available rules</td>
+</tr>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/Collections">Collections</a></td>
+<td style="text-align: center;">Basic overview of collections</td>
+</tr>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/Test-Media">Test Media</a></td>
+<td style="text-align: center;">How to test your rules against a specific media item</td>
+</tr>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/Common/">Common Problems</a></td>
+<td style="text-align: center;">A short list of common problems and their solutions</td>
+</tr>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/blog/">Walkthroughs</a></td>
+<td style="text-align: center;">A short series of <em>episodes</em> written to try and help you get started.</td>
+</tr>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/Installation/">Installation</a></td>
+<td style="text-align: center;">How to get Maintainerr installed and running.</td>
+</tr>
+<tr>
+<td><a href="https://docs.maintainerr.info/latest/Installation/#enabling-debug-logging_1">Debug logging</a></td>
+<td style="text-align: center;">How to enable debug logging.</td>
+</tr>
+</tbody>
+</table>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 31, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2025</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Created">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 1, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2025</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">
@@ -874,9 +1017,6 @@
 </a>
 <a class="md-author" href="https://github.com/web-flow" title="@web-flow">
 <img alt="web-flow" src="https://avatars.githubusercontent.com/u/19864447?v=4&amp;size=72"/>
-</a>
-<a class="md-author" href="https://github.com/benscobie" title="@benscobie">
-<img alt="benscobie" src="https://avatars.githubusercontent.com/u/944312?v=4&amp;size=72"/>
 </a>
 </nav>
 </span>
