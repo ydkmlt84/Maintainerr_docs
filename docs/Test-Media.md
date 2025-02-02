@@ -13,9 +13,9 @@ The first thing you must do, in order to use this function, is to create a rule.
 
 <p align="center" markdown>
 
-[Rules](https://docs.maintainerr.info/Rules/){ .md-button .md-button--primary }
+[Rules](https://docs.maintainerr.info/latest/Rules/){ .md-button .md-button--primary }
 
-[Walkthroughs](https://docs.maintainerr.info/blog/){ .md-button .md-button--primary }
+[Walkthroughs](https://docs.maintainerr.info/latest/blog/){ .md-button .md-button--primary }
 
 </p>
 
