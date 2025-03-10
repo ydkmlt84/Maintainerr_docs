@@ -22,15 +22,25 @@ Maintainerr looks through your Plex media, to find items that match against the 
     ```
     There are more examples and explanations of each option here &#8594; [Rule Glossary](https://docs.maintainerr.info/latest/Glossary) and here &#8594; [Walkthroughs](https://docs.maintainerr.info/blog).
 
-Once the rule is setup and the rule handler has ran (every 8 hours by default), Maintainerr will add all of this rules matches to a Collection. This collection, once it has matched items inside of it, will get synced to Plex. There are various options as to where you want this collection displayed on your Plex server, but at the very least they will be inside of your library on the Collections tab.
+Once the rule is setup and the rule handler has ran (every 8 hours by default), Maintainerr will add all of this rule's matches to a Collection. This collection, once it has matched items inside of it, will get synced to Plex. *An empty collection will not get synced with Plex*. There are various options as to where you want this collection displayed on your Plex server, but at the very least they will be inside of your library on the Collections tab.
 
 ### Take action after days
 
-Within the rule creation page there is a setting called `Take action after days` along with a setting called Sonarr/Radarr/Plex action. Which actions that are available depends on the Library and if you chose a configured Sonarr or Radarr server. An in-depth look at the rule creation settings can be found here &#8594; [Walkthrough S01E01](https://docs.maintainerr.info/latest/blog/tutorials/getting-started-s01e01/#rule-setup)
+Within the rule creation page there is a setting called `Take action after days`, along with a setting called Sonarr/Radarr/Plex action. Which actions that are available depends on the Library and if you chose a configured Sonarr or Radarr server. An in-depth look at the rule creation settings can be found here &#8594; [Walkthrough S01E01](https://docs.maintainerr.info/latest/blog/tutorials/getting-started-s01e01/#rule-setup)
 
 Take action after days is how long media will be in this collection before action is taken against it. The action is setup by you when creating the rule. Options include `delete, unmonitor and delete, unmonitor and keep, delete season, unmonitor season and keep files, etc.`
 
 Maintainerr will periodically run its Collection handler task (every 12 hours by default), and anything in a collection that meets the `Take action after days` deadline, action will be taken against it.
+
+#### Dry Run
+
+There is no dry run, per se. When either the rule runs on its schedule, or you manually click the Run Rules button, Maintainerr will run every rule. There is currently no way to select which rules you would like to run. You *could* uncheck the active checkbox in a rule if you didn't want that rule included in the run.
+
+Each rule checks the chosen library against the rule parameters you setup, makes a collection for that rule, and everything that matches the ruleset gets added to that collection. A separate task, the *Collection Handler*, is what takes actions against the items in a collection. When the Collection Handler determines that an items has been in the collection long enough to meet the `Take action after days` setting, your chosen action will be taken (Plex/Sonarr/Radarr unmonitor or delete).
+
+No media will get removed simply by running rules, as this is a separate task. Depending on what you set as `Take action after days`, that is how long you will have to see what collection is created (AKA what the rule actually found as matches), before anything happens to your media. Setting the `Take action after days` to 1 will give you 1 day of those items being in the collection before the Action is taken. For the purposes of a "dry-run", we suggest a minimum of 30 days and this is the default setting. Once your collection is working as you intended, you can adjust this to how long you want to wait.
+
+All of that is to say you can safely use the Run Rules button to see what items get added to the collection, based off of your ruleset. It wouldn't make much sense for us to make a separate dry-run feature as all of the same calculations would need to happen. During this testing, there is no reason to press the Handle Collections button.
 
 ## TLDR;
 

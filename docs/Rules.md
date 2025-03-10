@@ -20,27 +20,28 @@ General info about the rule. Some of the information specified here will be show
 
 | Parameter                    | Description                                                                                                                                                            |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Name                         | The Rule and Plex Collection name                                                                                                                                      |
-| Description                  | Description of the Rule. This is also used as the Collection's description                                                                                             |
-| Library                      | Which Plex library's media to use                                                                                                                                      |
-| Media type                   | The type of TV media the rules will apply to, either the entire show, only seasons or only episodes                                                                    |
-| Radarr server                | The server that Radarr specific rules and actions will be applied to                                                                                                   |
-| Radarr action                | Unmonitor or delete movies from Radarr                                                                                                                                 |
-| Sonarr server                | The server that Sonarr specific rules and actions will be applied to                                                                                                   |
-| Sonarr action                | Unmonitor or delete series from Sonarr                                                                                                                                 |
-| Plex action                  | Delete media from Plex directly. Only applicable when no *arr server is selected.                                                                                      |
-| Active                       | If inactive, the rule won't run                                                                                                                                        |
-| Show on library recommended  | Show the rule's collection on the Plex library recommended screen                                                                                                      |
-| Show on home                 | Show the rule's collection on the Plex home screen                                                                                                                     |
-| Add list exclusions          | Prevent \*arr import lists from re-adding media that has been removed by Maintainerr                                                                                   |
-| Media deleted after days     | Amount of days media will live in the collection before deletion                                                                                                       |
-| Use rules                    | Disable the rule engine, in case you want to add media manually                                                                                                        |
+| Name                         | The Rule and Plex Collection  |
+| Description                  | Description of the Rule. This is also used as the Collection's description  |
+| Library                      | Which Plex library's media to use  |
+| Media type                   | The type of TV media the rules will apply to, either the entire show, only seasons or only episodes  |
+| Radarr server                | The server that Radarr specific rules and actions will be applied to  |
+| Radarr action                | Unmonitor or delete movies from Radarr  |
+| Sonarr server                | The server that Sonarr specific rules and actions will be applied to  |
+| Sonarr action                | Unmonitor or delete series from Sonarr  |
+| Plex action                  | Delete media from Plex directly. Only applicable when no *arr server is selected.  |
+| Do nothing action            | No action will be taken on the media in this collection.  |
+| Active                       | If inactive, the rule won't run  |
+| Show on library recommended  | Show the rule's collection on the Plex library recommended screen  |
+| Show on home                 | Show the rule's collection on the Plex home screen  |
+| Add list exclusions          | Prevent \*arr import lists from re-adding media that has been removed by Maintainerr  |
+| Media deleted after days     | Amount of days media will live in the collection before deletion  |
+| Use rules                    | Disable the rule engine, in case you want to add media manually  |
 | Force reset Overseerr record | Force resets the Overseerr record by deleting any requests instead of relying on availability-sync. 'Enable CSRF Protection' needs to be disabled in Overseer's settings for this to work. [^1] |
-| Custom collection            | Use a manual collection. Media will sync from Plex to Maintainerr. Maintainerr will never remove this collection from Plex                                             |
-| Custom collection name       | The name of the manual collection to use [^2]                                                                                                                          |
+| Custom collection            | Use a manual collection. Media will sync from Plex to Maintainerr. Maintainerr will never remove this collection from Plex  |
+| Custom collection name       | The name of the manual collection to use [^2]  |
 
 [^1]:
-    This is the old method of telling Overseerr that something has been removed. The default method now, is to tell Overseerr to initiate an `Availability Sync`, through its API. This happens automatically at the end of the collection handler job.
+    This is the old method of telling Overseerr that something has been removed. The default method now, is to tell Overseerr to initiate an `Availability Sync`, through its API. This happens automatically at the end of the collection handler job. This option is not available for Jellyseerr.
 [^2]: Only shown and needed when the Custom Collection checkbox is checked.  
 
 #### TV media type

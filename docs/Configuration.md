@@ -48,6 +48,16 @@ Overseerr's configuration is required to use its parameters in rules and to remo
 | Port          | The port Overseerr runs on |
 | Api key  | Overseerr API key, should be visible in the Overseerr settings |
 
+## Jellyseerr
+
+Jellyseerr's configuration is required to use its parameters in rules and to remove requests. </br>
+
+| Param | Description |
+| ------------- |:-------------:|
+| Hostname or IP| The domain name or local IP of the host your server runs on |
+| Port          | The port Jellyseerr runs on |
+| Api key  | Jellyseerr API key, should be visible in the Jellyseerr settings |
+
 ## Radarr
 
 Radarr's configuration is required to use its parameters in rules and to remove or unmonitor movies.

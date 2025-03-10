@@ -576,6 +576,71 @@ The key is used for identification in Yaml rule files.
 - Availability: movies, shows, seasons, episodes
 - Type: boolean
 
+### Jellyseerr
+
+#### Requested by user (Plex or local username)
+
+!!! info ""
+    The username of the Plex user who requested the media in Jellyseerr. If a local user requested it, this will be the local username.
+
+- Key: Jellyseerr.addUser
+- Availability: movies, shows, seasons, episodes
+- Type: text
+
+#### Request date
+
+!!! info ""
+    The date when the media was requested in Jellyseerr.
+
+- Key: Jellyseerr.requestDate
+- Availability: movies, shows, seasons, episodes
+- Type: date
+
+#### Release/air date
+
+!!! info ""
+    The release or air date of the media in Jellyseerr.
+
+- Key: Jellyseerr.releaseDate
+- Availability: movies, shows, seasons, episodes
+- Type: date
+
+#### Approval date
+
+!!! info ""
+    The date when the media request was approved in Jellyseerr.
+
+- Key: Jellyseerr.approvalDate
+- Availability: movies, shows, seasons, episodes
+- Type: date
+
+#### Media downloaded date
+
+!!! info ""
+    The date when the media was downloaded in Jellyseerr.
+
+- Key: Jellyseerr.mediaAddedAt
+- Availability: movies, shows, seasons, episodes
+- Type: date
+
+#### Amount of requests
+
+!!! info ""
+    The total number of requests for the media in Jellyseerr.
+
+- Key: Jellyseerr.amountRequested
+- Availability: movies, shows, seasons, episodes
+- Type: number
+
+#### Requested in Jellyseerr
+
+!!! info ""
+    Indicates whether the media was requested in Jellyseerr.
+
+- Key: Jellyseerr.isRequested
+- Availability: movies, shows, seasons, episodes
+- Type: boolean
+
 ### Tautulli
 
 #### Viewed by (username)
