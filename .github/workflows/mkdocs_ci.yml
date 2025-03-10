@@ -76,7 +76,7 @@ jobs:
             if [ "${{ github.event.inputs.isDev }}" == "false" ]; then
               mike deploy --update-aliases "$VERSION" latest
             else
-              mike deploy "$VERSION"
+              mike deploy --push --update-aliases "$VERSION" dev
             fi
           fi
 
