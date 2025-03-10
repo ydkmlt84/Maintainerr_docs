@@ -11,7 +11,7 @@
 <link href="../Configuration/" rel="prev"/>
 <link href="../Common/" rel="next"/>
 <link href="../images/favicon.ico" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.5+insiders-4.53.15" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.7+insiders-4.53.15" name="generator"/>
 <title>How it works - Maintainerr Documentation</title>
 <link href="../assets/stylesheets/main.f15084e1.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
@@ -437,6 +437,19 @@
       
     </span>
 </a>
+<nav aria-label="Take action after days" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dry-run">
+<span class="md-ellipsis">
+      
+        Dry Run
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -875,6 +888,19 @@
       
     </span>
 </a>
+<nav aria-label="Take action after days" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dry-run">
+<span class="md-ellipsis">
+      
+        Dry Run
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -931,11 +957,16 @@
 </span></code></pre></div>
 There are more examples and explanations of each option here → <a href="https://docs.maintainerr.info/latest/Glossary">Rule Glossary</a> and here → <a href="https://docs.maintainerr.info/blog">Walkthroughs</a>.</p>
 </details>
-<p>Once the rule is setup and the rule handler has ran (every 8 hours by default), Maintainerr will add all of this rules matches to a Collection. This collection, once it has matched items inside of it, will get synced to Plex. There are various options as to where you want this collection displayed on your Plex server, but at the very least they will be inside of your library on the Collections tab.</p>
+<p>Once the rule is setup and the rule handler has ran (every 8 hours by default), Maintainerr will add all of this rule's matches to a Collection. This collection, once it has matched items inside of it, will get synced to Plex. <em>An empty collection will not get synced with Plex</em>. There are various options as to where you want this collection displayed on your Plex server, but at the very least they will be inside of your library on the Collections tab.</p>
 <h3 id="take-action-after-days">Take action after days<a class="headerlink" href="#take-action-after-days" title="Permanent link">¶</a></h3>
-<p>Within the rule creation page there is a setting called <code>Take action after days</code> along with a setting called Sonarr/Radarr/Plex action. Which actions that are available depends on the Library and if you chose a configured Sonarr or Radarr server. An in-depth look at the rule creation settings can be found here → <a href="https://docs.maintainerr.info/latest/blog/tutorials/getting-started-s01e01/#rule-setup">Walkthrough S01E01</a></p>
+<p>Within the rule creation page there is a setting called <code>Take action after days</code>, along with a setting called Sonarr/Radarr/Plex action. Which actions that are available depends on the Library and if you chose a configured Sonarr or Radarr server. An in-depth look at the rule creation settings can be found here → <a href="https://docs.maintainerr.info/latest/blog/tutorials/getting-started-s01e01/#rule-setup">Walkthrough S01E01</a></p>
 <p>Take action after days is how long media will be in this collection before action is taken against it. The action is setup by you when creating the rule. Options include <code>delete, unmonitor and delete, unmonitor and keep, delete season, unmonitor season and keep files, etc.</code></p>
 <p>Maintainerr will periodically run its Collection handler task (every 12 hours by default), and anything in a collection that meets the <code>Take action after days</code> deadline, action will be taken against it.</p>
+<h4 id="dry-run">Dry Run<a class="headerlink" href="#dry-run" title="Permanent link">¶</a></h4>
+<p>There is no dry run, per se. When either the rule runs on its schedule, or you manually click the Run Rules button, Maintainerr will run every rule. There is currently no way to select which rules you would like to run. You <em>could</em> uncheck the active checkbox in a rule if you didn't want that rule included in the run.</p>
+<p>Each rule checks the chosen library against the rule parameters you setup, makes a collection for that rule, and everything that matches the ruleset gets added to that collection. A separate task, the <em>Collection Handler</em>, is what takes actions against the items in a collection. When the Collection Handler determines that an items has been in the collection long enough to meet the <code>Take action after days</code> setting, your chosen action will be taken (Plex/Sonarr/Radarr unmonitor or delete).</p>
+<p>No media will get removed simply by running rules, as this is a separate task. Depending on what you set as <code>Take action after days</code>, that is how long you will have to see what collection is created (AKA what the rule actually found as matches), before anything happens to your media. Setting the <code>Take action after days</code> to 1 will give you 1 day of those items being in the collection before the Action is taken. For the purposes of a "dry-run", we suggest a minimum of 30 days and this is the default setting. Once your collection is working as you intended, you can adjust this to how long you want to wait.</p>
+<p>All of that is to say you can safely use the Run Rules button to see what items get added to the collection, based off of your ruleset. It wouldn't make much sense for us to make a separate dry-run feature as all of the same calculations would need to happen. During this testing, there is no reason to press the Handle Collections button.</p>
 <h2 id="tldr">TLDR;<a class="headerlink" href="#tldr" title="Permanent link">¶</a></h2>
 <p>Maintainerr creates collections, synced with Plex, of items that match your ruleset. These items sit in the collection, displayed in various places on your Plex server, and once a set amount of time has passed, the items are removed/unmonitored. If you setup a rule to catch unwatched items, something got added to a collection, and then the item was watched...Maintainerr will remove it from the collection as it no longer meets the rule criteria (i.e. it is no longer queued for removal).</p>
 <h3 id="requirementslimitations">Requirements/Limitations<a class="headerlink" href="#requirementslimitations" title="Permanent link">¶</a></h3>
@@ -998,13 +1029,13 @@ There are more examples and explanations of each option here → <a href="https:
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2025</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 10, 2025 14:37:11">March 10, 2025</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Created">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2025</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 2, 2025 17:53:51">February 2, 2025</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="Contributors">
@@ -1136,7 +1167,7 @@ There are more examples and explanations of each option here → <a href="https:
 </div>
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
 <script id="__config" type="application/json">{"annotate": {"json": [".s2"]}, "base": "..", "features": ["content.code.annotate", "content.code.copy", "content.tooltips", "content.footnote.tooltips", "content.tabs.link", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "search.highlight", "search.share", "toc.follow"], "search": "../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
-<script src="../assets/javascripts/bundle.5a789024.min.js"></script>
+<script src="../assets/javascripts/bundle.f807c082.min.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script><script>document$.subscribe(() => {
