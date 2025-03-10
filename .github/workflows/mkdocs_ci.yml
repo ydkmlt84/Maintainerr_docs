@@ -1,8 +1,5 @@
 name: Mkdocs Deploy
 on:
-  push:
-    branches:
-      - main
   repository_dispatch:
     types: [maintainerr-release]
   workflow_dispatch:
@@ -10,8 +7,14 @@ on:
       versionInput:
         description: 'Input version from Maintainerr release'
         required: true
+      isDev:
+        description: 'Is this a dev version?'
+        required: true
+        type: boolean
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -24,27 +27,36 @@ jobs:
           sparse-checkout: |
             docs
             layouts
-      - name: Extract Version Number
-        id: extract_version
+
+      - name: Validate Version Input
         run: |
-          echo "version=$(grep -oP 'version: \K.*' docs/index.md)" >> $GITHUB_ENV
-      - name: Log Extracted Version
-        run: |
-          echo "Extracted version: ${{ env.version }}"
+          VERSION="${{ github.event.inputs.versionInput || github.event.client_payload.versionInput }}"
+
+          if [[ ! "$VERSION" =~ ^[a-zA-Z0-9._-]+$ ]]; then
+            echo "Invalid version format: '$VERSION'"
+            echo "Allowed characters: letters, numbers, dots (.), hyphens (-), and underscores (_)"
+            exit 1
+          fi
+          echo "Version format is valid: $VERSION"
+
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
+
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
       - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material- 
+
       - run: sudo apt-get install pngquant
       - run: pip install mkdocs-glightbox
       - run: pip install mkdocs-swagger-ui-tag
@@ -53,7 +65,24 @@ jobs:
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-committers-plugin-2
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: mike deploy --update-aliases ${{github.event.client_payload.versionInput || github.event.inputs.versionInput || env.version || '2.8.0'}} latest
-      - run: mike set-default --push --allow-empty latest
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }} 
+
+      - name: Deploy Documentation
+        run: |
+          VERSION="${{ github.event.inputs.versionInput || github.event.client_payload.versionInput }}"
+
+          if [ "${{ github.event_name }}" == "repository_dispatch" ]; then
+            mike deploy --update-aliases "$VERSION" latest
+          else
+            if [ "${{ github.event.inputs.isDev }}" == "false" ]; then
+              mike deploy --update-aliases "$VERSION" latest
+            else
+              mike deploy "$VERSION"
+            fi
+          fi
+
+      - name: Set Default Version to Latest
+        if: github.event_name == 'repository_dispatch' || github.event.inputs.isDev == 'false'
+        run: mike set-default --push --allow-empty latest
+
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}

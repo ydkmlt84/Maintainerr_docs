@@ -1,5 +1,4 @@
 ---
-status: new
 description: Common problems, and their solutions.
 title: Common Problems
 ---
