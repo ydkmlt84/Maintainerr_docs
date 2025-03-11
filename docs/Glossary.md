@@ -273,6 +273,42 @@ The key is used for identification in Yaml rule files.
 - Availability: seasons, episodes
 - Type: text[]
 
+#### IMDB rating (scale 1-10)
+
+!!! info ""
+    The IMDB rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_imdb
+- Availability: movies, shows, episodes
+- Type: number
+
+#### RottenTomatoes critic rating (scale 1-10)
+
+!!! info ""
+    The Rotten Tomatoes critic rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_rottenTomatoesCritic
+- Availability: movies, shows, episodes
+- Type: number
+
+#### RottenTomatoes audience rating (scale 1-10)
+
+!!! info ""
+    The Rotten Tomatoes audience rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_rottenTomatoesAudience
+- Availability: movies, shows, episodes
+- Type: number
+
+#### The Movie Database rating (scale 1-10)
+
+!!! info ""
+    The Movie Database rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_tmdb
+- Availability: movies, shows, episodes
+- Type: number
+
 ### Radarr
 
 #### Date added
