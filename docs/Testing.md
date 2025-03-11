@@ -31,7 +31,6 @@ You can run the PR image using either docker run, or docker compose. Compose is 
     --name maintainerr-testing \
     --hostname maintainerr-testing \
     -e TZ=Europe/Brussels \
-    -e DEBUG=true \
     -v <your-testing-host-directory>:/opt/data \
     -u 1000:1000 \
     -p <9999>:6246 \
@@ -51,7 +50,6 @@ services:
           - <your-testing-host-directory>:/opt/data
         environment:
           - TZ=Europe/Brussels
-          - DEBUG=true # debug logging needs to be enabled
         ports:
           - <9999>:6246
         restart: unless-stopped

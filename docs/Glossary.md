@@ -273,6 +273,42 @@ The key is used for identification in Yaml rule files.
 - Availability: seasons, episodes
 - Type: text[]
 
+#### IMDb rating (scale 1-10)
+
+!!! info ""
+    The IMDb rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_imdb
+- Availability: movies, shows, episodes
+- Type: number
+
+#### RottenTomatoes critic rating (scale 1-10)
+
+!!! info ""
+    The Rotten Tomatoes critic rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_rottenTomatoesCritic
+- Availability: movies, shows, episodes
+- Type: number
+
+#### RottenTomatoes audience rating (scale 1-10)
+
+!!! info ""
+    The Rotten Tomatoes audience rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_rottenTomatoesAudience
+- Availability: movies, shows, episodes
+- Type: number
+
+#### The Movie Database rating (scale 1-10)
+
+!!! info ""
+    The Movie Database rating of the Plex item on a scale of 1 to 10. You can override this with a rating from a different source by using [Kometa](https://kometa.wiki/en/latest/kometa/guides/ratings/).
+
+- Key: Plex.rating_tmdb
+- Availability: movies, shows, episodes
+- Type: number
+
 ### Radarr
 
 #### Date added
@@ -382,6 +418,42 @@ The key is used for identification in Yaml rule files.
 - Key: Radarr.filePath
 - Availability: movies
 - Type: text
+
+#### Original language
+
+!!! info ""
+    The original language of the Radarr item.
+
+- Key: Radarr.originalLanguage
+- Availability: movies
+- Type: text
+
+#### Rotten Tomatoes rating (scale 0-100)
+
+!!! info ""
+    The Rotten Tomatoes rating of the Radarr item.
+
+- Key: Radarr.rottenTomatoesRating
+- Availability: movies
+- Type: number
+
+#### Trakt rating (scale 0-10)
+
+!!! info ""
+    The Trakt rating of the Radarr item.
+
+- Key: Radarr.traktRating
+- Availability: movies
+- Type: number
+
+#### IMDb rating (scale 0-10)
+
+!!! info ""
+    The IMDb rating of the Radarr item.
+
+- Key: Radarr.imdbRating
+- Availability: movies
+- Type: number
 
 ### Sonarr
 
@@ -505,11 +577,65 @@ The key is used for identification in Yaml rule files.
 #### Base file path
 
 !!! info ""
-    The base path on disk of the file associated with the Radarr item. When using Docker, this will be the path inside the container.
+    The base path on disk of the file associated with the Sonarr item. When using Docker, this will be the path inside the container.
 
 - Key: Sonarr.filePath
-- Availability: movies, seasons, episodes
+- Availability: shows, seasons, episodes
 - Type: text
+
+#### Original language
+
+!!! info ""
+    The original language of the Sonarr item.
+
+- Key: Sonarr.originalLanguage
+- Availability: shows, seasons, episodes
+- Type: text
+
+#### Has season finale episode
+
+!!! info ""
+    Indicates whether an episode with the season finale label is available on disk.
+
+- Key: Sonarr.seasonFinale
+- Availability: seasons
+- Type: boolean
+
+#### Has series finale episode
+
+!!! info ""
+    Indicates whether an episode with the series finale label is available on disk.
+
+- Key: Sonarr.seriesFinale
+- Availability: seasons
+- Type: boolean
+
+#### Season number
+
+!!! info ""
+    The season number of the Sonarr item.
+
+- Key: Sonarr.seasonNumber
+- Availability: seasons, episodes
+- Type: number
+
+#### Show rating (IMDb) (scale 0-10)
+
+!!! info ""
+    The IMDb rating of the Sonarr item.
+
+- Key: Sonarr.rating
+- Availability: shows, seasons, episodes
+- Type: number
+
+#### Show rating (IMDb) vote count
+
+!!! info ""
+    The IMDb vote count of the Sonarr item.
+
+- Key: Sonarr.ratingVotes
+- Availability: shows, seasons, episodes
+- Type: number
 
 ### Overseerr
 
