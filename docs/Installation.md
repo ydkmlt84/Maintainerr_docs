@@ -60,7 +60,7 @@ Setting the host data directory largely depends on how you are installing Mainta
     Changing from a development version to a stable version is not supported.
 
     - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
-    - `jorenn92/maintainerr:develop` for the Docker Hub development image.
+    - `jorenn92/maintainerr:main` for the Docker Hub development image.
 
 ### Updating
 
@@ -110,7 +110,7 @@ services:
     Changing from a development version to a stable version is not supported.
 
     - `ghcr.io/jorenn92/maintainerr:main` for the develop branch
-    - `jorenn92/maintainerr:develop` for the Docker Hub development image.
+    - `jorenn92/maintainerr:main` for the Docker Hub development image.
 
 Save your docker-compose.yml file.
 Then, while in the directory where your docker-compose file exists, start all services defined in your Compose file:

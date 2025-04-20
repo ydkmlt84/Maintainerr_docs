@@ -87,10 +87,10 @@ The key is used for identification in Yaml rule files.
 #### Media file resolution (4k, 1080,..)
 
 !!! info ""
-    The resolutions of the media file associated with the Plex item. Possibilities include 4k, 1080, 720, 480, 360, 240.
+    The resolution of the media file associated with the Plex item. Possibilities include 4k, 1080, 720, 480, 360, 240.
 
 - Key: Plex.fileVideoResolution
-- Availability: movies, shows, seasons, episodes
+- Availability: movies
 - Type: text
 
 #### Media file bitrate
