@@ -6,7 +6,7 @@ A collection is auto generated when defining a rule. A collection holds all medi
 
 When the specified amount of days that media must live in the collection is passed, the collection handler job will perform the necessary cleanup actions.
 
-??? note "Collection Handling"
+???+ note "Collection Handling"
      Collection handling is a batch process that runs every 12 hours. You can manually trigger it with the `Handle collection` button on the Collections page.
 
 ## Plex
@@ -37,14 +37,18 @@ However, if you wish to just remove media from 1 collection it's easier to click
 
 You're able to exclude media from all, or specific, collections by using the `Excl` button on the media's card from the `Overview` page. This will open a similar popup as adding media.
 
-Here you're able to Remove the media's current exclusions, exclude for all collections or exclude for a specific collection.
+Here you're able to remove the media's current exclusions, exclude for all collections or exclude for a specific collection.
 
 When media has exclusions, an `Excl` badge will be shown on the top-right side of the card.
+
+### Data syncing from Plex
+
+If media is added to the Plex collection outside of Maintainerr, it will be added to the associated Maintainerr collection. These manually added items will be ignored by the rule processor.
+
+If you delete media from the Plex collection outside of Maintainerr, it will be removed from the corresponding Maintainerr collection. However, if the media still matches your rules, it will be re-added to the collection in subsequent rule processing cycles.
 
 ## Misc
 
 - By clicking on the collection's name you can see all media currently added to the collection. On the top-right side there'll be a number indicating the number of days before removal.
 
 - Maintainerr will never remove the collection from Plex if you specified a manual collection.
-
-- You could add media directly to the Plex collection within Plex. Maintainerr will sync Media with the Plex collection. (The Plex collection might not always be available in case you're using an automatic collection)
