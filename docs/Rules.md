@@ -9,7 +9,7 @@ When media exists in the collection for a specified amount of time, they'll be d
 
 Once you complete and save your rule, Maintainerr will generate a collection. The collection will only be visible/synced to Plex if it contains media.
 
-??? note "Rule Handling"
+???+ note "Rule Handling"
     Rule handling is a batch process that runs every 8 hours. You can manually trigger it with the `Run rules` button on the 'rules' page.
 
 ## Creating rules
