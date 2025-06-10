@@ -4,13 +4,12 @@ description: Rules configurations and basic information about using rules.
 title: Rules
 ---
 
-Rules are the engine of Maintainerr. Media will be tested against the rule parameters and added to a collection, if they are a match.
-When media exists in the collection for a specified amount of time, they'll be deleted from disk & external applications.
+Rules are the core of Maintainerr. They evaluate your Plex media based on the parameters you set. If a media item matches a rule, it is added to a collection.
 
-Once you complete and save your rule, Maintainerr will generate a collection. The collection will only be visible/synced to Plex if it contains media.
+Media in a collection will remain there for the number of days you specify. After that period, Maintainerr will delete the media from disk and any connected external applications. If a collections media item no longer matches a rule, it will be removed from it.
 
-??? note "Rule Handling"
-    Rule handling is a batch process that runs every 8 hours. You can manually trigger it with the `Run rules` button on the 'rules' page.
+???+ note "Rule Handling"
+    Rule handling is a batch process that runs every 8 hours (this interval can be changed in the settings). During each run, Maintainerr checks all your rules and updates collections by adding or removing media items as needed. You can manually trigger this process with the `Run Rules` button on the 'Rules' page.
 
 ## Creating rules
 
@@ -35,35 +34,29 @@ General info about the rule. Some of the information specified here will be show
 | Show on home                 | Show the rule's collection on the Plex home screen  |
 | Add list exclusions          | Prevent \*arr import lists from re-adding media that has been removed by Maintainerr  |
 | Media deleted after days     | Amount of days media will live in the collection before deletion  |
-| Use rules                    | Disable the rule engine, in case you want to add media manually  |
+| Use rules                    | Disable the rule engine, for when you want to add media to the Plex collection manually  |
 | Force reset Overseerr record | Force resets the Overseerr record by deleting any requests instead of relying on availability-sync. 'Enable CSRF Protection' needs to be disabled in Overseer's settings for this to work. [^1] |
-| Custom collection            | Use a manual collection. Media will sync from Plex to Maintainerr. Maintainerr will never remove this collection from Plex  |
-| Custom collection name       | The name of the manual collection to use [^2]  |
+| Custom collection            | Use a manually created Plex collection. Maintainerr will never automatically add or remove this collection from Plex.  |
+| Custom collection name       | The name of the manual Plex collection to use [^2]  |
 
 [^1]:
     This is the old method of telling Overseerr that something has been removed. The default method now, is to tell Overseerr to initiate an `Availability Sync`, through its API. This happens automatically at the end of the collection handler job. This option is not available for Jellyseerr.
-[^2]: Only shown and needed when the Custom Collection checkbox is checked.  
+[^2]: Only shown and needed when the Custom Collection checkbox is checked.
 
 #### TV media type
 
-With the *Media type* parameter you're able to specify the type of media that should be used for a TV library. This allows to run rules on either a selection of shows, seasons or episodes.
+With the *Media type* parameter, you specify which type of media to target in a TV library. This allows you to run rules on shows, seasons, or episodes.
 
-For instance, this makes it possible to create rule groups that select & delete old/watched seasons of a tv show, without removing the newer seasons.
+For example, you might create a rule group that selects and deletes old or watched seasons of a TV show, while keeping newer seasons untouched. Alternatively, you could target watched episodes and set them to unmonitored in Sonarr.
 
-??? info
-    - Because you can't mix media types on a Plex collection, Maintainerr also doesn't allow the use of multiple types on a rule group / collection.
+???+ info
+    - Plex collections cannot contain mixed media types. Therefore, Maintainerr restricts each rule group / collection to a single media type.
 
-    - Executing rules on episodes takes a lot longer than shows & seasons because Maintainerr has to sift through more data.
+    - Running rules on episodes is slower than on shows or seasons, as Maintainerr must process a larger volume of data.
 
-#### Disabling rules & manual collections
+#### Manual collections
 
-In case you want to manage the collection manually, or with another program, there's the possibility to disable Maintainerr's collection system by specifying a manual collection.
-Maintainerr will sync all media added/removed from the Plex collection into its internal collection.
-
-!!! warning
-    If media is excluded in Maintainerr, but is added manually to the Plex collection, the exclude will be ignored.
-
-Additionally, you can disable the rule system by unchecking the *use rules* checkbox.
+If you prefer to manage Plex collections yourself or use a different tool, you can enable the manual collection option. With this enabled, Maintainerr will not automatically create and delete collections in Plex.
 
 ## Adding rules
 
