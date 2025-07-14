@@ -250,6 +250,8 @@ nav:
   - Collections: 
     - Collections.md
     - Test-Media.md
+  - Notifications:
+    - Notifications.md
   - Community:
     - Introduction.md
     - Contributing.md
