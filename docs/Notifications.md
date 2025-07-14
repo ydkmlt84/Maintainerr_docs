@@ -1,5 +1,5 @@
 ---
-status: recent
+status: new
 description: Configure and manage notification agents for automated alerts and updates.
 title: Notifications
 ---

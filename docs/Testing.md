@@ -1,6 +1,5 @@
 ---
 title: Testing 
-status: new
 description: Information on testing a specific pull request image. Something not in a develop branch yet and not in a released.
 ---
 
