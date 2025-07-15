@@ -1,6 +1,5 @@
 ---
 title: How it works
-status: new
 description: Explanation of the basics and how Maintainerr was designed to be used.
 ---
 

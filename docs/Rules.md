@@ -1,5 +1,4 @@
 ---
-status: recent
 description: Rules configurations and basic information about using rules.
 title: Rules
 ---
